@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Briefly.</title>
+<meta name="description" content="직장인을 위한 하루 17분 영어 브리핑. 단어, 표현, 듣기, 읽기, 쓰기를 매일 아침 하나의 업무 상황으로.">
+<meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#11141a" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Briefly.">
+<meta property="og:title" content="Briefly. · Daily English at Work">
+<meta property="og:description" content="매일 아침 업무 상황 하나로 단어·표현·듣기·읽기·쓰기를 17분 안에.">
+<meta property="og:url" content="https://nhs1816.github.io/briefly/">
+<meta property="og:image" content="https://nhs1816.github.io/briefly/icons/icon-512.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Briefly">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<style>
+html{-webkit-text-size-adjust:100%}
+body{-webkit-tap-highlight-color:transparent;padding-top:calc(20px + env(safe-area-inset-top,0px))!important;padding-bottom:calc(56px + env(safe-area-inset-bottom,0px))!important}
+.install{background:var(--surface);border:1px dashed var(--line);border-radius:6px;padding:10px 14px;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px}
+.install p{margin:0;flex:1 1 220px}
+.install button{border:1px solid var(--ink);border-radius:4px;padding:6px 12px;background:var(--ink);color:var(--bg)}
+.install button.plain{background:none;border-color:transparent;color:var(--muted)}
+</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: 하루치 회의 안건(agenda)처럼 5개 항목을 한 줄 세로로 쌓은 업무 브리핑 문서 */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --ink:#18202e; --muted:#5d6676; --line:#dfe3ea;
+  --accent:#2747c9; --accent-soft:#e8ecfb; --marker:#fff0a8; --good:#1d7f55; --good-soft:#e3f3ea; --bad:#b8402d; --bad-soft:#fbe9e5;
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans KR","Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;
+  --f-read:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11141a; --surface:#191d26; --ink:#e6e9ef; --muted:#9aa3b3; --line:#2a303c;
+  --accent:#8aa1ff; --accent-soft:#232b45; --marker:#4a421c; --good:#5fc794; --good-soft:#17302a; --bad:#f08a76; --bad-soft:#3a1f1b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11141a; --surface:#191d26; --ink:#e6e9ef; --muted:#9aa3b3; --line:#2a303c;
+  --accent:#8aa1ff; --accent-soft:#232b45; --marker:#4a421c; --good:#5fc794; --good-soft:#17302a; --bad:#f08a76; --bad-soft:#3a1f1b; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+.wrap{max-width:720px;margin:0 auto;display:grid;gap:28px}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;color:var(--muted)}
+.en{font-family:var(--f-display)}
+
+/* 머리 */
+header{display:grid;gap:14px}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.brand b{font-family:var(--f-display);font-weight:700;font-size:22px;letter-spacing:-.02em;line-height:1}
+.brand b i{font-style:normal;color:var(--accent)}
+.brand span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;color:var(--muted)}
+.dateline{display:flex;align-items:center;gap:8px;margin:18px 0 0;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.dateline .chip{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.08em;padding:2px 7px;border-radius:3px;background:var(--ink);color:var(--bg)}
+h1{font-family:var(--f-body);font-weight:600;font-size:clamp(28px,6vw,38px);line-height:1.2;margin:4px 0 0;letter-spacing:-.02em;text-wrap:balance}
+.theme-en{font-family:var(--f-display);font-weight:500;font-size:17px;color:var(--accent);margin:2px 0 0}
+.top{align-items:flex-start}
+.today-btn{justify-self:start;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px;font-size:13px;color:var(--accent)}
+/* 미니 달력: 날짜를 누르면 그날 주제만 보여요. 첫날부터 오늘까지만 열려 있어요. */
+.calbox{width:216px;max-width:100%;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 9px 9px;display:grid;gap:4px}
+.cal-head{display:flex;justify-content:space-between;align-items:center;gap:4px}
+.cal-head h2{margin:0;font:600 12px/1.2 var(--f-body)}
+.cal-head .arrows{display:flex;gap:2px}
+.cal-head .arrows button{width:22px;height:20px;padding:0;border:0;background:none;border-radius:3px;font-size:15px;line-height:1;color:var(--muted)}
+.cal-head .arrows button:hover:not(:disabled){background:var(--accent-soft);color:var(--ink)}
+.cal-head .arrows button:disabled{opacity:.3;cursor:default}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center}
+.cal .wd{font-size:10.5px;line-height:16px;color:var(--muted)}
+.day{height:24px;border-radius:4px;border:0;background:none;display:flex;align-items:center;justify-content:center;font:500 11.5px/1 var(--f-mono);color:var(--muted);opacity:.4;padding:0}
+.day.has{cursor:pointer;opacity:1;color:var(--ink)}
+.day.has:hover{outline:1px solid var(--accent)}
+.day.part{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.day.full{background:var(--accent);color:var(--surface);font-weight:600}
+.day.today{text-decoration:underline;text-underline-offset:3px}
+.day.sel{outline:2px solid var(--ink);outline-offset:-1px}
+.cal-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted);padding-top:2px}
+.cal-foot i{display:inline-block;width:9px;height:9px;border-radius:2px;vertical-align:-1px;margin-right:3px}
+
+/* 안건 */
+.agenda{background:var(--surface);border:1px solid var(--line);border-radius:6px}
+.agenda-h{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line)}
+.agenda ol{list-style:none;margin:0;padding:0}
+.agenda li{border-top:1px solid var(--line)}
+.agenda li:first-child{border-top:0}
+.ag{width:100%;display:grid;grid-template-columns:28px 1fr auto auto 14px;gap:10px;align-items:center;padding:13px 16px;border:0;background:none;text-align:left}
+.ag:hover{background:var(--accent-soft)}
+.ag .arr{width:8px;height:8px;border:solid var(--muted);border-width:0 1.5px 1.5px 0;transform:rotate(45deg);justify-self:center;margin-top:-4px;transition:transform .15s}
+.agenda li.open>.ag{background:var(--accent-soft)}
+.agenda li.open>.ag .arr{transform:rotate(-135deg);margin-top:4px}
+.agenda li.review .no{color:var(--accent)}
+.agenda li>section{padding:16px 16px 20px;background:var(--bg);border-top:1px solid var(--line)}
+.agenda li>section>.sec-h{display:none}
+.next{justify-self:end}
+.cnt{font-family:var(--f-mono);font-size:12px;color:var(--accent);min-width:20px;text-align:right}
+.agenda .no{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.agenda .nm b{font-weight:600}
+.agenda .nm span{color:var(--muted);font-size:13px;margin-left:6px}
+.agenda .min{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.chk{width:20px;height:20px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center}
+.chk.on{background:var(--good);border-color:var(--good)}
+.chk.on::after{content:"";width:6px;height:10px;border:solid var(--surface);border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)}
+
+/* 섹션 */
+section{display:grid;gap:14px;scroll-margin-top:16px}
+.sec-h{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:6px}
+.sec-h h2{font-family:var(--f-display);font-weight:700;font-size:22px;margin:0}
+.sec-h .ko{color:var(--muted);font-size:14px}
+.sec-h .mono{margin-left:auto}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px}
+
+/* 단어 */
+.words{display:grid}
+.word{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:12px 0;border-top:1px dashed var(--line)}
+.word:first-child{border-top:0;padding-top:0}
+.word .w{font-family:var(--f-display);font-weight:700;font-size:20px}
+.word .pos{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-left:6px;font-weight:400}
+.word .kr{grid-column:1/-1;font-weight:500}
+.word .ex{grid-column:1/-1;font-family:var(--f-read);font-size:15.5px}
+.word .exk{grid-column:1/-1;color:var(--muted);font-size:13px}
+.say{border:1px solid var(--line);background:transparent;border-radius:999px;width:32px;height:32px;display:inline-grid;place-items:center;flex:0 0 auto}
+.say:hover{border-color:var(--accent);color:var(--accent)}
+.say svg{width:15px;height:15px}
+mark{background:var(--marker);color:inherit;padding:0 2px;border-radius:2px}
+
+/* 표현 */
+.exprs{display:grid;gap:10px}
+.expr{display:grid;gap:4px}
+.tag{justify-self:start;font-size:12px;padding:1px 8px;border-radius:3px;background:var(--accent-soft);color:var(--accent);font-weight:500}
+.expr .big{display:flex;gap:10px;align-items:center;justify-content:space-between}
+.expr .big b{font-family:var(--f-display);font-size:19px;font-weight:700;line-height:1.3}
+.expr .ex{font-family:var(--f-read);color:var(--ink)}
+.expr .kr{color:var(--muted);font-size:14px}
+
+/* 퀴즈 */
+.quiz{display:grid;gap:14px}
+.quiz-h{display:flex;justify-content:space-between;align-items:center}
+.q{display:grid;gap:8px}
+.q p{margin:0;font-weight:500}
+.q p .en{font-weight:700;font-size:17px}
+.opts{display:flex;flex-wrap:wrap;gap:6px}
+.opts button{border:1px solid var(--line);background:var(--bg);border-radius:4px;padding:7px 12px;text-align:left}
+.opts button:hover:not(:disabled){border-color:var(--accent)}
+.opts button:disabled{cursor:default}
+.opts button.ok{background:var(--good-soft);border-color:var(--good);color:var(--good);font-weight:600}
+.opts button.no{background:var(--bad-soft);border-color:var(--bad);color:var(--bad);text-decoration:line-through}
+.result{font-weight:600}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--bg);border-radius:4px;padding:8px 14px;font-weight:500}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:disabled{opacity:.45;cursor:default}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+
+/* 리스닝 */
+.player{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.play{width:48px;height:48px;border-radius:50%;border:0;background:var(--accent);color:var(--surface);display:grid;place-items:center}
+.play svg{width:20px;height:20px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:5px 10px;font-family:var(--f-mono);font-size:12px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.script{display:grid;gap:4px;margin:0;padding:0;list-style:none}
+.script li{display:grid;grid-template-columns:22px 1fr;gap:8px;font-family:var(--f-read);font-size:15.5px;padding:3px 6px;border-radius:3px}
+.script li b{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:3px}
+.script li.now{background:var(--marker)}
+.script.blur li span{filter:blur(5px);user-select:none}
+.dict input{width:100%;font:inherit;font-family:var(--f-read);font-size:16px;padding:9px 11px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink)}
+.dres{font-family:var(--f-read);font-size:16px;line-height:1.9}
+.dres .o{color:var(--good)}
+.dres .x{color:var(--bad);text-decoration:underline wavy;text-underline-offset:4px}
+.dres .miss{color:var(--muted)}
+.note{font-size:13px;color:var(--muted)}
+.sub{font-weight:600;font-size:14px;margin:0}
+
+/* 리딩 */
+.doc{font-family:var(--f-read);font-size:16.5px;line-height:1.75;white-space:pre-wrap;max-width:65ch}
+.doc .kind{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:normal}
+.doc h3{font-family:var(--f-read);font-weight:600;font-size:19px;margin:2px 0 10px;white-space:normal}
+.gl{border:0;padding:0;background:none;font:inherit;border-bottom:1.5px dotted var(--accent);cursor:help}
+.gl[aria-expanded="true"]{background:var(--marker)}
+.gl[aria-expanded="true"]::after{content:" (" attr(data-kr) ")";font-family:var(--f-body);font-size:13px;color:var(--accent)}
+
+/* 라이팅 */
+.task{font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-family:var(--f-display);font-size:13.5px;border:1px solid var(--line);border-radius:3px;padding:2px 8px;background:var(--bg)}
+textarea{width:100%;min-height:150px;resize:vertical;font-family:var(--f-read);font-size:16px;line-height:1.6;padding:10px 12px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink)}
+.fb{display:grid;gap:12px;border-top:1px solid var(--line);padding-top:14px}
+.score{font-family:var(--f-display);font-size:30px;font-weight:700;line-height:1}
+.score small{font-size:14px;color:var(--muted);font-weight:500}
+.fix{display:grid;gap:2px;padding:8px 0;border-top:1px dashed var(--line)}
+.fix .b{font-family:var(--f-read);text-decoration:line-through;color:var(--bad)}
+.fix .a{font-family:var(--f-read);color:var(--good);font-weight:600}
+.fix .y{font-size:13.5px;color:var(--muted)}
+.model{font-family:var(--f-read);white-space:pre-wrap;background:var(--bg);border-radius:4px;padding:12px;margin:0;font-size:15.5px}
+.checklist{margin:0;padding-left:20px;font-size:14px}
+
+/* 단어장 */
+.vlist{display:grid;gap:0}
+.vlist div{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:8px 0;border-top:1px dashed var(--line)}
+.vlist div:first-child{border-top:0}
+.vlist b{font-family:var(--f-display)}
+.vlist .x{border:0;background:none;color:var(--muted);font-size:13px}
+.empty{color:var(--muted);font-size:14px;margin:0}
+footer{color:var(--muted);font-size:12.5px;text-align:center}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:480px){.ag{grid-template-columns:24px 1fr auto 14px}.agenda .min{display:none}.agenda li>section{padding-inline:10px}}
+</style>
+
+<div class="wrap">
+  <div class="install" id="install" hidden><p id="installText">홈 화면에 설치하면 앱처럼 바로 열 수 있어요.</p>
+  <button id="installBtn">설치하기</button><button id="installClose" class="plain">닫기</button></div>
+  <header>
+    <div class="top">
+      <div style="display:grid;gap:10px;min-width:0">
+        <div>
+          <div class="brand"><b>Briefly<i>.</i></b><span>DAILY ENGLISH AT WORK</span></div>
+          <p class="dateline"><span class="chip" id="dateChip"></span><span id="dateLine"></span></p>
+          <h1 id="theme"></h1>
+          <p class="theme-en" id="themeEn"></p>
+        </div>
+        <button class="today-btn" id="todayBtn" hidden>오늘 브리핑으로</button>
+      </div>
+      <nav class="calbox" aria-label="날짜 선택 달력">
+        <div class="cal-head">
+          <h2 id="calTitle"></h2>
+          <div class="arrows"><button id="calPrev" aria-label="이전 달">‹</button><button id="calNext" aria-label="다음 달">›</button></div>
+        </div>
+        <div class="cal" id="cal"></div>
+        <div class="cal-foot"><span><i style="background:var(--accent)"></i>완료 <i style="background:var(--accent-soft);margin-left:6px"></i>진행 중</span><span class="mono" id="streakTxt"></span></div>
+      </nav>
+    </div>
+  </header>
+
+  <p class="note" id="loadNote" style="margin:0"></p>
+  <nav class="agenda" aria-label="오늘의 안건">
+    <div class="agenda-h"><span class="mono">TODAY'S AGENDA</span><span class="mono" id="agendaSum"></span></div>
+    <ol id="agenda"></ol>
+  </nav>
+
+  <section id="words">
+    <div class="sec-h"><h2>Words</h2><span class="ko">오늘의 단어</span><span class="mono">5 WORDS</span></div>
+    <div class="panel words" id="wordList"></div>
+    <div class="panel quiz" id="wordQuiz"></div>
+  </section>
+
+  <section id="expressions">
+    <div class="sec-h"><h2>Expressions</h2><span class="ko">바로 쓰는 표현</span><span class="mono">3 PHRASES</span></div>
+    <div class="exprs" id="exprList"></div>
+    <div class="panel quiz" id="exprQuiz"></div>
+  </section>
+
+  <section id="listening">
+    <div class="sec-h"><h2>Listening</h2><span class="ko">듣기</span><span class="mono" id="lisMeta"></span></div>
+    <div class="panel" style="display:grid;gap:14px">
+      <div class="player">
+        <button class="play" id="playBtn" aria-label="대화 재생"></button>
+        <div style="display:grid;gap:2px">
+          <b id="lisTitle"></b>
+          <span class="note" id="lisHint">먼저 대본 없이 들어 보세요.</span>
+        </div>
+        <div class="row" style="margin-left:auto">
+          <div class="seg" id="rate" role="group" aria-label="속도">
+            <button data-r="0.8" aria-pressed="false">0.8×</button><button data-r="1" aria-pressed="true">1.0×</button>
+          </div>
+          <button class="btn ghost" id="scriptBtn">대본 보기</button>
+        </div>
+      </div>
+      <ol class="script blur" id="script"></ol>
+      <p class="note" id="ttsWarn" hidden>이 브라우저는 음성 읽기를 지원하지 않아요. 대본을 보고 읽어 보세요.</p>
+    </div>
+    <div class="panel quiz" id="lisQuiz"></div>
+    <div class="panel dict" style="display:grid;gap:10px">
+      <div class="row"><p class="sub">받아쓰기</p><button class="say" id="dictPlay" aria-label="받아쓰기 문장 듣기"></button><span class="note">한 문장을 듣고 그대로 적어 보세요.</span></div>
+      <input id="dictIn" autocomplete="off" spellcheck="false" placeholder="들은 문장을 영어로 입력">
+      <div class="row"><button class="btn" id="dictBtn">채점</button><span class="note" id="dictScore"></span></div>
+      <div class="dres" id="dictRes"></div>
+    </div>
+  </section>
+
+  <section id="reading">
+    <div class="sec-h"><h2>Reading</h2><span class="ko">읽기</span><span class="mono" id="readMeta"></span></div>
+    <div class="panel" style="display:grid;gap:10px">
+      <div class="row"><span class="note">점선 단어를 누르면 뜻이 나와요.</span><button class="btn ghost" id="readPlay" style="margin-left:auto">본문 듣기</button></div>
+      <div class="doc" id="doc"></div>
+    </div>
+    <div class="panel quiz" id="readQuiz"></div>
+  </section>
+
+  <section id="writing">
+    <div class="sec-h"><h2>Writing</h2><span class="ko">쓰기</span><span class="mono">3–5 SENTENCES</span></div>
+    <div class="panel" style="display:grid;gap:12px">
+      <p class="task" id="task" style="margin:0"></p>
+      <div class="chips" id="hints"></div>
+      <textarea id="draft" placeholder="여기에 영어로 써 보세요."></textarea>
+      <div class="row">
+        <button class="btn" id="fbBtn" hidden>Claude 첨삭 받기</button>
+        <button class="btn ghost" id="selfBtn">제출하고 모범 답안 보기</button>
+        <span class="note" id="wc" style="margin-left:auto"></span>
+      </div>
+      <p class="note" id="fbNote"></p>
+      <div class="fb" id="fb" hidden></div>
+      <div class="fb" id="modelBox" hidden>
+        <p class="sub">모범 답안</p>
+        <pre class="model" id="model"></pre>
+        <p class="sub">스스로 점검</p>
+        <ul class="checklist">
+          <li>인사 → 용건 → 요청/다음 단계 → 맺음말 순서인가요?</li>
+          <li>오늘 배운 표현을 하나 이상 썼나요?</li>
+          <li>문장마다 주어와 동사가 있나요? 시제는 맞나요?</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="vocab">
+    <div class="sec-h"><h2>Review</h2><span class="ko">틀린 단어장</span><span class="mono" id="vCount"></span></div>
+    <div class="panel vlist" id="vlist"></div>
+  </section>
+
+  <footer>달력에서 날짜를 고르면 그날의 브리핑이 열려요. 기록은 이 기기의 브라우저에만 저장돼요.</footer>
+</div>
+
+<script>
+/* ===== 콘텐츠: days/index.json(날짜·주제 목록) + days/<날짜>.json(그날 브리핑) ===== */
+let INDEX=[], DAY=null, indexReady=false;
+const dayCache={};
+async function getJSON(u){const r=await fetch(u,{cache:"no-cache"});if(!r.ok)throw new Error(r.status);return r.json()}
+
+/* ===== 저장 ===== */
+const KEY="mbe.v1";
+function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
+let S=Object.assign({days:{},vocab:[],drafts:{}},load());
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+
+/* ===== 날짜·세트 ===== */
+const pad=n=>String(n).padStart(2,"0");
+const ymd=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const NOW=new Date(), TODAY=ymd(NOW);
+const toDate=s=>{const [y,m,d]=s.split("-").map(Number);return new Date(y,m-1,d)};
+const META={}; // 날짜 → {theme,en}
+const open=s=>s<=TODAY&&!!META[s];
+let selDate=TODAY;
+const WD="일월화수목금토";
+const PARTS=[["words","Words","단어",3],["expressions","Expressions","표현",2],["listening","Listening","듣기",4],["reading","Reading","읽기",3],["writing","Writing","쓰기",5]];
+
+const doneOf=s=>(S.days[s]||{}).done||{};
+function markDone(part,extra){
+  if(!DAY)return;
+  const r=S.days[selDate]||(S.days[selDate]={theme:DAY.theme,done:{}});
+  r.done[part]=extra||true; save(); renderAgenda(); renderCal();
+}
+let loadToken=0;
+async function goDate(s){
+  selDate=s;calYM=[toDate(s).getFullYear(),toDate(s).getMonth()];
+  const t=++loadToken;
+  DAY=null;renderAll();
+  if(!open(s))return;
+  try{DAY=dayCache[s]||(dayCache[s]=await getJSON(`days/${s}.json`))}
+  catch(e){if(t===loadToken)$("loadNote").textContent="브리핑을 불러오지 못했어요. 인터넷 연결을 확인하고 다시 열어 주세요.";return}
+  if(t===loadToken)renderAll();
+}
+
+/* ===== 유틸 ===== */
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const ICON_SAY='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
+const ICON_PLAY='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+const ICON_STOP='<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1"/></svg>';
+
+/* ===== 음성 (브라우저 TTS) ===== */
+const TTS="speechSynthesis" in window;
+let voices=[], rate=1, speakToken=0;
+function pickVoices(){
+  if(!TTS)return;
+  const all=speechSynthesis.getVoices().filter(v=>/^en[-_]/i.test(v.lang));
+  const us=all.filter(v=>/en[-_]US/i.test(v.lang));
+  const pool=(us.length?us:all);
+  const nice=pool.filter(v=>/natural|online|google|samantha|aria|jenny|guy|zira|david/i.test(v.name));
+  voices=(nice.length?nice:pool).concat(pool).filter((v,i,a)=>a.indexOf(v)===i);
+}
+if(TTS){pickVoices();speechSynthesis.onvoiceschanged=pickVoices}
+function sayOne(text,who){
+  return new Promise(res=>{
+    if(!TTS)return res();
+    const u=new SpeechSynthesisUtterance(text);
+    u.lang="en-US"; u.rate=rate*0.95;
+    const vA=voices[0], vB=voices.find(v=>v!==vA);
+    if(who==="B"){ if(vB)u.voice=vB; else{u.voice=vA||null;u.pitch=1.25} } else if(vA)u.voice=vA;
+    u.onend=res; u.onerror=res;
+    speechSynthesis.speak(u);
+  });
+}
+function stopSpeak(){speakToken++; if(TTS)speechSynthesis.cancel(); setPlaying(false)}
+async function sayList(items,onLine){
+  stopSpeak(); const t=++speakToken;
+  for(let i=0;i<items.length;i++){
+    if(t!==speakToken)return false;
+    onLine&&onLine(i);
+    await sayOne(items[i][1],items[i][0]);
+    await new Promise(r=>setTimeout(r,250));
+  }
+  return t===speakToken;
+}
+function sayBtn(text){
+  const b=document.createElement("button");b.className="say";b.innerHTML=ICON_SAY;b.setAttribute("aria-label","발음 듣기: "+text);
+  b.onclick=()=>{sayList([["A",text]])};
+  if(!TTS)b.hidden=true;
+  return b;
+}
+
+/* ===== 객관식 퀴즈 ===== */
+function quiz(el,title,qs,onDone){
+  el.innerHTML=`<div class="quiz-h"><p class="sub">${esc(title)}</p><span class="mono" data-c>0 / ${qs.length}</span></div>`;
+  let answered=0, right=0; const wrong=[];
+  qs.forEach((q,qi)=>{
+    const box=document.createElement("div");box.className="q";
+    box.innerHTML=`<p>${q.html||esc(q.q)}</p><div class="opts"></div>`;
+    const opts=box.querySelector(".opts");
+    shuffle(q.opts).forEach(o=>{
+      const b=document.createElement("button");b.textContent=o;
+      b.onclick=()=>{
+        opts.querySelectorAll("button").forEach(x=>{x.disabled=true;if(x.textContent===q.a)x.classList.add("ok")});
+        if(o===q.a)right++;else{b.classList.add("no");wrong.push(q)}
+        answered++; el.querySelector("[data-c]").textContent=`${answered} / ${qs.length}`;
+        if(answered===qs.length){
+          const r=document.createElement("p");r.className="result";r.style.margin="0";
+          r.textContent=right===qs.length?`${right}개 모두 맞혔어요.`:`${qs.length}개 중 ${right}개 맞혔어요.`;
+          const again=document.createElement("button");again.className="btn ghost";again.textContent="다시 풀기";again.style.marginLeft="10px";
+          again.onclick=()=>quiz(el,title,qs,null);
+          r.appendChild(again);el.appendChild(r);
+          onDone&&onDone(right,wrong);
+        }
+      };
+      opts.appendChild(b);
+    });
+    el.appendChild(box);
+  });
+}
+
+/* ===== 렌더 ===== */
+function renderHeader(){
+  const d=toDate(selDate);
+  $("dateLine").textContent=`${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 ${WD[d.getDay()]}요일`;
+  $("dateChip").textContent=selDate===TODAY?"TODAY":"PAST";
+  const m=META[selDate];
+  $("theme").textContent=m?m.theme:!indexReady?"":(selDate===TODAY?"오늘 브리핑 준비 중":"브리핑 없음");
+  $("themeEn").textContent=m?m.en:"";
+  $("todayBtn").hidden=selDate===TODAY;
+  const ag=$("agenda").closest(".agenda");ag.hidden=!DAY;
+  $("loadNote").hidden=!!DAY;
+  $("loadNote").textContent=(m||!indexReady)?"불러오는 중…":selDate===TODAY?"오늘 브리핑은 매일 아침 7시쯤 올라와요. 그동안 달력에서 지난 브리핑을 풀어 보세요.":"이 날은 브리핑이 없어요.";
+}
+$("todayBtn").onclick=()=>goDate(TODAY);
+
+let calYM=[toDate(selDate).getFullYear(),toDate(selDate).getMonth()];
+const ymKey=([y,m])=>y*12+m;
+function renderCal(){
+  const [y,m]=calYM;
+  $("calTitle").textContent=`${y}년 ${m+1}월`;
+  const first=new Date(y,m,1).getDay(), days=new Date(y,m+1,0).getDate();
+  let h=[...WD].map(w=>`<span class="wd">${w}</span>`).join("");
+  for(let k=0;k<first;k++)h+="<span></span>";
+  for(let d=1;d<=days;d++){
+    const ds=ymd(new Date(y,m,d)), c=Object.keys(doneOf(ds)).length;
+    const cls=["day",open(ds)?"has":"",c>=5?"full":c?"part":"",ds===selDate?"sel":"",ds===TODAY?"today":""].filter(Boolean).join(" ");
+    h+=open(ds)
+      ?`<button class="${cls}" data-d="${ds}" aria-label="${m+1}월 ${d}일 ${esc(META[ds].theme)}, ${c}/5"${ds===selDate?' aria-current="date"':""} title="${esc(META[ds].theme)} · ${c}/5">${d}</button>`
+      :`<span class="${cls}">${d}</span>`;
+  }
+  $("cal").innerHTML=h;
+  $("cal").querySelectorAll("button.day").forEach(b=>b.onclick=()=>goDate(b.dataset.d));
+  const first0=INDEX.length?toDate(INDEX[0].date):NOW;
+  $("calPrev").disabled=ymKey(calYM)<=ymKey([first0.getFullYear(),first0.getMonth()]);
+  $("calNext").disabled=ymKey(calYM)>=ymKey([NOW.getFullYear(),NOW.getMonth()]);
+  // 연속 학습: 오늘(아직 안 끝났으면 어제)부터 거꾸로 5/5 완료한 날
+  let streak=0;const dt=new Date(NOW);
+  const full=k=>Object.keys(doneOf(k)).length>=5;
+  if(!full(ymd(dt)))dt.setDate(dt.getDate()-1);
+  while(full(ymd(dt))){streak++;dt.setDate(dt.getDate()-1)}
+  $("streakTxt").textContent=streak?`${streak}일 연속`:"";
+}
+$("calPrev").onclick=()=>{calYM=calYM[1]===0?[calYM[0]-1,11]:[calYM[0],calYM[1]-1];renderCal()};
+$("calNext").onclick=()=>{calYM=calYM[1]===11?[calYM[0]+1,0]:[calYM[0],calYM[1]+1];renderCal()};
+
+/* 안건 = 아코디언: 줄을 누르면 그 아래에 내용이 펼쳐지고, 한 번에 하나만 열림 */
+const ITEMS=[...PARTS,["vocab","Review","틀린 단어장",0]];
+let openPart=null;
+(function buildAgenda(){
+  const ol=$("agenda");
+  ITEMS.forEach(([id,en,ko,min],i)=>{
+    const li=document.createElement("li");li.dataset.id=id;if(id==="vocab")li.className="review";
+    li.innerHTML=`<button class="ag" aria-expanded="false" aria-controls="${id}"><span class="no">${id==="vocab"?"+":pad(i+1)}</span><span class="nm"><b class="en">${en}</b><span>${ko}</span></span><span class="min">${min?min+" min":""}</span>${id==="vocab"?'<span class="cnt" id="vcnt"></span>':`<span class="chk" data-chk></span>`}<span class="arr"></span></button>`;
+    const sec=$(id);sec.hidden=true;li.appendChild(sec);
+    if(i<PARTS.length){
+      const nx=ITEMS[i+1], b=document.createElement("button");b.className="btn ghost next";
+      b.textContent=i<PARTS.length-1?`다음: ${nx[1]} ${nx[2]} ›`:"오늘 브리핑 닫기";
+      b.onclick=()=>togglePart(i<PARTS.length-1?nx[0]:id);
+      sec.appendChild(b);
+    }
+    li.querySelector(".ag").onclick=()=>togglePart(id);
+    ol.appendChild(li);
+  });
+})();
+function togglePart(id){
+  openPart=openPart===id?null:id;
+  $("agenda").querySelectorAll(":scope>li").forEach(li=>{
+    const on=li.dataset.id===openPart;
+    li.classList.toggle("open",on);li.querySelector(".ag").setAttribute("aria-expanded",on);$(li.dataset.id).hidden=!on;
+  });
+  if(!openPart)stopSpeak();
+  if(openPart)$("agenda").querySelector(`li[data-id="${openPart}"]`).scrollIntoView({behavior:"smooth",block:"start"});
+}
+function renderAgenda(){
+  const done=doneOf(selDate);let n=0;
+  PARTS.forEach(([id])=>{
+    if(done[id])n++;
+    const c=$("agenda").querySelector(`li[data-id="${id}"] [data-chk]`);
+    c.classList.toggle("on",!!done[id]);c.setAttribute("aria-label",done[id]?"완료":"미완료");
+  });
+  $("agendaSum").textContent=`${n} / 5 DONE · ~17 MIN`;
+}
+
+function renderWords(){
+  const set=DAY, list=$("wordList");list.innerHTML="";
+  set.words.forEach(([w,pos,kr,ex,exk])=>{
+    const row=document.createElement("div");row.className="word";
+    const re=new RegExp("("+w.split(" ").map(x=>x.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")).join("\\s")+"\\w*)","i");
+    row.innerHTML=`<div><span class="w">${esc(w)}</span><span class="pos">${pos}.</span></div><div></div>
+      <div class="kr">${esc(kr)}</div><div class="ex">${esc(ex).replace(re,"<mark>$1</mark>")}</div><div class="exk">${esc(exk)}</div>`;
+    row.children[1].appendChild(sayBtn(w+". "+ex));
+    list.appendChild(row);
+  });
+  const qs=shuffle(set.words).map(([w,,kr])=>({html:`<span class="en">${esc(w)}</span> 의 뜻은?`,a:kr,opts:[kr,...shuffle(set.words.filter(x=>x[0]!==w)).slice(0,2).map(x=>x[2])],w}));
+  quiz($("wordQuiz"),"단어 확인",qs,(right,wrong)=>{
+    wrong.forEach(q=>{const it=set.words.find(x=>x[0]===q.w);if(!S.vocab.some(v=>v.w===it[0]))S.vocab.unshift({w:it[0],kr:it[2],ex:it[3]})});
+    save();renderVocab();markDone("words",{score:right});
+  });
+}
+function renderExprs(){
+  const set=DAY, list=$("exprList");list.innerHTML="";
+  set.exprs.forEach(([tag,en,kr,ex])=>{
+    const c=document.createElement("div");c.className="panel expr";
+    c.innerHTML=`<span class="tag">${esc(tag)}</span><div class="big"><b>${esc(en)}</b></div><div class="kr">${esc(kr)}</div><div class="ex">${esc(ex)}</div>`;
+    c.querySelector(".big").appendChild(sayBtn(ex));
+    list.appendChild(c);
+  });
+  const qs=set.exprs.map(([,, , ,cz])=>({html:`<span class="en" style="font-weight:500">${esc(cz[0]).replace("___","<u>&emsp;&emsp;&emsp;</u>")}</span>`,a:cz[1],opts:cz[2]}));
+  quiz($("exprQuiz"),"빈칸 채우기",qs,right=>markDone("expressions",{score:right}));
+}
+
+let lisState={q:false,d:false};
+function setPlaying(on){const b=$("playBtn");b.innerHTML=on?ICON_STOP:ICON_PLAY;b.setAttribute("aria-label",on?"정지":"대화 재생");b.dataset.on=on?"1":""}
+function renderListening(){
+  const L=DAY.listen;lisState={q:false,d:false};
+  const speakers=new Set(L.lines.map(l=>l[0])).size;
+  $("lisTitle").textContent=L.title;
+  $("lisMeta").textContent=speakers>1?`DIALOGUE · ${L.lines.length} LINES`:`MONOLOGUE · ${L.lines.length} LINES`;
+  const sc=$("script");sc.innerHTML="";sc.classList.add("blur");$("scriptBtn").textContent="대본 보기";
+  L.lines.forEach(([who,t])=>{const li=document.createElement("li");li.innerHTML=`<b>${who}</b><span>${esc(t)}</span>`;sc.appendChild(li)});
+  setPlaying(false);
+  $("playBtn").onclick=async()=>{
+    if($("playBtn").dataset.on){stopSpeak();return}
+    setPlaying(true);
+    const ok=await sayList(L.lines,i=>{[...sc.children].forEach((li,k)=>li.classList.toggle("now",k===i))});
+    [...sc.children].forEach(li=>li.classList.remove("now"));
+    if(ok)setPlaying(false);
+  };
+  $("ttsWarn").hidden=TTS; if(!TTS){$("playBtn").disabled=true;sc.classList.remove("blur")}
+  quiz($("lisQuiz"),"내용 확인",L.qs.map(([q,a,o])=>({q,a,opts:o})),()=>{lisState.q=true;lisCheck()});
+  $("dictIn").value="";$("dictRes").innerHTML="";$("dictScore").textContent="";
+  $("dictPlay").onclick=()=>sayList([["A",L.dict]]);
+  $("dictPlay").hidden=!TTS;
+  $("dictBtn").onclick=()=>{
+    const NUM=["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve"];
+    const norm=s=>s.toLowerCase().replace(/[’']/g,"'").replace(/[^a-z0-9' ]/g," ").split(/\s+/).filter(Boolean).map(w=>/^\d+$/.test(w)&&NUM[+w]?NUM[+w]:w);
+    const want=norm(L.dict), got=norm($("dictIn").value);
+    if(!got.length){$("dictScore").textContent="문장을 먼저 입력해 주세요.";return}
+    // 단어 단위 LCS로 맞은 단어 표시
+    const m=want.length,n=got.length,dp=Array.from({length:m+1},()=>Array(n+1).fill(0));
+    for(let i=m-1;i>=0;i--)for(let j=n-1;j>=0;j--)dp[i][j]=want[i]===got[j]?dp[i+1][j+1]+1:Math.max(dp[i+1][j],dp[i][j+1]);
+    const hit=new Set();let i=0,j=0;while(i<m&&j<n){if(want[i]===got[j]){hit.add(i);i++;j++}else if(dp[i+1][j]>=dp[i][j+1])i++;else j++}
+    const words=L.dict.split(" ");
+    $("dictRes").innerHTML=words.map((w,k)=>`<span class="${hit.has(k)?"o":"x"}">${esc(w)}</span>`).join(" ");
+    const extra=n-hit.size;
+    $("dictScore").textContent=`${m}단어 중 ${hit.size}개 맞음`+(extra>0?` · 필요 없는 단어 ${extra}개`:"")+(hit.size===m&&extra===0?" · 완벽해요":"");
+    lisState.d=true;lisCheck();
+  };
+  function lisCheck(){if(lisState.q&&lisState.d)markDone("listening",true)}
+}
+$("scriptBtn").onclick=()=>{const sc=$("script");sc.classList.toggle("blur");$("scriptBtn").textContent=sc.classList.contains("blur")?"대본 보기":"대본 가리기"};
+$("rate").querySelectorAll("button").forEach(b=>b.onclick=()=>{rate=+b.dataset.r;$("rate").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b))});
+
+function renderReading(){
+  const R=DAY.read;
+  $("readMeta").textContent=`${R.kind.toUpperCase()} · ${R.text.split(/\s+/).length} WORDS`;
+  let html=esc(R.text);const slots=[];
+  Object.keys(R.gloss).sort((a,b)=>b.length-a.length).forEach(k=>{
+    const re=new RegExp("\\b("+k.replace(/ /g,"\\s")+")\\b","i");
+    html=html.replace(re,(m)=>{slots.push(`<button class="gl" data-kr="${esc(R.gloss[k])}" aria-expanded="false">${m}</button>`);return `\u0000${slots.length-1}\u0000`});
+  });
+  html=html.replace(/\u0000(\d+)\u0000/g,(_,i)=>slots[i]);
+  $("doc").innerHTML=`<div class="kind">${esc(R.kind)}</div><h3>${esc(R.title)}</h3>${html}`;
+  $("doc").querySelectorAll(".gl").forEach(b=>b.onclick=()=>b.setAttribute("aria-expanded",b.getAttribute("aria-expanded")!=="true"));
+  $("readPlay").hidden=!TTS;
+  $("readPlay").onclick=()=>{
+    if($("readPlay").dataset.on){stopSpeak();$("readPlay").dataset.on="";$("readPlay").textContent="본문 듣기";return}
+    const sents=(R.title+". "+R.text).replace(/\n+/g," ").match(/[^.!?]+[.!?]+["”]?|[^.!?]+$/g).map(s=>["A",s.trim()]);
+    $("readPlay").dataset.on="1";$("readPlay").textContent="멈추기";
+    sayList(sents).then(()=>{$("readPlay").dataset.on="";$("readPlay").textContent="본문 듣기"});
+  };
+  $("readPlay").dataset.on="";$("readPlay").textContent="본문 듣기";
+  quiz($("readQuiz"),"내용 확인",R.qs.map(([q,a,o])=>({q,a,opts:o})),right=>markDone("reading",{score:right}));
+}
+
+/* ===== 쓰기 + Claude 첨삭 ===== */
+let sample=null, fbCtl=null;
+function wcount(){const n=($("draft").value.match(/[A-Za-z][A-Za-z'’-]*/g)||[]).length;$("wc").textContent=`${n} words`;return n}
+function renderWriting(){
+  const W=DAY.write;
+  $("task").textContent=W.task;
+  $("hints").innerHTML=W.hints.map(h=>`<span>${esc(h)}</span>`).join("");
+  $("draft").value=(S.drafts[selDate])||"";wcount();
+  $("model").textContent=W.model;$("modelBox").hidden=true;$("fb").hidden=true;$("fbNote").textContent="";
+}
+$("draft").addEventListener("input",()=>{wcount();S.drafts[selDate]=$("draft").value;save()});
+$("selfBtn").onclick=()=>{
+  if(wcount()<10){$("fbNote").textContent="10단어 이상 써야 제출할 수 있어요.";return}
+  $("fbNote").textContent="";$("modelBox").hidden=false;markDone("writing",true);
+};
+$("fbBtn").onclick=async()=>{
+  const text=$("draft").value.trim(), W=DAY.write;
+  if(wcount()<10){$("fbNote").textContent="10단어 이상 써야 첨삭을 받을 수 있어요.";return}
+  if(fbCtl){fbCtl.abort();return}
+  fbCtl=new AbortController();
+  $("fbBtn").textContent="멈추기";$("fbNote").textContent="Claude가 읽고 있어요…";$("fb").hidden=true;
+  const prompt=`You are an English writing coach for Korean office workers at an intermediate level (TOEIC 650-850).
+Task given to the learner: ${W.en}
+Useful expressions from today's lesson: ${W.hints.join(", ")}
+
+Learner's text:
+"""
+${text.slice(0,3000)}
+"""
+
+Check grammar, word choice, tone for business, and whether the task was done.
+Reply with only JSON in this shape:
+{"score": 7, "praise": "한국어 한 문장: 잘한 점", "fixes": [{"before": "learner's phrase", "after": "corrected phrase", "why": "한국어 한 문장 설명"}], "corrected": "the learner's full text with only necessary corrections", "natural": "a more natural, business-appropriate version of the whole text", "tip": "한국어 한 문장: 다음에 써 볼 표현이나 습관"}
+score is 1-10. fixes: at most 5, only real errors or clearly unnatural phrasing; empty array if none.`;
+  try{
+    const r=await sample.json(prompt,{signal:fbCtl.signal,cache:false});
+    showFb(r);$("fbNote").textContent="";markDone("writing",{score:r.score});$("modelBox").hidden=false;
+  }catch(e){
+    const msg={not_granted:"Claude 사용을 허락하지 않아 첨삭을 쓸 수 없어요. 모범 답안으로 스스로 점검해 보세요.",sampling_disabled:"이 계정에서는 Claude 첨삭을 쓸 수 없어요.",rate_limited:"요청이 많아요. 잠시 뒤 다시 눌러 주세요.",invalid_json:"답을 읽지 못했어요. 한 번 더 눌러 주세요.",cancelled:""}[e&&e.code];
+    $("fbNote").textContent=msg!==undefined?msg:"첨삭을 받지 못했어요. 잠시 뒤 다시 눌러 주세요.";
+    if(e&&["not_granted","sampling_disabled","not_declared","capability_disabled"].includes(e.code))$("fbBtn").hidden=true;
+  }finally{fbCtl=null;$("fbBtn").textContent="Claude 첨삭 받기"}
+};
+function showFb(r){
+  const fb=$("fb");fb.hidden=false;
+  const fixes=(Array.isArray(r.fixes)?r.fixes:[]).map(f=>`<div class="fix"><span class="b">${esc(f.before||"")}</span><span class="a">${esc(f.after||"")}</span><span class="y">${esc(f.why||"")}</span></div>`).join("");
+  fb.innerHTML=`<div class="row" style="align-items:baseline;gap:14px"><span class="score">${esc(r.score??"-")}<small> / 10</small></span><span>${esc(r.praise||"")}</span></div>
+    ${fixes?`<div><p class="sub">고칠 곳</p>${fixes}</div>`:`<p class="note" style="margin:0">눈에 띄는 오류가 없어요.</p>`}
+    <div><p class="sub">고친 글</p><pre class="model">${esc(r.corrected||"")}</pre></div>
+    <div><div class="row"><p class="sub">더 자연스럽게</p><span data-say></span></div><pre class="model">${esc(r.natural||"")}</pre></div>
+    ${r.tip?`<p class="note" style="margin:0">${esc(r.tip)}</p>`:""}`;
+  if(r.natural)fb.querySelector("[data-say]").appendChild(sayBtn(r.natural));
+}
+
+function renderVocab(){
+  const el=$("vlist");el.innerHTML="";$("vCount").textContent=`${S.vocab.length} WORDS`;$("vcnt").textContent=S.vocab.length||"";
+  if(!S.vocab.length){el.innerHTML=`<p class="empty">단어 퀴즈에서 틀린 단어가 여기에 모여요. 다시 맞힐 자신이 생기면 지우세요.</p>`;return}
+  S.vocab.forEach((v,i)=>{
+    const d=document.createElement("div");
+    d.innerHTML=`<span><b>${esc(v.w)}</b> <span class="note">${esc(v.kr)}</span></span>`;
+    d.appendChild(sayBtn(v.w+". "+v.ex));
+    const x=document.createElement("button");x.className="x";x.textContent="외웠어요";
+    x.onclick=()=>{S.vocab.splice(i,1);save();renderVocab()};
+    d.appendChild(x);el.appendChild(d);
+  });
+}
+
+function renderAll(){
+  stopSpeak();
+  if(openPart)togglePart(openPart);
+  renderHeader();renderAgenda();renderCal();renderVocab();
+  if(DAY){renderWords();renderExprs();renderListening();renderReading();renderWriting()}
+}
+renderAll();
+(async()=>{
+  try{INDEX=await getJSON("days/index.json")}catch(e){INDEX=[]}
+  INDEX.forEach(x=>META[x.date]={theme:x.theme,en:x.en});indexReady=true;
+  goDate(TODAY);
+})();
+
+/* Claude 첨삭: 뷰어가 지원할 때만 버튼을 보여 줌 */
+(async()=>{
+  try{
+    if(window.claude&&claude.use){sample=await claude.use("sample")}
+  }catch(e){sample=null}
+  if(sample){$("fbBtn").hidden=false;$("selfBtn").textContent="모범 답안만 보기"}
+})();
+</script>
+
+<script>
+/* 앱 설치 안내 + 오프라인 지원 */
+(function(){
+  const box = document.getElementById("install"), txt = document.getElementById("installText"), btn = document.getElementById("installBtn");
+  const standalone = matchMedia("(display-mode: standalone)").matches || navigator.standalone;
+  let dismissed = false; try { dismissed = localStorage.getItem("briefly:installDismissed") === "1"; } catch(e) {}
+  const close = () => { box.hidden = true; try { localStorage.setItem("briefly:installDismissed", "1"); } catch(e) {} };
+  document.getElementById("installClose").onclick = close;
+  if (!standalone && !dismissed) {
+    const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    const inApp = /KAKAOTALK|NAVER\(|Instagram|FBAN|FBAV|Line\//i.test(navigator.userAgent);
+    if (inApp) { txt.textContent = ios ? "앱처럼 쓰려면 오른쪽 아래 메뉴에서 'Safari로 열기'를 누른 뒤, 공유 버튼에서 '홈 화면에 추가'를 골라 주세요." : "앱처럼 쓰려면 메뉴에서 '다른 브라우저로 열기'를 누른 뒤 설치해 주세요."; btn.hidden = true; box.hidden = false; }
+    else if (ios) { txt.textContent = "Safari 아래쪽 공유 버튼을 누르고 '홈 화면에 추가'를 고르면 앱처럼 쓸 수 있어요."; btn.hidden = true; box.hidden = false; }
+    let deferred = null;
+    addEventListener("beforeinstallprompt", e => { e.preventDefault(); deferred = e; box.hidden = false; });
+    btn.onclick = async () => { if (!deferred) return; deferred.prompt(); await deferred.userChoice; deferred = null; close(); };
+    addEventListener("appinstalled", close);
+  }
+  if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+})();
+</script>
+</body>
+</html>

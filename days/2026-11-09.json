@@ -1,0 +1,181 @@
+{
+ "date": "2026-11-09",
+ "theme": "회의 일정 잡기",
+ "en": "Scheduling",
+ "words": [
+  [
+   "postpone",
+   "v",
+   "연기하다, 미루다",
+   "We had to postpone the launch until March.",
+   "출시를 3월로 미뤄야 했어요."
+  ],
+  [
+   "agenda",
+   "n",
+   "안건, 의제",
+   "Let's stick to the agenda.",
+   "안건에서 벗어나지 맙시다."
+  ],
+  [
+   "tentative",
+   "adj",
+   "잠정적인, 임시의",
+   "The date is tentative for now.",
+   "날짜는 일단 잠정적이에요."
+  ],
+  [
+   "attendee",
+   "n",
+   "참석자",
+   "Please send the slides to all attendees.",
+   "슬라이드를 참석자 모두에게 보내 주세요."
+  ],
+  [
+   "reschedule",
+   "v",
+   "일정을 다시 잡다",
+   "Can we reschedule for Thursday?",
+   "목요일로 일정을 다시 잡을 수 있을까요?"
+  ]
+ ],
+ "exprs": [
+  [
+   "회의",
+   "Does that work for you?",
+   "그 시간 괜찮으세요?",
+   "How about 3 p.m. tomorrow? Does that work for you?",
+   [
+    "Does that ___ for you?",
+    "work",
+    [
+     "work",
+     "make",
+     "take"
+    ]
+   ]
+  ],
+  [
+   "이메일",
+   "I'm afraid I can't make it.",
+   "죄송하지만 참석이 어려울 것 같아요.",
+   "I'm afraid I can't make it to Friday's meeting.",
+   [
+    "I'm afraid I can't ___ it to the meeting.",
+    "make",
+    [
+     "make",
+     "do",
+     "get"
+    ]
+   ]
+  ],
+  [
+   "회의",
+   "Let's circle back to this later.",
+   "이건 나중에 다시 이야기하죠.",
+   "We're running out of time. Let's circle back to this later.",
+   [
+    "Let's ___ back to this after lunch.",
+    "circle",
+    [
+     "circle",
+     "turn",
+     "round"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "화요일 회의 옮기기",
+  "lines": [
+   [
+    "A",
+    "Hi Jake, do you have a minute? I need to move our Tuesday meeting."
+   ],
+   [
+    "B",
+    "Sure. What's going on?"
+   ],
+   [
+    "A",
+    "The client asked for a call at the same time, so I'm afraid I can't make it."
+   ],
+   [
+    "B",
+    "No problem. How about Wednesday at ten?"
+   ],
+   [
+    "A",
+    "Wednesday at ten works for me. I'll send an updated invite."
+   ],
+   [
+    "B",
+    "Great. Could you also add the budget review to the agenda?"
+   ]
+  ],
+  "qs": [
+   [
+    "회의를 옮기는 이유는?",
+    "고객 통화가 같은 시간에 잡혀서",
+    [
+     "고객 통화가 같은 시간에 잡혀서",
+     "예산 검토가 끝나지 않아서",
+     "Jake가 휴가를 가서"
+    ]
+   ],
+   [
+    "새로 잡은 회의 시간은?",
+    "수요일 10시",
+    [
+     "수요일 10시",
+     "화요일 10시",
+     "수요일 2시"
+    ]
+   ]
+  ],
+  "dict": "How about Wednesday at ten?"
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Change to Q3 Planning Meeting",
+  "text": "Hi team,\n\nI'm writing to let you know that the Q3 planning meeting has been postponed from Monday to Thursday, July 10, at 2 p.m. Several attendees are traveling early next week, and we want everyone in the room for this discussion.\n\nThe agenda is still tentative, but we plan to cover three topics: the sales forecast, the hiring plan, and the new product timeline. If you would like to add an item, please reply by Tuesday noon.\n\nPlease also review the attached report before the meeting so that we can keep the discussion short and focused.\n\nThanks,\nMina",
+  "gloss": {
+   "forecast": "예측, 전망",
+   "hiring": "채용",
+   "timeline": "일정(표)",
+   "attached": "첨부된",
+   "focused": "집중된"
+  },
+  "qs": [
+   [
+    "회의가 연기된 이유는?",
+    "여러 참석자가 출장 중이라서",
+    [
+     "여러 참석자가 출장 중이라서",
+     "보고서가 아직 끝나지 않아서",
+     "회의실 예약이 안 돼서"
+    ]
+   ],
+   [
+    "안건을 추가하고 싶으면?",
+    "화요일 정오까지 답장한다",
+    [
+     "화요일 정오까지 답장한다",
+     "목요일 회의에서 말한다",
+     "Mina에게 전화한다"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "다음 주 화요일 거래처 미팅에 갈 수 없게 되었어요. 상대에게 정중하게 일정 변경을 요청하는 짧은 이메일을 써 보세요.",
+  "en": "Write a short, polite email asking a business partner to reschedule next Tuesday's meeting because you can't attend.",
+  "hints": [
+   "I'm afraid I can't make it",
+   "reschedule",
+   "Does that work for you?"
+  ],
+  "model": "Hi Mr. Brown,\n\nI'm afraid I can't make it to our meeting next Tuesday because of an urgent internal review. Would it be possible to reschedule for Thursday or Friday afternoon? Please let me know which time works best for you. Sorry for the inconvenience.\n\nBest regards,\nMinsu"
+ }
+}
