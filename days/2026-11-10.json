@@ -1,0 +1,181 @@
+{
+ "date": "2026-11-10",
+ "theme": "마감과 진행 보고",
+ "en": "Deadlines",
+ "words": [
+  [
+   "deadline",
+   "n",
+   "마감 기한",
+   "The deadline for the report is Friday.",
+   "보고서 마감은 금요일이에요."
+  ],
+  [
+   "prioritize",
+   "v",
+   "우선순위를 정하다, 먼저 처리하다",
+   "We need to prioritize customer issues.",
+   "고객 문제를 먼저 처리해야 해요."
+  ],
+  [
+   "on track",
+   "phr",
+   "순조롭게 진행 중인",
+   "The project is on track.",
+   "프로젝트는 순조롭게 진행 중이에요."
+  ],
+  [
+   "delay",
+   "n",
+   "지연",
+   "Sorry for the delay in my reply.",
+   "답장이 늦어서 죄송해요."
+  ],
+  [
+   "deliverable",
+   "n",
+   "결과물, 산출물",
+   "The main deliverable is a 10-page proposal.",
+   "주요 결과물은 10쪽짜리 제안서예요."
+  ]
+ ],
+ "exprs": [
+  [
+   "보고",
+   "I'll keep you posted.",
+   "진행 상황 계속 알려 드릴게요.",
+   "I'm still waiting for their answer. I'll keep you posted.",
+   [
+    "I'll keep you ___ on the progress.",
+    "posted",
+    [
+     "posted",
+     "posting",
+     "post"
+    ]
+   ]
+  ],
+  [
+   "요청",
+   "Could you give me a heads-up?",
+   "미리 귀띔해 주실래요?",
+   "Could you give me a heads-up before you send it to the client?",
+   [
+    "Could you give me a ___ before you send it?",
+    "heads-up",
+    [
+     "heads-up",
+     "hand-up",
+     "head-on"
+    ]
+   ]
+  ],
+  [
+   "마감",
+   "I'm running behind on this.",
+   "이 일이 좀 밀리고 있어요.",
+   "Sorry, I'm running behind on the sales report.",
+   [
+    "I'm running ___ on the sales report.",
+    "behind",
+    [
+     "behind",
+     "after",
+     "late"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "시장 보고서 진행 상황",
+  "lines": [
+   [
+    "A",
+    "Sarah, how's the market report coming along?"
+   ],
+   [
+    "B",
+    "Honestly, I'm running behind. The data from the sales team came in late."
+   ],
+   [
+    "A",
+    "The deadline is Thursday. Do you think you can still make it?"
+   ],
+   [
+    "B",
+    "If I prioritize the report today, I can send you a draft by Wednesday afternoon."
+   ],
+   [
+    "A",
+    "That works. Let me know if you need help with the charts."
+   ],
+   [
+    "B",
+    "Thanks. I'll keep you posted."
+   ]
+  ],
+  "qs": [
+   [
+    "보고서가 늦어진 이유는?",
+    "영업팀 데이터가 늦게 와서",
+    [
+     "영업팀 데이터가 늦게 와서",
+     "차트 프로그램이 고장 나서",
+     "마감이 앞당겨져서"
+    ]
+   ],
+   [
+    "초안은 언제 보내기로 했나요?",
+    "수요일 오후",
+    [
+     "수요일 오후",
+     "목요일 아침",
+     "오늘 저녁"
+    ]
+   ]
+  ],
+  "dict": "Do you think you can still make it?"
+ },
+ "read": {
+  "kind": "Memo",
+  "title": "Project Status Update",
+  "text": "The website redesign project is mostly on track. The design team finished the new home page last week, and user testing will begin on Monday. However, there is a two-week delay in the payment system because the vendor changed its software version.\n\nTo avoid further delays, we will prioritize the payment work and move the blog update to the next phase. The final deliverable, a fully working website, is now expected on September 30 instead of September 16.\n\nIf you have concerns about the new schedule, please contact the project office by Friday.",
+  "gloss": {
+   "redesign": "개편, 재설계",
+   "vendor": "공급 업체",
+   "phase": "단계",
+   "concerns": "우려",
+   "expected": "예상되는"
+  },
+  "qs": [
+   [
+    "결제 시스템이 지연된 이유는?",
+    "업체가 소프트웨어 버전을 바꿔서",
+    [
+     "업체가 소프트웨어 버전을 바꿔서",
+     "디자인팀 인원이 부족해서",
+     "사용자 테스트에서 오류가 나서"
+    ]
+   ],
+   [
+    "다음 단계로 미룬 작업은?",
+    "블로그 업데이트",
+    [
+     "블로그 업데이트",
+     "홈페이지 디자인",
+     "결제 시스템"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "팀장님이 보고서 진행 상황을 물었어요. 조금 늦어지는 이유와 언제까지 끝낼 수 있는지 답장을 써 보세요.",
+  "en": "Reply to your manager: explain why your report is a little late and when you can finish it.",
+  "hints": [
+   "I'm running behind",
+   "prioritize",
+   "I'll keep you posted"
+  ],
+  "model": "Hi Jenny,\n\nThanks for checking in. I'm running a little behind on the report because I'm still waiting for the final numbers from finance. I'll prioritize it tomorrow and send you the draft by Thursday noon. I'll keep you posted if anything changes.\n\nThanks,\nMinsu"
+ }
+}
