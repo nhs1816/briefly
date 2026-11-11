@@ -939,7 +939,11 @@ async function renderJob(){
   try{J=trackCache[key]||(trackCache[key]=await getJSON(`tracks/${S.track}/${selDate}.json`))}
   catch(e){if(t===jobToken)body.innerHTML=`<p class="note" style="margin:0">직무 브리핑을 불러오지 못했어요.</p>`;return}
   if(t!==jobToken)return;
+  const hasAud=m.taudio.includes(S.track);
   body.innerHTML=`<div class="row" style="justify-content:space-between"><b style="font-size:17px">${esc(J.theme)}</b><span class="theme-en" style="margin:0;font-size:15px">${esc(J.en)}</span></div>
+    ${hasAud?`<div class="panel audio-card"><div class="t"><b>Job Audio</b><span class="mono">단어 → 표현 → 실무 문서</span></div>
+      <audio data-ja controls preload="none" src="audio/${S.track}/${selDate}.mp3"></audio>
+      <p class="note" data-jn style="margin:0">약 2분. 기본 오디오 브리핑 다음에 이어 들어 보세요.</p></div>`:""}
     <div class="panel words" data-w></div><div class="exprs" data-e></div>
     <div class="panel" style="display:grid;gap:10px"><p class="note" style="margin:0">점선 단어를 누르면 뜻이 나와요.</p>
       <div class="doc"><div class="kind">${esc(J.read.kind)}</div><h3>${esc(J.read.title)}</h3>${glossHTML(J.read.text,J.read.gloss)}</div></div>
@@ -949,6 +953,11 @@ async function renderJob(){
       <textarea id="jobDraft" placeholder="여기에 영어로 써 보세요."></textarea>
       <div class="row"><button class="btn ghost" data-model>모범 답안 보기</button></div>
       <pre class="model" data-m hidden></pre></div>`;
+  const ja=body.querySelector("[data-ja]");
+  if(ja){
+    ja.onerror=()=>{body.querySelector("[data-jn]").textContent="오디오는 휴대폰 앱(nhs1816.github.io/briefly)에서 들을 수 있어요."};
+    ja.onplay=()=>{stopSpeak();const ma=$("aud");if(ma&&!ma.paused)ma.pause();try{if("mediaSession" in navigator)navigator.mediaSession.metadata=new MediaMetadata({title:`${J.theme} · ${J.en}`,artist:"Briefly English · "+TRACKS[S.track][0],album:selDate})}catch(e){}};
+  }
   const wl=body.querySelector("[data-w]");
   J.words.forEach(([w,pos,kr,ex,exk])=>{
     const row=document.createElement("div");row.className="word";
@@ -975,7 +984,7 @@ async function renderJob(){
 renderAll();
 (async()=>{
   try{INDEX=await getJSON("days/index.json")}catch(e){INDEX=[]}
-  INDEX.forEach(x=>META[x.date]={theme:x.theme,en:x.en,audio:!!x.audio,tracks:x.tracks||[]});indexReady=true;
+  INDEX.forEach(x=>META[x.date]={theme:x.theme,en:x.en,audio:!!x.audio,tracks:x.tracks||[],taudio:x.taudio||[]});indexReady=true;
   goDate(TODAY);
 })();
 
