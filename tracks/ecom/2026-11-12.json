@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-12",
+ "track": "ecom",
+ "theme": "부정 리뷰 응대",
+ "en": "Handling Reviews",
+ "words": [
+  [
+   "refund",
+   "n",
+   "환불",
+   "We have issued a full refund to your account.",
+   "계정으로 전액 환불해 드렸어요."
+  ],
+  [
+   "replacement",
+   "n",
+   "교환품, 대체품",
+   "We will send you a replacement at no cost.",
+   "교환품을 무료로 보내 드릴게요."
+  ],
+  [
+   "inconvenience",
+   "n",
+   "불편",
+   "We apologize for the inconvenience.",
+   "불편을 드려 죄송합니다."
+  ]
+ ],
+ "exprs": [
+  [
+   "사과",
+   "We're sorry to hear that ...",
+   "…라니 유감입니다",
+   "We're sorry to hear that the bottle arrived damaged.",
+   [
+    "We're sorry to ___ that the bottle arrived damaged.",
+    "hear",
+    [
+     "hear",
+     "listen",
+     "know"
+    ]
+   ]
+  ],
+  [
+   "안내",
+   "Please reach out to us ...",
+   "…로 연락 주세요",
+   "Please reach out to us through Amazon messages.",
+   [
+    "Please reach ___ to us through Amazon messages.",
+    "out",
+    [
+     "out",
+     "up",
+     "over"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Guide",
+  "title": "Responding to Negative Reviews",
+  "text": "A quick, polite reply to a negative review can win back a customer and show future buyers that you care. Reply within 24 hours if possible.\n\nStart by thanking the customer and saying you are sorry to hear about the problem. Do not argue or blame the delivery company. Then offer a clear next step, such as a replacement or a refund, and ask the customer to reach out through Amazon messages.\n\nNever ask a customer to change or remove a review in exchange for a refund. This is against Amazon policy.",
+  "gloss": {
+   "win back": "되찾다",
+   "blame": "탓하다",
+   "in exchange for": "…의 대가로",
+   "policy": "정책"
+  },
+  "qs": [
+   [
+    "리뷰 답변에서 하지 말아야 할 것은?",
+    "배송 업체 탓하기",
+    [
+     "배송 업체 탓하기",
+     "사과하기",
+     "해결 방법 제시하기"
+    ]
+   ],
+   [
+    "아마존 정책에 어긋나는 것은?",
+    "환불 대가로 리뷰 수정 요청",
+    [
+     "환불 대가로 리뷰 수정 요청",
+     "교환품 보내기",
+     "24시간 안에 답변"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "'용기가 깨져서 왔다'는 1점 리뷰에 답글을 써 보세요. 사과하고, 교환이나 환불 방법을 안내하세요.",
+  "en": "Reply to a one-star review saying the bottle arrived broken: apologize and explain how to get a replacement or refund.",
+  "hints": [
+   "We're sorry to hear that",
+   "replacement",
+   "reach out"
+  ],
+  "model": "Hi Sarah, we're sorry to hear that your toner arrived broken, and we apologize for the inconvenience. We would be happy to send you a replacement or issue a full refund, whichever you prefer. Please reach out to us through Amazon messages with your order number, and we will take care of it right away."
+ }
+}

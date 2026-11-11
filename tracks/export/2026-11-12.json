@@ -1,0 +1,103 @@
+{
+ "date": "2026-11-12",
+ "track": "export",
+ "theme": "견적서 보내기",
+ "en": "Quotations",
+ "words": [
+  [
+   "quotation",
+   "n",
+   "견적(서)",
+   "We will send you a quotation by the end of the day.",
+   "오늘 중으로 견적서를 보내 드릴게요."
+  ],
+  [
+   "MOQ",
+   "n",
+   "최소 주문 수량",
+   "Our MOQ is 1,000 units per item.",
+   "품목당 최소 주문 수량은 1,000개예요."
+  ],
+  [
+   "valid",
+   "adj",
+   "유효한",
+   "This price is valid until the end of March.",
+   "이 가격은 3월 말까지 유효해요."
+  ]
+ ],
+ "exprs": [
+  [
+   "이메일",
+   "As requested, ...",
+   "요청하신 대로",
+   "As requested, I have attached our quotation for 3,000 units.",
+   [
+    "As ___, I have attached our quotation.",
+    "requested",
+    [
+     "requested",
+     "request",
+     "requesting"
+    ]
+   ]
+  ],
+  [
+   "조건",
+   "Prices are subject to change.",
+   "가격은 변동될 수 있습니다",
+   "Prices are subject to change depending on exchange rates.",
+   [
+    "Prices are ___ to change.",
+    "subject",
+    [
+     "subject",
+     "object",
+     "under"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Quotation for Order No. 2417",
+  "text": "Dear Mr. Kim,\n\nAs requested, please find attached our quotation for 3,000 units of the vitamin serum. The unit price is 4.20 US dollars, and the price is valid for 30 days.\n\nOur MOQ is 1,000 units per item, so you may also split the order across three items. Prices are subject to change if the exchange rate moves by more than five percent.\n\nPayment terms are 30 percent in advance and 70 percent before shipment.\n\nKind regards,\nAnna Choi",
+  "gloss": {
+   "unit price": "단가",
+   "split": "나누다",
+   "exchange rate": "환율",
+   "in advance": "선불로, 미리",
+   "shipment": "선적"
+  },
+  "qs": [
+   [
+    "견적 가격은 며칠 동안 유효한가요?",
+    "30일",
+    [
+     "30일",
+     "5일",
+     "3개월"
+    ]
+   ],
+   [
+    "결제 조건은?",
+    "선금 30%, 선적 전 70%",
+    [
+     "선금 30%, 선적 전 70%",
+     "선적 후 100%",
+     "선금 70%, 선적 후 30%"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "바이어에게 견적서를 보내는 이메일을 써 보세요. 단가, 최소 주문 수량, 가격 유효 기간을 넣으세요.",
+  "en": "Write an email sending a quotation to a buyer, including the unit price, MOQ, and how long the price is valid.",
+  "hints": [
+   "As requested",
+   "valid until",
+   "MOQ"
+  ],
+  "model": "Dear Ms. Garcia,\n\nAs requested, please find attached our quotation for the hand cream set. The unit price is 3.50 US dollars, and our MOQ is 2,000 units. This price is valid until December 31. Please let me know if you have any questions.\n\nBest regards,\nMinsu Lee"
+ }
+}

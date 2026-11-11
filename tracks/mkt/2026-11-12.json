@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-12",
+ "track": "mkt",
+ "theme": "캠페인 성과 보고",
+ "en": "Campaign Reports",
+ "words": [
+  [
+   "reach",
+   "n",
+   "도달(수)",
+   "The video reached over two million people.",
+   "그 영상은 200만 명 넘게 도달했어요."
+  ],
+  [
+   "impression",
+   "n",
+   "노출",
+   "We got 3 million impressions in one week.",
+   "일주일에 노출 300만 회를 기록했어요."
+  ],
+  [
+   "ROAS",
+   "n",
+   "광고비 대비 매출",
+   "Our ROAS was 4.5 on the TikTok ads.",
+   "틱톡 광고 ROAS는 4.5였어요."
+  ]
+ ],
+ "exprs": [
+  [
+   "보고",
+   "... outperformed ...",
+   "…가 …보다 성과가 좋았다",
+   "Short videos outperformed photo posts by 40 percent.",
+   [
+    "Short videos ___ photo posts by 40 percent.",
+    "outperformed",
+    [
+     "outperformed",
+     "overperformed",
+     "upperformed"
+    ]
+   ]
+  ],
+  [
+   "계획",
+   "Going forward, we will ...",
+   "앞으로는 …하겠습니다",
+   "Going forward, we will spend more on creator videos.",
+   [
+    "Going forward, we will ___ more on videos.",
+    "spend",
+    [
+     "spend",
+     "pay",
+     "use"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "Spring Campaign Results",
+  "text": "Our spring sunscreen campaign ran for four weeks on Instagram and TikTok. In total, we reached 1.8 million people and got 5.2 million impressions.\n\nCreator videos clearly outperformed our own brand posts. They had three times more engagement and a ROAS of 4.1, compared with 2.3 for regular ads.\n\nGoing forward, we will move 30 percent of the ad budget to creator content and test shorter videos under 15 seconds.",
+  "gloss": {
+   "in total": "모두 합쳐",
+   "engagement": "참여",
+   "compared with": "…와 비교해",
+   "budget": "예산"
+  },
+  "qs": [
+   [
+    "가장 성과가 좋았던 콘텐츠는?",
+    "크리에이터 영상",
+    [
+     "크리에이터 영상",
+     "브랜드 자체 게시물",
+     "일반 광고"
+    ]
+   ],
+   [
+    "앞으로의 계획은?",
+    "광고 예산 30%를 크리에이터 콘텐츠로",
+    [
+     "광고 예산 30%를 크리에이터 콘텐츠로",
+     "틱톡 광고 중단",
+     "영상 길이를 늘리기"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "지난달 SNS 캠페인 결과를 팀장님께 보고하는 짧은 메시지를 써 보세요. 핵심 수치 하나, 잘된 점, 다음 계획을 넣으세요.",
+  "en": "Write a short message to your manager about last month's social media campaign: one key number, what worked, and the next step.",
+  "hints": [
+   "outperformed",
+   "Going forward",
+   "reach"
+  ],
+  "model": "Hi Jenny,\n\nHere is a quick update on our October campaign. We reached 900,000 people, and creator videos outperformed our regular posts by 60 percent in engagement. Going forward, we will work with five more creators and shift part of the ad budget to short videos.\n\nThanks,\nMinsu"
+ }
+}

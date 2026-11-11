@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-11",
+ "track": "mkt",
+ "theme": "인플루언서 협업 제안",
+ "en": "Influencer Outreach",
+ "words": [
+  [
+   "collaboration",
+   "n",
+   "협업",
+   "We'd love to discuss a collaboration with you.",
+   "협업을 논의하고 싶어요."
+  ],
+  [
+   "engagement",
+   "n",
+   "(팔로워) 참여",
+   "Her posts get high engagement from young women.",
+   "그녀의 게시물은 젊은 여성들의 참여가 높아요."
+  ],
+  [
+   "brief",
+   "n",
+   "브리프, 요약 지침",
+   "I'll send you the campaign brief this afternoon.",
+   "오늘 오후에 캠페인 브리프를 보내 드릴게요."
+  ]
+ ],
+ "exprs": [
+  [
+   "DM",
+   "We're big fans of your content.",
+   "콘텐츠 정말 잘 보고 있어요",
+   "We're big fans of your skincare videos.",
+   [
+    "We're big ___ of your content.",
+    "fans",
+    [
+     "fans",
+     "lovers",
+     "likes"
+    ]
+   ]
+  ],
+  [
+   "제안",
+   "Would you be interested in ...?",
+   "…에 관심 있으세요?",
+   "Would you be interested in trying our new sunscreen?",
+   [
+    "Would you be ___ in trying our sunscreen?",
+    "interested",
+    [
+     "interested",
+     "interesting",
+     "interest"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Collaboration Proposal from Glowlab",
+  "text": "Hi Mia,\n\nWe're big fans of your content, especially your honest skincare reviews. I'm the marketing manager at Glowlab, a Korean skincare brand.\n\nWould you be interested in a paid collaboration for our new sunscreen? We are looking for one Instagram Reel and two Stories in April. We'll send you free products first, so you can try them before deciding.\n\nIf this sounds good, I'll send you the campaign brief with the timeline and fee.\n\nBest,\nMinsu",
+  "gloss": {
+   "honest": "솔직한",
+   "paid": "유료의",
+   "timeline": "일정",
+   "fee": "보수, 비용"
+  },
+  "qs": [
+   [
+    "요청하는 콘텐츠는?",
+    "릴스 1개와 스토리 2개",
+    [
+     "릴스 1개와 스토리 2개",
+     "유튜브 영상 1개",
+     "게시물 3개"
+    ]
+   ],
+   [
+    "결정하기 전에 브랜드가 해 주는 것은?",
+    "제품을 먼저 무료로 보내 줌",
+    [
+     "제품을 먼저 무료로 보내 줌",
+     "보수를 미리 지급함",
+     "촬영 팀을 보내 줌"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "처음 연락하는 해외 뷰티 인플루언서에게 협업 제안 DM을 써 보세요. 칭찬 한마디, 브랜드 소개, 제안 내용을 넣으세요.",
+  "en": "Write a first DM to an overseas beauty influencer proposing a collaboration: a compliment, a brand introduction, and the offer.",
+  "hints": [
+   "We're big fans of",
+   "Would you be interested in",
+   "collaboration"
+  ],
+  "model": "Hi Chloe! We're big fans of your content, especially your morning routine videos. I'm Minsu from Glowlab, a Korean skincare brand. Would you be interested in a paid collaboration for our new vitamin serum? We'd love to send you some products first. Let me know if you're open to it!"
+ }
+}

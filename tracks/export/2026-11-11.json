@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-11",
+ "track": "export",
+ "theme": "샘플 요청 응대",
+ "en": "Sample Requests",
+ "words": [
+  [
+   "sample",
+   "n",
+   "샘플, 견본",
+   "Could you send us a few samples before we place an order?",
+   "주문 전에 샘플 몇 개 보내 주실 수 있나요?"
+  ],
+  [
+   "courier",
+   "n",
+   "특송(업체)",
+   "We'll ship the samples by courier tomorrow.",
+   "샘플은 내일 특송으로 보낼게요."
+  ],
+  [
+   "lead time",
+   "n",
+   "리드타임, 준비 기간",
+   "What is the lead time for an order of 5,000 units?",
+   "5천 개 주문 리드타임이 어떻게 되나요?"
+  ]
+ ],
+ "exprs": [
+  [
+   "이메일",
+   "Please find attached ...",
+   "…를 첨부해 드립니다",
+   "Please find attached our latest product catalog.",
+   [
+    "Please find ___ our latest catalog.",
+    "attached",
+    [
+     "attached",
+     "attach",
+     "attaching"
+    ]
+   ]
+  ],
+  [
+   "요청",
+   "We would appreciate it if you could ...",
+   "…해 주시면 감사하겠습니다",
+   "We would appreciate it if you could confirm the shipping address.",
+   [
+    "We would ___ it if you could confirm the address.",
+    "appreciate",
+    [
+     "appreciate",
+     "thank",
+     "please"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Re: Sample Request – Hydrating Mask Line",
+  "text": "Dear Ms. Lopez,\n\nThank you for your interest in our hydrating mask line. We are happy to send you samples of our five best-selling products. They will be shipped by courier this Friday, and you should receive them within five business days.\n\nPlease note that these samples are free, but we ask distributors to cover the shipping cost for future sample requests. Our standard lead time for orders is three weeks.\n\nPlease find attached our price list for your review.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "hydrating": "보습",
+   "distributors": "유통업체, 대리점",
+   "business days": "영업일",
+   "review": "검토"
+  },
+  "qs": [
+   [
+    "샘플은 언제 보내나요?",
+    "이번 주 금요일",
+    [
+     "이번 주 금요일",
+     "다음 주 월요일",
+     "주문 확정 후"
+    ]
+   ],
+   [
+    "앞으로 샘플을 요청할 때 유통업체가 부담할 것은?",
+    "배송비",
+    [
+     "배송비",
+     "샘플 가격",
+     "관세만"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "해외 바이어가 샘플을 요청했어요. 샘플 발송일과 도착 예상 시점을 알리고, 카탈로그를 첨부했다고 답장해 보세요.",
+  "en": "Reply to a buyer's sample request: say when the samples will ship, when they should arrive, and that you attached the catalog.",
+  "hints": [
+   "Please find attached",
+   "courier",
+   "lead time"
+  ],
+  "model": "Dear Mr. Tanaka,\n\nThank you for your sample request. We will ship three samples of our new sheet masks by courier on Monday, and they should arrive within a week. Please find attached our latest catalog and price list. Our lead time for the first order is about four weeks.\n\nBest regards,\nMinsu Lee"
+ }
+}

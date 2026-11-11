@@ -92,6 +92,29 @@ h1{font-family:var(--f-body);font-weight:600;font-size:clamp(28px,6vw,38px);line
 .cal-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted);padding-top:2px}
 .cal-foot i{display:inline-block;width:9px;height:9px;border-radius:2px;vertical-align:-1px;margin-right:3px}
 
+/* 요금제: 무료 / 플러스(오디오·알림) / 프로(+직무 트랙). 결제 전이라 시험용으로 바꿔 볼 수 있어요. */
+.plan-btn{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 10px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;color:var(--muted)}
+.plan-btn[data-tier="plus"]{border-color:var(--accent);color:var(--accent)}
+.plan-btn[data-tier="pro"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.plans{display:grid;gap:12px}
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.tier{border:1px solid var(--line);background:var(--bg);border-radius:6px;padding:10px;text-align:left;display:grid;gap:4px;align-content:start}
+.tier b{font-family:var(--f-display);font-size:16px}
+.tier span{font-size:12.5px;color:var(--muted);line-height:1.45}
+.tier[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:var(--accent-soft)}
+.plans select{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink)}
+.plans .url{font-family:var(--f-mono);font-size:12px;word-break:break-all;background:var(--bg);border-radius:4px;padding:6px 8px;user-select:all}
+.lock{display:grid;gap:8px;justify-items:start}
+.lock .badge{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;padding:1px 7px;border-radius:3px;background:var(--accent-soft);color:var(--accent)}
+a.btn{text-decoration:none;display:inline-block}
+@media (max-width:480px){.tiers{grid-template-columns:1fr}.tier{grid-template-columns:52px 1fr;align-items:baseline;gap:10px}}
+.audio-card{display:grid;gap:8px}
+.audio-card audio{width:100%}
+.audio-card .t{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.audio-card .t b{font-family:var(--f-display);font-size:17px}
+.agenda li.locked .nm b{color:var(--muted)}
+.agenda li.locked .chk{border-style:dashed}
+
 /* 안건 */
 .agenda{background:var(--surface);border:1px solid var(--line);border-radius:6px}
 .agenda-h{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line)}
@@ -247,7 +270,7 @@ footer{color:var(--muted);font-size:12.5px;text-align:center}
     <div class="top">
       <div style="display:grid;gap:10px;min-width:0">
         <div>
-          <div class="brand"><b>Briefly <i>English</i></b><span>DAILY BRIEFING AT WORK</span></div>
+          <div class="brand"><b>Briefly <i>English</i></b><span>DAILY BRIEFING AT WORK</span><button class="plan-btn" id="planBtn" aria-expanded="false" aria-controls="plans">FREE</button></div>
           <p class="dateline"><span class="chip" id="dateChip"></span><span id="dateLine"></span></p>
           <h1 id="theme"></h1>
           <p class="theme-en" id="themeEn"></p>
@@ -265,7 +288,25 @@ footer{color:var(--muted);font-size:12.5px;text-align:center}
     </div>
   </header>
 
+  <div class="panel plans" id="plans" hidden>
+    <div class="row" style="justify-content:space-between"><p class="sub">요금제</p><span class="note">결제는 아직 없어요. 시험용으로 바꿔 볼 수 있어요.</span></div>
+    <div class="tiers" id="tiers">
+      <button class="tier" data-tier="free"><b>Free</b><span>오늘의 브리핑 6개 영역, 달력, 틀린 단어장</span></button>
+      <button class="tier" data-tier="plus"><b>Plus</b><span>무료 전부 + 화면 꺼도 듣는 오디오 브리핑 + 아침 알림</span></button>
+      <button class="tier" data-tier="pro"><b>Pro</b><span>플러스 전부 + 내 직무 브리핑 매일 + 쓰기 첨삭</span></button>
+    </div>
+    <div class="row" id="trackRow" hidden><label class="sub" for="trackSel">내 직무</label><select id="trackSel"></select></div>
+    <div id="alarmBox" hidden style="display:grid;gap:6px">
+      <p class="sub">아침 7시 30분 알림</p>
+      <p class="note" style="margin:0">휴대폰 캘린더에 한 번 추가하면 매일 아침 알림이 와요.</p>
+      <div class="row"><a class="btn ghost" id="icsDaily" href="#">매일 알림 일정 추가</a><a class="btn ghost" id="icsFeed" href="#">주제까지 보이는 캘린더 구독</a></div>
+      <p class="note" style="margin:0">구독 주소 (캘린더 앱의 '구독 추가'에 붙여 넣기)</p>
+      <div class="url" id="icsUrl"></div>
+    </div>
+  </div>
+
   <p class="note" id="loadNote" style="margin:0"></p>
+  <div class="panel audio-card" id="audioCard" hidden></div>
   <nav class="agenda" aria-label="오늘의 안건">
     <div class="agenda-h"><span class="mono">TODAY'S AGENDA</span><span class="mono" id="agendaSum"></span></div>
     <ol id="agenda"></ol>
@@ -353,6 +394,11 @@ footer{color:var(--muted);font-size:12.5px;text-align:center}
     </div>
   </section>
 
+  <section id="job">
+    <div class="sec-h"><h2>My Job</h2><span class="ko">직무 브리핑</span><span class="mono" id="jobMeta"></span></div>
+    <div id="jobBody" style="display:grid;gap:14px"></div>
+  </section>
+
   <section id="vocab">
     <div class="sec-h"><h2>Review</h2><span class="ko">틀린 단어장</span><span class="mono" id="vCount"></span></div>
     <div class="panel vlist" id="vlist"></div>
@@ -370,7 +416,7 @@ async function getJSON(u){const r=await fetch(u,{cache:"no-cache"});if(!r.ok)thr
 /* ===== 저장 ===== */
 const KEY="mbe.v1";
 function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
-let S=Object.assign({days:{},vocab:[],drafts:{},spk:{}},load());
+let S=Object.assign({days:{},vocab:[],drafts:{},spk:{},tier:"free",track:"export"},load());
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 
 /* ===== 날짜·세트 ===== */
@@ -384,8 +430,12 @@ let selDate=TODAY;
 const WD="일월화수목금토";
 const PARTS=[["words","Words","단어",3],["expressions","Expressions","표현",2],["listening","Listening","듣기",4],["speaking","Speaking","따라 읽기",3],["reading","Reading","읽기",3],["writing","Writing","쓰기",5]];
 const TOTAL_MIN=PARTS.reduce((a,p)=>a+p[3],0);
+const TRACKS={export:["해외영업·수출","Export Sales"],ecom:["이커머스·아마존","E-commerce"],mkt:["마케팅·SNS","Marketing"]};
+const SITE="https://nhs1816.github.io/briefly/";
+const isPlus=()=>S.tier==="plus"||S.tier==="pro", isPro=()=>S.tier==="pro";
 
 const doneOf=s=>(S.days[s]||{}).done||{};
+const baseDone=s=>{const d=doneOf(s);return PARTS.filter(p=>d[p[0]]).length};
 function markDone(part,extra){
   if(!DAY)return;
   const r=S.days[selDate]||(S.days[selDate]={theme:DAY.theme,done:{}});
@@ -504,7 +554,7 @@ function renderCal(){
   let h=[...WD].map(w=>`<span class="wd">${w}</span>`).join("");
   for(let k=0;k<first;k++)h+="<span></span>";
   for(let d=1;d<=days;d++){
-    const ds=ymd(new Date(y,m,d)), c=Object.keys(doneOf(ds)).length;
+    const ds=ymd(new Date(y,m,d)), c=baseDone(ds);
     const cls=["day",open(ds)?"has":"",c>=PARTS.length?"full":c?"part":"",ds===selDate?"sel":"",ds===TODAY?"today":""].filter(Boolean).join(" ");
     h+=open(ds)
       ?`<button class="${cls}" data-d="${ds}" aria-label="${m+1}월 ${d}일 ${esc(META[ds].theme)}, ${c}/5"${ds===selDate?' aria-current="date"':""} title="${esc(META[ds].theme)} · ${c}/5">${d}</button>`
@@ -517,7 +567,7 @@ function renderCal(){
   $("calNext").disabled=ymKey(calYM)>=ymKey([NOW.getFullYear(),NOW.getMonth()]);
   // 연속 학습: 오늘(아직 안 끝났으면 어제)부터 거꾸로 5/5 완료한 날
   let streak=0;const dt=new Date(NOW);
-  const full=k=>Object.keys(doneOf(k)).length>=PARTS.length;
+  const full=k=>baseDone(k)>=PARTS.length;
   if(!full(ymd(dt)))dt.setDate(dt.getDate()-1);
   while(full(ymd(dt))){streak++;dt.setDate(dt.getDate()-1)}
   $("streakTxt").textContent=streak?`${streak}일 연속`:"";
@@ -526,18 +576,20 @@ $("calPrev").onclick=()=>{calYM=calYM[1]===0?[calYM[0]-1,11]:[calYM[0],calYM[1]-
 $("calNext").onclick=()=>{calYM=calYM[1]===11?[calYM[0]+1,0]:[calYM[0],calYM[1]+1];renderCal()};
 
 /* 안건 = 아코디언: 줄을 누르면 그 아래에 내용이 펼쳐지고, 한 번에 하나만 열림 */
-const ITEMS=[...PARTS,["vocab","Review","틀린 단어장",0]];
+const ITEMS=[...PARTS,["job","My Job","직무 브리핑",5],["vocab","Review","틀린 단어장",0]];
 let openPart=null;
 (function buildAgenda(){
   const ol=$("agenda");
   ITEMS.forEach(([id,en,ko,min],i)=>{
     const li=document.createElement("li");li.dataset.id=id;if(id==="vocab")li.className="review";
-    li.innerHTML=`<button class="ag" aria-expanded="false" aria-controls="${id}"><span class="no">${id==="vocab"?"+":pad(i+1)}</span><span class="nm"><b class="en">${en}</b><span>${ko}</span></span><span class="min">${min?min+" min":""}</span>${id==="vocab"?'<span class="cnt" id="vcnt"></span>':`<span class="chk" data-chk></span>`}<span class="arr"></span></button>`;
+    li.innerHTML=`<button class="ag" aria-expanded="false" aria-controls="${id}"><span class="no">${id==="vocab"?"+":id==="job"?"PRO":pad(i+1)}</span><span class="nm"><b class="en">${en}</b><span>${ko}</span></span><span class="min">${min?min+" min":""}</span>${id==="vocab"?'<span class="cnt" id="vcnt"></span>':`<span class="chk" data-chk></span>`}<span class="arr"></span></button>`;
     const sec=$(id);sec.hidden=true;li.appendChild(sec);
-    if(i<PARTS.length){
+    if(id!=="vocab"){
       const nx=ITEMS[i+1], b=document.createElement("button");b.className="btn ghost next";
-      b.textContent=i<PARTS.length-1?`다음: ${nx[1]} ${nx[2]} ›`:"오늘 브리핑 닫기";
-      b.onclick=()=>togglePart(i<PARTS.length-1?nx[0]:id);
+      const toJob=id==="writing";
+      b.dataset.next=toJob?"job":(id==="job"?"":nx[0]);
+      b.textContent=id==="job"?"오늘 브리핑 닫기":`다음: ${nx[1]} ${nx[2]} ›`;
+      b.onclick=()=>{const n=b.dataset.next;togglePart(n||id)};
       sec.appendChild(b);
     }
     li.querySelector(".ag").onclick=()=>togglePart(id);
@@ -560,7 +612,10 @@ function renderAgenda(){
     const c=$("agenda").querySelector(`li[data-id="${id}"] [data-chk]`);
     c.classList.toggle("on",!!done[id]);c.setAttribute("aria-label",done[id]?"완료":"미완료");
   });
-  $("agendaSum").textContent=`${n} / ${PARTS.length} DONE · ~${TOTAL_MIN} MIN`;
+  const jc=$("agenda").querySelector('li[data-id="job"] [data-chk]');
+  jc.classList.toggle("on",isPro()&&!!done.job);
+  const tot=PARTS.length+(isPro()?1:0), nn=n+(isPro()&&done.job?1:0);
+  $("agendaSum").textContent=`${nn} / ${tot} DONE · ~${TOTAL_MIN+(isPro()?5:0)} MIN`;
 }
 
 function renderWords(){
@@ -817,13 +872,110 @@ function renderVocab(){
 function renderAll(){
   stopSpeak();
   if(openPart)togglePart(openPart);
-  renderHeader();renderAgenda();renderCal();renderVocab();
+  renderHeader();renderPlan();renderAgenda();renderCal();renderVocab();renderAudio();
   if(DAY){renderWords();renderExprs();renderListening();renderSpeaking();renderReading();renderWriting()}
+  renderJob();
+}
+
+/* ===== 요금제 (시험용 전환) ===== */
+$("planBtn").onclick=()=>{const p=$("plans");p.hidden=!p.hidden;$("planBtn").setAttribute("aria-expanded",!p.hidden)};
+$("tiers").querySelectorAll(".tier").forEach(b=>b.onclick=()=>{S.tier=b.dataset.tier;save();renderAll()});
+$("trackSel").innerHTML=Object.entries(TRACKS).map(([k,v])=>`<option value="${k}">${v[0]}</option>`).join("");
+$("trackSel").onchange=()=>{S.track=$("trackSel").value;save();renderPlan();renderAgenda();renderJob()};
+function renderPlan(){
+  const t=S.tier;
+  $("planBtn").textContent=t.toUpperCase();$("planBtn").dataset.tier=t;
+  $("tiers").querySelectorAll(".tier").forEach(b=>b.setAttribute("aria-pressed",b.dataset.tier===t));
+  $("trackRow").hidden=!isPro();$("trackSel").value=S.track;
+  $("alarmBox").hidden=!isPlus();
+  const feed=SITE.replace(/^https:/,"webcal:")+"briefly.ics";
+  $("icsDaily").href=SITE+"briefly-daily.ics";$("icsFeed").href=feed;$("icsUrl").textContent=SITE+"briefly.ics";
+  const li=$("agenda").querySelector('li[data-id="job"]');
+  li.classList.toggle("locked",!isPro());
+  li.querySelector(".nm span").textContent=isPro()?TRACKS[S.track][0]:"직무 브리핑";
+  const wn=$("writing").querySelector(".next");
+  if(wn){wn.dataset.next="job";wn.textContent=`다음: My Job ${isPro()?TRACKS[S.track][0]:"직무 브리핑"} ›`}
+  const fbb=$("fbBtn"); if(sample)fbb.hidden=!isPro();
+}
+function lockBox(tier,title,desc){
+  return `<div class="lock"><span class="badge">${tier.toUpperCase()}</span><p class="sub" style="margin:0">${esc(title)}</p><p class="note" style="margin:0">${esc(desc)}</p><button class="btn ghost" data-up="${tier}">${tier==="pro"?"Pro":"Plus"}로 바꿔 보기 (시험용)</button></div>`;
+}
+function wireUp(el){el.querySelectorAll("[data-up]").forEach(b=>b.onclick=()=>{S.tier=b.dataset.up;save();renderAll()})}
+
+/* ===== 오디오 브리핑 (플러스) ===== */
+function renderAudio(){
+  const c=$("audioCard"), m=META[selDate];
+  c.hidden=!DAY;
+  if(!DAY)return;
+  if(!isPlus()){c.innerHTML=lockBox("plus","오디오 브리핑","오늘 브리핑을 5분짜리 음성으로 들어요. 화면을 꺼도, 이어폰으로 출퇴근길에.");wireUp(c);return}
+  if(!m||!m.audio){c.innerHTML=`<div class="t"><b>Audio Briefing</b><span class="note">이 날은 오디오가 없어요.</span></div>`;return}
+  c.innerHTML=`<div class="t"><b>Audio Briefing</b><span class="mono">단어 → 표현 → 대화 → 따라 읽기 → 본문</span></div>
+    <audio id="aud" controls preload="none" src="audio/${selDate}.mp3"></audio>
+    <p class="note" id="audNote" style="margin:0">화면을 꺼도 계속 들려요. 따라 읽기 부분에서는 소리 내어 따라 해 보세요.</p>`;
+  const a=$("aud");
+  a.onerror=()=>{$("audNote").textContent="오디오는 휴대폰 앱(nhs1816.github.io/briefly)에서 들을 수 있어요."};
+  a.onplay=()=>{stopSpeak();try{if("mediaSession" in navigator)navigator.mediaSession.metadata=new MediaMetadata({title:`${m.theme} · ${m.en}`,artist:"Briefly English",album:selDate})}catch(e){}};
+}
+
+/* ===== 직무 브리핑 (프로) ===== */
+const trackCache={};let jobToken=0;
+function glossHTML(text,gloss){
+  let html=esc(text);const slots=[];
+  Object.keys(gloss).sort((a,b)=>b.length-a.length).forEach(k=>{
+    const re=new RegExp("\\b("+k.replace(/ /g,"\\s")+")\\b","i");
+    html=html.replace(re,m=>{slots.push(`<button class="gl" data-kr="${esc(gloss[k])}" aria-expanded="false">${m}</button>`);return `\u0000${slots.length-1}\u0000`});
+  });
+  return html.replace(/\u0000(\d+)\u0000/g,(_,i)=>slots[i]);
+}
+async function renderJob(){
+  const body=$("jobBody"), t=++jobToken;
+  $("jobMeta").textContent=isPro()?TRACKS[S.track][1].toUpperCase():"PRO";
+  if(!isPro()){body.innerHTML=lockBox("pro","내 직무 브리핑","기본 주제에 더해, 고른 직무(해외영업·이커머스·마케팅)의 실전 단어·표현·이메일·쓰기를 매일 받아요.");wireUp(body);return}
+  if(!DAY){body.innerHTML="";return}
+  const m=META[selDate];
+  if(!m||!m.tracks.includes(S.track)){body.innerHTML=`<p class="note" style="margin:0">이 날은 ${esc(TRACKS[S.track][0])} 브리핑이 없어요.</p>`;return}
+  body.innerHTML=`<p class="note" style="margin:0">불러오는 중…</p>`;
+  const key=S.track+"/"+selDate;let J;
+  try{J=trackCache[key]||(trackCache[key]=await getJSON(`tracks/${S.track}/${selDate}.json`))}
+  catch(e){if(t===jobToken)body.innerHTML=`<p class="note" style="margin:0">직무 브리핑을 불러오지 못했어요.</p>`;return}
+  if(t!==jobToken)return;
+  body.innerHTML=`<div class="row" style="justify-content:space-between"><b style="font-size:17px">${esc(J.theme)}</b><span class="theme-en" style="margin:0;font-size:15px">${esc(J.en)}</span></div>
+    <div class="panel words" data-w></div><div class="exprs" data-e></div>
+    <div class="panel" style="display:grid;gap:10px"><p class="note" style="margin:0">점선 단어를 누르면 뜻이 나와요.</p>
+      <div class="doc"><div class="kind">${esc(J.read.kind)}</div><h3>${esc(J.read.title)}</h3>${glossHTML(J.read.text,J.read.gloss)}</div></div>
+    <div class="panel quiz" data-q></div>
+    <div class="panel" style="display:grid;gap:10px"><p class="sub">실전 쓰기</p><p class="task" style="margin:0">${esc(J.write.task)}</p>
+      <div class="chips">${J.write.hints.map(h=>`<span>${esc(h)}</span>`).join("")}</div>
+      <textarea id="jobDraft" placeholder="여기에 영어로 써 보세요."></textarea>
+      <div class="row"><button class="btn ghost" data-model>모범 답안 보기</button></div>
+      <pre class="model" data-m hidden></pre></div>`;
+  const wl=body.querySelector("[data-w]");
+  J.words.forEach(([w,pos,kr,ex,exk])=>{
+    const row=document.createElement("div");row.className="word";
+    row.innerHTML=`<div><span class="w">${esc(w)}</span><span class="pos">${esc(pos)}.</span></div><div></div><div class="kr">${esc(kr)}</div><div class="ex">${esc(ex)}</div><div class="exk">${esc(exk)}</div>`;
+    row.children[1].appendChild(sayBtn(w+". "+ex));wl.appendChild(row);
+  });
+  const el=body.querySelector("[data-e]");
+  J.exprs.forEach(([tag,en,kr,ex])=>{
+    const c=document.createElement("div");c.className="panel expr";
+    c.innerHTML=`<span class="tag">${esc(tag)}</span><div class="big"><b>${esc(en)}</b></div><div class="kr">${esc(kr)}</div><div class="ex">${esc(ex)}</div>`;
+    c.querySelector(".big").appendChild(sayBtn(ex));el.appendChild(c);
+  });
+  body.querySelectorAll(".gl").forEach(b=>b.onclick=()=>b.setAttribute("aria-expanded",b.getAttribute("aria-expanded")!=="true"));
+  const jd=S.jobDone||(S.jobDone={}), k=key;
+  const qs=[...J.words.map(([w,,kr])=>({html:`<span class="en">${esc(w)}</span> 의 뜻은?`,a:kr,opts:[kr,...J.words.filter(x=>x[0]!==w).map(x=>x[2])]})),
+    ...J.exprs.map(e=>({html:`<span class="en" style="font-weight:500">${esc(e[4][0]).replace("___","<u>&emsp;&emsp;&emsp;</u>")}</span>`,a:e[4][1],opts:e[4][2]})),
+    ...J.read.qs.map(([q,a,o])=>({q,a,opts:o}))];
+  const fin=()=>{if(jd[k]&&jd[k].q&&jd[k].w){markDone("job",true)}};
+  quiz(body.querySelector("[data-q]"),"직무 확인 문제",qs,()=>{jd[k]=Object.assign(jd[k]||{},{q:true});save();fin()});
+  const dr=$("jobDraft");dr.value=(S.drafts["job:"+k])||"";
+  dr.oninput=()=>{S.drafts["job:"+k]=dr.value;save()};
+  body.querySelector("[data-model]").onclick=()=>{const pm=body.querySelector("[data-m]");pm.textContent=J.write.model;pm.hidden=false;jd[k]=Object.assign(jd[k]||{},{w:true});save();fin()};
 }
 renderAll();
 (async()=>{
   try{INDEX=await getJSON("days/index.json")}catch(e){INDEX=[]}
-  INDEX.forEach(x=>META[x.date]={theme:x.theme,en:x.en});indexReady=true;
+  INDEX.forEach(x=>META[x.date]={theme:x.theme,en:x.en,audio:!!x.audio,tracks:x.tracks||[]});indexReady=true;
   goDate(TODAY);
 })();
 
@@ -832,7 +984,7 @@ renderAll();
   try{
     if(window.claude&&claude.use){sample=await claude.use("sample")}
   }catch(e){sample=null}
-  if(sample){$("fbBtn").hidden=false;$("selfBtn").textContent="모범 답안만 보기"}
+  if(sample){$("selfBtn").textContent="모범 답안만 보기";renderPlan()}
 })();
 </script>
 

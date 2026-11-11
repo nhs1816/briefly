@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-11",
+ "track": "ecom",
+ "theme": "상품 리스팅 문구",
+ "en": "Product Listings",
+ "words": [
+  [
+   "listing",
+   "n",
+   "(판매) 상품 페이지",
+   "We updated the listing with new photos.",
+   "새 사진으로 상품 페이지를 업데이트했어요."
+  ],
+  [
+   "bullet point",
+   "n",
+   "글머리 항목",
+   "Keep each bullet point under 200 characters.",
+   "항목마다 200자 이내로 쓰세요."
+  ],
+  [
+   "conversion rate",
+   "n",
+   "구매 전환율",
+   "The new title improved our conversion rate.",
+   "새 제목으로 구매 전환율이 올랐어요."
+  ]
+ ],
+ "exprs": [
+  [
+   "리스팅",
+   "suitable for all skin types",
+   "모든 피부 타입에 적합한",
+   "This gentle cleanser is suitable for all skin types.",
+   [
+    "This cleanser is ___ for all skin types.",
+    "suitable",
+    [
+     "suitable",
+     "fitting",
+     "matching"
+    ]
+   ]
+  ],
+  [
+   "보고",
+   "... is driving sales",
+   "…가 매출을 끌어올리고 있다",
+   "The new bundle is driving sales this month.",
+   [
+    "The new bundle is ___ sales this month.",
+    "driving",
+    [
+     "driving",
+     "making",
+     "doing"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "Listing Review: Collagen Mask",
+  "text": "Our collagen mask listing has strong traffic, but the conversion rate dropped to 9 percent last month. Customer reviews suggest that the main image does not show the product size clearly.\n\nWe recommend three changes. First, add a photo of the mask next to a hand for scale. Second, move the key benefit, \"hydration for 24 hours,\" to the first bullet point. Third, mention that the mask is suitable for sensitive skin.\n\nWe will test the new listing for two weeks and compare the results.",
+  "gloss": {
+   "traffic": "방문자 수, 유입",
+   "for scale": "크기 비교용으로",
+   "key benefit": "핵심 효능",
+   "sensitive skin": "민감성 피부"
+  },
+  "qs": [
+   [
+    "전환율이 떨어진 원인으로 리뷰가 지적한 것은?",
+    "대표 사진에서 크기가 잘 안 보임",
+    [
+     "대표 사진에서 크기가 잘 안 보임",
+     "가격이 비쌈",
+     "배송이 느림"
+    ]
+   ],
+   [
+    "첫 번째 글머리 항목으로 옮길 내용은?",
+    "24시간 보습 효과",
+    [
+     "24시간 보습 효과",
+     "민감성 피부 사용 가능",
+     "제품 크기"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "새로 올릴 수분 크림의 아마존 글머리 항목(bullet point) 3개를 영어로 써 보세요. 핵심 효능, 피부 타입, 사용법을 하나씩 넣으세요.",
+  "en": "Write three Amazon bullet points for a new moisturizing cream: key benefit, skin type, and how to use it.",
+  "hints": [
+   "suitable for all skin types",
+   "lightweight",
+   "apply"
+  ],
+  "model": "- 48-HOUR HYDRATION: Ceramides and hyaluronic acid lock in moisture all day without a greasy feel.\n- SUITABLE FOR ALL SKIN TYPES: A gentle, fragrance-free formula that works for dry and sensitive skin.\n- EASY TO USE: Apply a small amount to clean skin every morning and night, then gently pat until absorbed."
+ }
+}
