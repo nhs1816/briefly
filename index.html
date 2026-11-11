@@ -155,9 +155,12 @@ a.btn{text-decoration:none;display:inline-block}
 .agenda li.done:first-child::before{background:var(--rail)}
 .agenda li.done:has(+ li.done)::before{background:var(--accent)}
 /* 프로가 아니면 My Job 은 점선: 쓰기 역 → 직무 역 구간을 회색 점선으로, 직무 역 아래(단어장 쪽)는 본선 그대로 */
-.agenda li:has(+ li.locked)::after{content:"";position:absolute;left:31px;top:28px;bottom:0;width:4px;background:repeating-linear-gradient(var(--muted) 0 6px,var(--surface) 6px 12px)}
-.agenda li.locked::before{background:linear-gradient(transparent 0 28px,var(--rail) 28px),repeating-linear-gradient(var(--muted) 0 6px,var(--surface) 6px 12px)}
-.agenda li.locked .chk{border:2.5px dashed var(--muted);width:22px;height:22px;background:var(--surface);box-shadow:none}
+.agenda li:has(+ li.locked)::before{background:linear-gradient(var(--rail) 0 28px,transparent 28px)}
+.agenda li.done:has(+ li.locked)::before{background:linear-gradient(var(--accent) 0 28px,transparent 28px)}
+.agenda li:has(+ li.locked)::after{content:"";position:absolute;left:32px;top:28px;bottom:0;width:2px;background:repeating-linear-gradient(var(--muted) 0 5px,transparent 5px 10px)}
+.agenda li.locked::before{top:28px}
+.agenda li.locked::after{content:"";position:absolute;left:32px;top:0;height:28px;width:2px;background:repeating-linear-gradient(var(--muted) 0 5px,transparent 5px 10px)}
+.agenda li.locked .chk{border:1.5px dashed var(--muted);width:20px;height:20px;background:var(--surface);box-shadow:none}
 .agenda li.locked .nm::after{content:"Pro";margin-left:8px;font-size:12px;font-weight:700;padding:1px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink);vertical-align:2px}
 .ag{position:relative;z-index:1;width:100%;display:grid;grid-template-columns:34px 1fr auto 18px;grid-template-areas:"dot nm min arr";gap:12px;align-items:center;padding:14px 18px 14px 16px;border:0;background:none;text-align:left;min-height:56px}
 .ag .no{display:none}
