@@ -1,5 +1,5 @@
 // Briefly 서비스 워커: 매일 새 브리핑을 받도록 네트워크 우선, 오프라인이면 저장해 둔 사본으로 열어요.
-const CACHE = "briefly-202611100944";
+const CACHE = "briefly-202611110944";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./days/index.json",
   "./icons/icon-180.png", "./icons/icon-192.png", "./icons/icon-512.png"];
 self.addEventListener("install", e => {

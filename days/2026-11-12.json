@@ -1,0 +1,178 @@
+{
+ "date": "2026-11-12",
+ "theme": "발표하기",
+ "en": "Presentations",
+ "words": [
+  [
+   "overview",
+   "n",
+   "개요",
+   "Let me start with a quick overview.",
+   "간단한 개요부터 말씀드릴게요."
+  ],
+  [
+   "highlight",
+   "v",
+   "강조하다",
+   "I'd like to highlight three key points.",
+   "핵심 세 가지를 강조하고 싶어요."
+  ],
+  [
+   "figure",
+   "n",
+   "수치",
+   "These figures are from last quarter.",
+   "이 수치는 지난 분기 거예요."
+  ],
+  [
+   "summarize",
+   "v",
+   "요약하다",
+   "Could you summarize the main points?",
+   "요점을 정리해 주시겠어요?"
+  ],
+  [
+   "significant",
+   "adj",
+   "상당한, 의미 있는",
+   "We saw a significant increase in sales.",
+   "매출이 상당히 늘었어요."
+  ]
+ ],
+ "exprs": [
+  [
+   "발표",
+   "Let me walk you through the results.",
+   "결과를 하나씩 설명드릴게요.",
+   "Let me walk you through the results from the survey.",
+   [
+    "Let me ___ you through the results.",
+    "walk",
+    [
+     "walk",
+     "carry",
+     "push"
+    ]
+   ]
+  ],
+  [
+   "발표",
+   "As you can see on this slide, ...",
+   "이 슬라이드에서 보시듯이",
+   "As you can see on this slide, costs went down in May.",
+   [
+    "As you can ___ on this slide, sales went up.",
+    "see",
+    [
+     "see",
+     "look",
+     "watch"
+    ]
+   ]
+  ],
+  [
+   "마무리",
+   "To sum up, ...",
+   "정리하자면",
+   "To sum up, we need a bigger budget for Q4.",
+   [
+    "To ___ up, we need a bigger budget.",
+    "sum",
+    [
+     "sum",
+     "add",
+     "total"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "3분기 실적 발표",
+  "lines": [
+   [
+    "A",
+    "Good morning, everyone. Today I'll give you a quick overview of our third-quarter results."
+   ],
+   [
+    "A",
+    "As you can see on this slide, sales grew by twelve percent compared to last year."
+   ],
+   [
+    "A",
+    "I'd like to highlight two reasons for this. First, our online channel doubled. Second, we cut delivery times in half."
+   ],
+   [
+    "A",
+    "However, marketing costs also rose significantly."
+   ],
+   [
+    "A",
+    "To sum up, we had a strong quarter, but we need to watch our spending."
+   ]
+  ],
+  "qs": [
+   [
+    "작년 대비 매출 성장률은?",
+    "12%",
+    [
+     "12%",
+     "20%",
+     "2%"
+    ]
+   ],
+   [
+    "발표자가 짚은 걱정거리는?",
+    "마케팅 비용 증가",
+    [
+     "마케팅 비용 증가",
+     "배송 지연",
+     "온라인 매출 감소"
+    ]
+   ]
+  ],
+  "dict": "We need to watch our spending."
+ },
+ "read": {
+  "kind": "News",
+  "title": "Retailer Reports Strong Online Growth",
+  "text": "Bluebay, a mid-sized home goods retailer, reported a significant rise in online sales for the second quarter. According to figures released on Tuesday, online revenue increased by 35 percent, while store sales stayed flat.\n\nThe company's CEO said the growth came mainly from a new mobile app launched in March. \"Customers now do most of their browsing on their phones,\" she said. Bluebay plans to close five stores next year and invest the savings in faster delivery.\n\nAnalysts said the move makes sense but warned that competition in online retail remains intense.",
+  "gloss": {
+   "retailer": "소매업체",
+   "revenue": "매출, 수익",
+   "flat": "변동 없는",
+   "browsing": "(상품) 둘러보기",
+   "analysts": "분석가들",
+   "intense": "치열한"
+  },
+  "qs": [
+   [
+    "온라인 매출이 늘어난 주된 이유는?",
+    "3월에 출시한 모바일 앱",
+    [
+     "3월에 출시한 모바일 앱",
+     "매장 확장",
+     "가격 인하"
+    ]
+   ],
+   [
+    "내년 계획은?",
+    "매장 5곳을 닫고 배송에 투자",
+    [
+     "매장 5곳을 닫고 배송에 투자",
+     "매장 5곳을 새로 열기",
+     "앱 서비스 종료"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "지난달 팀 실적 발표의 첫 부분을 써 보세요. 인사, 개요, 핵심 수치 하나를 넣으세요.",
+  "en": "Write the opening of a presentation on your team's results last month: greeting, overview, and one key figure.",
+  "hints": [
+   "Let me walk you through",
+   "As you can see on this slide",
+   "highlight"
+  ],
+  "model": "Good morning, everyone. Today I'll walk you through our team's results for October. As you can see on this slide, we signed 15 new clients, which is 20 percent more than in September. I'd like to highlight what worked well and what we need to improve."
+ }
+}
