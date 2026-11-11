@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Briefly English</title>
-<meta name="description" content="직장인을 위한 하루 17분 영어 브리핑. 단어, 표현, 듣기, 읽기, 쓰기를 매일 아침 하나의 업무 상황으로.">
+<meta name="description" content="직장인을 위한 하루 20분 영어 브리핑. 단어, 표현, 듣기, 따라 읽기, 읽기, 쓰기를 매일 아침 하나의 업무 상황으로.">
 <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#11141a" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Briefly English">
-<meta property="og:title" content="Briefly English · 직장인 하루 17분 영어">
-<meta property="og:description" content="매일 아침 업무 상황 하나로 단어·표현·듣기·읽기·쓰기를 17분 안에.">
+<meta property="og:title" content="Briefly English · 직장인 하루 20분 영어">
+<meta property="og:description" content="매일 아침 업무 상황 하나로 단어·표현·듣기·말하기·읽기·쓰기를 20분 안에.">
 <meta property="og:url" content="https://nhs1816.github.io/briefly/">
 <meta property="og:image" content="https://nhs1816.github.io/briefly/icons/icon-512.png">
 <link rel="manifest" href="manifest.webmanifest">
@@ -33,7 +33,7 @@ body{-webkit-tap-highlight-color:transparent;padding-top:calc(20px + env(safe-ar
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
 <style>
-/* Layout: 하루치 회의 안건(agenda)처럼 5개 항목을 한 줄 세로로 쌓은 업무 브리핑 문서 */
+/* Layout: 하루치 회의 안건(agenda)처럼 6개 항목을 한 줄 세로로 쌓은 업무 브리핑 문서 */
 :root{
   --bg:#f5f6f8; --surface:#ffffff; --ink:#18202e; --muted:#5d6676; --line:#dfe3ea;
   --accent:#2747c9; --accent-soft:#e8ecfb; --marker:#fff0a8; --good:#1d7f55; --good-soft:#e3f3ea; --bad:#b8402d; --bad-soft:#fbe9e5;
@@ -185,6 +185,26 @@ mark{background:var(--marker);color:inherit;padding:0 2px;border-radius:2px}
 .note{font-size:13px;color:var(--muted)}
 .sub{font-weight:600;font-size:14px;margin:0}
 
+/* 스피킹: 문장마다 듣기 → 따라 읽기 → 녹음해서 비교, 3번 읽으면 완료 */
+.spk{display:grid;gap:10px}
+.sp{display:grid;gap:8px}
+.sp .src{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.sp .line{font-family:var(--f-read);font-size:18px;line-height:1.5;margin:0}
+.sp .line.on{background:var(--marker);border-radius:3px}
+.sp .kr{font-size:13.5px;color:var(--muted);margin:0}
+.sp .ctl{display:flex;flex-wrap:wrap;gap:6px}
+.sp .ctl button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:6px 12px;font-size:13.5px;display:inline-flex;align-items:center;gap:6px}
+.sp .ctl button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.sp .ctl button:disabled{opacity:.45;cursor:default}
+.sp .ctl button.rec{border-color:var(--bad);color:var(--bad)}
+.sp .ctl button.rec.on{background:var(--bad);color:var(--surface)}
+.sp .ctl button.shadow.on{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.sp .ctl svg{width:13px;height:13px}
+.tally{display:flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tally i{width:16px;height:5px;border-radius:3px;background:var(--line)}
+.tally i.on{background:var(--good)}
+.tally.done{color:var(--good)}
+
 /* 리딩 */
 .doc{font-family:var(--f-read);font-size:16.5px;line-height:1.75;white-space:pre-wrap;max-width:65ch}
 .doc .kind{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:normal}
@@ -291,6 +311,13 @@ footer{color:var(--muted);font-size:12.5px;text-align:center}
     </div>
   </section>
 
+  <section id="speaking">
+    <div class="sec-h"><h2>Speaking</h2><span class="ko">따라 읽기</span><span class="mono" id="spkMeta"></span></div>
+    <p class="note" style="margin:0">문장을 듣고 소리 내어 따라 읽어 보세요. 문장마다 3번 읽으면 끝나요. '따라 읽기 ×3'을 누르면 듣고 따라 할 시간을 주며 세 번 이어서 들려줘요.</p>
+    <div class="spk" id="spkList"></div>
+    <p class="note" id="micNote" style="margin:0" hidden></p>
+  </section>
+
   <section id="reading">
     <div class="sec-h"><h2>Reading</h2><span class="ko">읽기</span><span class="mono" id="readMeta"></span></div>
     <div class="panel" style="display:grid;gap:10px">
@@ -343,7 +370,7 @@ async function getJSON(u){const r=await fetch(u,{cache:"no-cache"});if(!r.ok)thr
 /* ===== 저장 ===== */
 const KEY="mbe.v1";
 function load(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return {}}}
-let S=Object.assign({days:{},vocab:[],drafts:{}},load());
+let S=Object.assign({days:{},vocab:[],drafts:{},spk:{}},load());
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 
 /* ===== 날짜·세트 ===== */
@@ -355,7 +382,8 @@ const META={}; // 날짜 → {theme,en}
 const open=s=>s<=TODAY&&!!META[s];
 let selDate=TODAY;
 const WD="일월화수목금토";
-const PARTS=[["words","Words","단어",3],["expressions","Expressions","표현",2],["listening","Listening","듣기",4],["reading","Reading","읽기",3],["writing","Writing","쓰기",5]];
+const PARTS=[["words","Words","단어",3],["expressions","Expressions","표현",2],["listening","Listening","듣기",4],["speaking","Speaking","따라 읽기",3],["reading","Reading","읽기",3],["writing","Writing","쓰기",5]];
+const TOTAL_MIN=PARTS.reduce((a,p)=>a+p[3],0);
 
 const doneOf=s=>(S.days[s]||{}).done||{};
 function markDone(part,extra){
@@ -394,11 +422,11 @@ function pickVoices(){
   voices=(nice.length?nice:pool).concat(pool).filter((v,i,a)=>a.indexOf(v)===i);
 }
 if(TTS){pickVoices();speechSynthesis.onvoiceschanged=pickVoices}
-function sayOne(text,who){
+function sayOne(text,who,r){
   return new Promise(res=>{
     if(!TTS)return res();
     const u=new SpeechSynthesisUtterance(text);
-    u.lang="en-US"; u.rate=rate*0.95;
+    u.lang="en-US"; u.rate=(r||rate)*0.95;
     const vA=voices[0], vB=voices.find(v=>v!==vA);
     if(who==="B"){ if(vB)u.voice=vB; else{u.voice=vA||null;u.pitch=1.25} } else if(vA)u.voice=vA;
     u.onend=res; u.onerror=res;
@@ -477,7 +505,7 @@ function renderCal(){
   for(let k=0;k<first;k++)h+="<span></span>";
   for(let d=1;d<=days;d++){
     const ds=ymd(new Date(y,m,d)), c=Object.keys(doneOf(ds)).length;
-    const cls=["day",open(ds)?"has":"",c>=5?"full":c?"part":"",ds===selDate?"sel":"",ds===TODAY?"today":""].filter(Boolean).join(" ");
+    const cls=["day",open(ds)?"has":"",c>=PARTS.length?"full":c?"part":"",ds===selDate?"sel":"",ds===TODAY?"today":""].filter(Boolean).join(" ");
     h+=open(ds)
       ?`<button class="${cls}" data-d="${ds}" aria-label="${m+1}월 ${d}일 ${esc(META[ds].theme)}, ${c}/5"${ds===selDate?' aria-current="date"':""} title="${esc(META[ds].theme)} · ${c}/5">${d}</button>`
       :`<span class="${cls}">${d}</span>`;
@@ -489,7 +517,7 @@ function renderCal(){
   $("calNext").disabled=ymKey(calYM)>=ymKey([NOW.getFullYear(),NOW.getMonth()]);
   // 연속 학습: 오늘(아직 안 끝났으면 어제)부터 거꾸로 5/5 완료한 날
   let streak=0;const dt=new Date(NOW);
-  const full=k=>Object.keys(doneOf(k)).length>=5;
+  const full=k=>Object.keys(doneOf(k)).length>=PARTS.length;
   if(!full(ymd(dt)))dt.setDate(dt.getDate()-1);
   while(full(ymd(dt))){streak++;dt.setDate(dt.getDate()-1)}
   $("streakTxt").textContent=streak?`${streak}일 연속`:"";
@@ -522,7 +550,7 @@ function togglePart(id){
     const on=li.dataset.id===openPart;
     li.classList.toggle("open",on);li.querySelector(".ag").setAttribute("aria-expanded",on);$(li.dataset.id).hidden=!on;
   });
-  if(!openPart)stopSpeak();
+  stopRec();if(!openPart)stopSpeak();
   if(openPart)$("agenda").querySelector(`li[data-id="${openPart}"]`).scrollIntoView({behavior:"smooth",block:"start"});
 }
 function renderAgenda(){
@@ -532,7 +560,7 @@ function renderAgenda(){
     const c=$("agenda").querySelector(`li[data-id="${id}"] [data-chk]`);
     c.classList.toggle("on",!!done[id]);c.setAttribute("aria-label",done[id]?"완료":"미완료");
   });
-  $("agendaSum").textContent=`${n} / 5 DONE · ~17 MIN`;
+  $("agendaSum").textContent=`${n} / ${PARTS.length} DONE · ~${TOTAL_MIN} MIN`;
 }
 
 function renderWords(){
@@ -604,6 +632,98 @@ function renderListening(){
 }
 $("scriptBtn").onclick=()=>{const sc=$("script");sc.classList.toggle("blur");$("scriptBtn").textContent=sc.classList.contains("blur")?"대본 보기":"대본 가리기"};
 $("rate").querySelectorAll("button").forEach(b=>b.onclick=()=>{rate=+b.dataset.r;$("rate").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b))});
+
+/* ===== 스피킹: 듣기 → 따라 읽기 → (되면) 녹음해서 비교. 채점 없이 문장마다 3번 읽으면 완료 ===== */
+const GOAL=3;
+const ICON_MIC='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>';
+let micOK=!!(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&window.MediaRecorder);
+let recNow=null; const myAudio={};
+function spkLines(){
+  if(Array.isArray(DAY.speak)&&DAY.speak.length)return DAY.speak.map(x=>Array.isArray(x)?x:[x,"",""]);
+  const out=DAY.exprs.map(e=>[e[3],e[0]+" · 오늘의 표현",`${e[1]} = ${e[2]}`]);
+  const L=DAY.listen, wc=t=>t.split(/\s+/).length;
+  out.push([L.dict,"대화",""]);
+  const other=L.lines.map(l=>l[1]).filter(t=>!t.includes(L.dict.replace(/[.?!]$/,""))&&wc(t)<=18).sort((a,b)=>wc(b)-wc(a))[0];
+  if(other)out.push([other,"대화",""]);
+  return out;
+}
+function spkCounts(n){let c=S.spk[selDate];if(!Array.isArray(c)||c.length!==n)c=S.spk[selDate]=Array(n).fill(0);return c}
+function drawTally(el,n){el.classList.toggle("done",n>=GOAL);el.innerHTML=Array.from({length:GOAL},(_,k)=>`<i class="${k<n?"on":""}"></i>`).join("")+`<span>${n}번</span>`}
+function bump(i){
+  const L=spkLines(),c=spkCounts(L.length);c[i]++;save();
+  drawTally($("spkList").children[i].querySelector(".tally"),c[i]);
+  if(c.every(x=>x>=GOAL))markDone("speaking",true);
+}
+function stopRec(){if(recNow){try{recNow.rec.state!=="inactive"&&recNow.rec.stop()}catch(e){}}}
+function noMic(){
+  micOK=false;$("spkList").querySelectorAll('[data-a="rec"],[data-a="mine"]').forEach(b=>b.hidden=true);
+  const n=$("micNote");n.hidden=false;n.textContent="이 화면에서는 녹음을 쓸 수 없어요. 듣고 소리 내어 따라 읽은 다음 '+1 읽었어요'를 눌러 주세요.";
+}
+async function startRec(i,btn,card){
+  stopRec();stopSpeak();
+  let stream;
+  try{stream=await navigator.mediaDevices.getUserMedia({audio:true})}catch(e){noMic();return}
+  const chunks=[];let rec;
+  try{rec=new MediaRecorder(stream)}catch(e){stream.getTracks().forEach(t=>t.stop());noMic();return}
+  rec.ondataavailable=e=>{if(e.data&&e.data.size)chunks.push(e.data)};
+  const timer=setTimeout(()=>rec.state!=="inactive"&&rec.stop(),20000);
+  rec.onstop=()=>{
+    clearTimeout(timer);stream.getTracks().forEach(t=>t.stop());
+    btn.classList.remove("on");btn.innerHTML=ICON_MIC+"녹음";recNow=null;
+    if(!chunks.length)return;
+    if(myAudio[i])URL.revokeObjectURL(myAudio[i]);
+    myAudio[i]=URL.createObjectURL(new Blob(chunks,{type:rec.mimeType||"audio/webm"}));
+    card.querySelector('[data-a="mine"]').disabled=false;
+    bump(i);
+  };
+  recNow={rec,i};rec.start();
+  btn.classList.add("on");btn.innerHTML=ICON_MIC+"멈추기";
+}
+async function shadow(i,en,btn,line){
+  if(btn.classList.contains("on")){stopSpeak();btn.classList.remove("on");btn.textContent=`따라 읽기 ×${GOAL}`;line.classList.remove("on");return}
+  stopRec();stopSpeak();const t=++speakToken;
+  btn.classList.add("on");
+  const gap=Math.max(1800,en.split(/\s+/).length*550)/rate;
+  for(let k=0;k<GOAL;k++){
+    btn.textContent=`듣기 ${k+1}/${GOAL}`;line.classList.add("on");
+    await sayOne(en,"A");line.classList.remove("on");
+    if(t!==speakToken)break;
+    btn.textContent=`따라 읽기 ${k+1}/${GOAL}`;
+    await new Promise(r=>setTimeout(r,gap));
+    if(t!==speakToken)break;
+    bump(i);
+  }
+  btn.classList.remove("on");btn.textContent=`따라 읽기 ×${GOAL}`;line.classList.remove("on");
+}
+function renderSpeaking(){
+  stopRec();Object.keys(myAudio).forEach(k=>{URL.revokeObjectURL(myAudio[k]);delete myAudio[k]});
+  const L=spkLines(),c=spkCounts(L.length),list=$("spkList");list.innerHTML="";
+  $("spkMeta").textContent=`${L.length} SENTENCES`;$("micNote").hidden=true;
+  L.forEach(([en,src,kr],i)=>{
+    const card=document.createElement("div");card.className="panel sp";
+    card.innerHTML=`<div class="src"><span class="tag">${esc(src||"문장")}</span><span class="tally"></span></div>
+      <p class="line">${esc(en)}</p>${kr?`<p class="kr">${esc(kr)}</p>`:""}
+      <div class="ctl">
+        <button data-a="play">${ICON_SAY}듣기</button><button data-a="slow">천천히</button>
+        <button data-a="shadow" class="shadow">따라 읽기 ×${GOAL}</button>
+        <button data-a="rec" class="rec">${ICON_MIC}녹음</button><button data-a="mine" disabled>내 녹음 듣기</button>
+        <button data-a="plus">+1 읽었어요</button>
+      </div>`;
+    drawTally(card.querySelector(".tally"),c[i]);
+    const line=card.querySelector(".line");
+    card.querySelectorAll("button").forEach(b=>b.onclick=()=>{
+      const a=b.dataset.a;
+      if(a==="play"||a==="slow"){stopRec();stopSpeak();const t=++speakToken;line.classList.add("on");sayOne(en,"A",a==="slow"?0.7:rate).then(()=>{line.classList.remove("on")})}
+      else if(a==="shadow")shadow(i,en,b,line);
+      else if(a==="rec"){if(recNow&&recNow.i===i)stopRec();else startRec(i,b,card)}
+      else if(a==="mine"&&myAudio[i]){stopSpeak();new Audio(myAudio[i]).play().catch(()=>{})}
+      else if(a==="plus")bump(i);
+    });
+    if(!TTS)card.querySelectorAll('[data-a="play"],[data-a="slow"],[data-a="shadow"]').forEach(b=>b.hidden=true);
+    if(!micOK)card.querySelectorAll('[data-a="rec"],[data-a="mine"]').forEach(b=>b.hidden=true);
+    list.appendChild(card);
+  });
+}
 
 function renderReading(){
   const R=DAY.read;
@@ -698,7 +818,7 @@ function renderAll(){
   stopSpeak();
   if(openPart)togglePart(openPart);
   renderHeader();renderAgenda();renderCal();renderVocab();
-  if(DAY){renderWords();renderExprs();renderListening();renderReading();renderWriting()}
+  if(DAY){renderWords();renderExprs();renderListening();renderSpeaking();renderReading();renderWriting()}
 }
 renderAll();
 (async()=>{
