@@ -151,7 +151,11 @@ a.btn{text-decoration:none;display:inline-block}
 .agenda li.done::before{background:linear-gradient(var(--accent) 0 28px,var(--rail) 28px)}
 .agenda li.done:first-child::before{background:var(--rail)}
 .agenda li.done:has(+ li.done)::before{background:var(--accent)}
-.agenda li.locked::before{background:repeating-linear-gradient(var(--rail) 0 6px,transparent 6px 11px)}
+/* 프로가 아니면 My Job 은 점선: 쓰기 역 → 직무 역 구간을 회색 점선으로, 직무 역 아래(단어장 쪽)는 본선 그대로 */
+.agenda li:has(+ li.locked)::after{content:"";position:absolute;left:31px;top:28px;bottom:0;width:4px;background:repeating-linear-gradient(var(--muted) 0 6px,var(--surface) 6px 12px)}
+.agenda li.locked::before{background:linear-gradient(transparent 0 28px,var(--rail) 28px),repeating-linear-gradient(var(--muted) 0 6px,var(--surface) 6px 12px)}
+.agenda li.locked .chk{border:2.5px dashed var(--muted);width:22px;height:22px;background:var(--surface);box-shadow:none}
+.agenda li.locked .nm::after{content:"Pro";margin-left:8px;font-size:12px;font-weight:700;padding:1px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink);vertical-align:2px}
 .ag{position:relative;z-index:1;width:100%;display:grid;grid-template-columns:34px 1fr auto 18px;grid-template-areas:"dot nm min arr";gap:12px;align-items:center;padding:14px 18px 14px 16px;border:0;background:none;text-align:left;min-height:56px}
 .ag .no{display:none}
 .ag .nm{grid-area:nm;min-width:0}
@@ -161,7 +165,6 @@ a.btn{text-decoration:none;display:inline-block}
 .chk{grid-area:dot;justify-self:center;width:20px;height:20px;border-radius:50%;border:4px solid var(--rail);background:var(--surface)}
 .chk.on{border-color:var(--accent);background:var(--accent)}
 .agenda li.open .chk{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
-.agenda li.locked .chk{border-style:dashed}
 .agenda li.review .no{display:block;grid-area:dot;justify-self:center;width:22px;height:22px;border-radius:50%;border:4px solid var(--ink);background:var(--surface);box-shadow:inset 0 0 0 3px var(--surface),inset 0 0 0 7px var(--ink);font-size:0}
 .agenda .nm b{font-family:"Gothic A1",var(--f-body);font-weight:700;font-size:16.5px}
 .agenda .nm span{color:var(--muted);font-size:14px;margin-left:8px;font-family:var(--f-display)}
