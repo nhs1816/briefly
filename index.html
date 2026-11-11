@@ -31,261 +31,294 @@ body{-webkit-tap-highlight-color:transparent;padding-top:calc(20px + env(safe-ar
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800&family=Gothic+A1:wght@400;500;700&display=swap">
 <style>
-/* Layout: 하루치 회의 안건(agenda)처럼 6개 항목을 한 줄 세로로 쌓은 업무 브리핑 문서 */
+/* 출근길 노선: 오늘 주제 = 역명판(이전·다음 날은 옆 역), 오늘 할 일 = 2호선 노선도. 대담한 건 역명판과 노선 둘뿐, 나머지는 조용하게.
+   글꼴: Overpass(도로 표지판 글자에서 온 영문) + Gothic A1(한글). 강조색은 2호선 초록 하나. */
 :root{
-  --bg:#f5f6f8; --surface:#ffffff; --ink:#18202e; --muted:#5d6676; --line:#dfe3ea;
-  --accent:#2747c9; --accent-soft:#e8ecfb; --marker:#fff0a8; --good:#1d7f55; --good-soft:#e3f3ea; --bad:#b8402d; --bad-soft:#fbe9e5;
-  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
-  --f-body:"IBM Plex Sans KR","Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;
-  --f-read:"Source Serif 4",Georgia,"Times New Roman",serif;
-  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  --bg:#e8ebe7; --surface:#ffffff; --tint:#f2f4f1; --ink:#23272b; --muted:#5e676d; --line:#d6dbd5;
+  --accent:#00a84d; --accent-ink:#00803b; --accent-soft:#e1f3e7; --rail:#c9dccf;
+  --sign:#2c3236; --sign-ink:#ffffff; --sign-sub:#b9c2c7;
+  --marker:#ffe36e; --good:#00803b; --good-soft:#e1f3e7; --bad:#c8402b; --bad-soft:#fbe8e4;
+  --f-display:"Overpass","Gothic A1","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --f-body:"Overpass","Gothic A1","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --f-read:"Overpass","Gothic A1","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --f-mono:"Overpass","Gothic A1",system-ui,sans-serif;
+  --r-sheet:18px; --r-block:12px; --r-ctl:10px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#11141a; --surface:#191d26; --ink:#e6e9ef; --muted:#9aa3b3; --line:#2a303c;
-  --accent:#8aa1ff; --accent-soft:#232b45; --marker:#4a421c; --good:#5fc794; --good-soft:#17302a; --bad:#f08a76; --bad-soft:#3a1f1b; color-scheme:dark}}
+  --bg:#131618; --surface:#1c2023; --tint:#24292c; --ink:#e8ecea; --muted:#9aa4a9; --line:#30383d;
+  --accent:#2dc26b; --accent-ink:#55d68b; --accent-soft:#173726; --rail:#2c4537;
+  --sign:#0d1012; --sign-ink:#ffffff; --sign-sub:#9aa4a9;
+  --marker:#5a4d12; --good:#55d68b; --good-soft:#173726; --bad:#f08a76; --bad-soft:#3a201b; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#11141a; --surface:#191d26; --ink:#e6e9ef; --muted:#9aa3b3; --line:#2a303c;
-  --accent:#8aa1ff; --accent-soft:#232b45; --marker:#4a421c; --good:#5fc794; --good-soft:#17302a; --bad:#f08a76; --bad-soft:#3a1f1b; color-scheme:dark}
+  --bg:#131618; --surface:#1c2023; --tint:#24292c; --ink:#e8ecea; --muted:#9aa4a9; --line:#30383d;
+  --accent:#2dc26b; --accent-ink:#55d68b; --accent-soft:#173726; --rail:#2c4537;
+  --sign:#0d1012; --sign-ink:#ffffff; --sign-sub:#9aa4a9;
+  --marker:#5a4d12; --good:#55d68b; --good-soft:#173726; --bad:#f08a76; --bad-soft:#3a201b; color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
-.wrap{max-width:720px;margin:0 auto;display:grid;gap:28px}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15.5px;line-height:1.65;-webkit-font-smoothing:antialiased;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 64px}
+.wrap{max-width:640px;margin:0 auto;display:grid;gap:18px}
 button{font:inherit;color:inherit;cursor:pointer}
-button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;color:var(--muted)}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mono{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
 .en{font-family:var(--f-display)}
+.note{font-size:13.5px;color:var(--muted)}
+.sub{font-weight:700;font-size:15px;margin:0}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 
-/* 머리 */
-header{display:grid;gap:14px}
-.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
-.brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.brand b{font-family:var(--f-display);font-weight:700;font-size:22px;letter-spacing:-.02em;line-height:1}
-.brand b i{font-style:normal;color:var(--accent)}
-.brand span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;color:var(--muted)}
-.dateline{display:flex;align-items:center;gap:8px;margin:18px 0 0;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
-.dateline .chip{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.08em;padding:2px 7px;border-radius:3px;background:var(--ink);color:var(--bg)}
-h1{font-family:var(--f-body);font-weight:600;font-size:clamp(28px,6vw,38px);line-height:1.2;margin:4px 0 0;letter-spacing:-.02em;text-wrap:balance}
-.theme-en{font-family:var(--f-display);font-weight:500;font-size:17px;color:var(--accent);margin:2px 0 0}
-.top{align-items:flex-start}
-.today-btn{justify-self:start;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px;font-size:13px;color:var(--accent)}
-/* 미니 달력: 날짜를 누르면 그날 주제만 보여요. 첫날부터 오늘까지만 열려 있어요. */
-.calbox{width:216px;max-width:100%;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 9px 9px;display:grid;gap:4px}
+/* 머리: 이름 줄 */
+header{display:grid;gap:12px}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.brand b{font-family:var(--f-display);font-weight:800;font-size:19px;letter-spacing:-.01em;line-height:1}
+.brand b i{font-style:normal;font-weight:400}
+.plan-btn{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 12px 2px;font-size:13px;font-weight:600;color:var(--muted)}
+.plan-btn[data-tier="plus"]{border-color:var(--accent);color:var(--accent-ink)}
+.plan-btn[data-tier="pro"]{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* 역명판: 가운데 큰 한글 주제, 아래 영어, 맨 아래 초록 띠에 어제·다음 날(옆 역) */
+.sign{background:var(--sign);color:var(--sign-ink);border-radius:var(--r-sheet);overflow:hidden;display:grid}
+.sign-main{padding:26px 20px 20px;text-align:center;display:grid;gap:2px;min-height:132px;align-content:center}
+.sign h1{font-family:"Gothic A1",var(--f-body);font-weight:700;font-size:clamp(30px,8.5vw,42px);line-height:1.15;margin:0;letter-spacing:-.02em;text-wrap:balance}
+.sign .theme-en{font-family:var(--f-display);font-weight:400;font-size:18px;color:var(--sign-sub);margin:0}
+.sign-band{background:var(--accent);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:40px;padding:0 6px}
+.sign-band .here{width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px var(--accent),0 0 0 5px #fff}
+.nb{border:0;background:none;color:#fff;font-size:14px;font-weight:600;padding:9px 8px;display:flex;align-items:center;gap:6px;min-width:0;max-width:100%}
+.nb span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nb.prev{justify-self:start}
+.nb.next{justify-self:end}
+.nb svg{width:14px;height:14px;flex:0 0 auto}
+.nb:disabled{visibility:hidden}
+
+/* 날짜 줄 */
+.dateline{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0;font-size:14.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.dateline .chip{font-size:12.5px;font-weight:700;padding:2px 9px 1px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink)}
+.dateline .chip.past{background:var(--tint);color:var(--muted)}
+.dateline .grow{flex:1}
+.linkish{border:0;background:none;padding:4px 2px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+.today-btn{border:0;background:none;padding:4px 2px;font-size:14px;font-weight:600;color:var(--accent-ink)}
+
+/* 달력: 접어 두고 필요할 때만 */
+.calbox{background:var(--surface);border-radius:var(--r-sheet);padding:14px 16px 16px;display:grid;gap:8px}
 .cal-head{display:flex;justify-content:space-between;align-items:center;gap:4px}
-.cal-head h2{margin:0;font:600 12px/1.2 var(--f-body)}
-.cal-head .arrows{display:flex;gap:2px}
-.cal-head .arrows button{width:22px;height:20px;padding:0;border:0;background:none;border-radius:3px;font-size:15px;line-height:1;color:var(--muted)}
-.cal-head .arrows button:hover:not(:disabled){background:var(--accent-soft);color:var(--ink)}
+.cal-head h2{margin:0;font:700 15px/1.2 var(--f-body)}
+.cal-head .arrows{display:flex;gap:4px}
+.cal-head .arrows button{width:32px;height:32px;padding:0;border:0;background:var(--tint);border-radius:50%;font-size:17px;line-height:1;color:var(--ink)}
 .cal-head .arrows button:disabled{opacity:.3;cursor:default}
-.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center}
-.cal .wd{font-size:10.5px;line-height:16px;color:var(--muted)}
-.day{height:24px;border-radius:4px;border:0;background:none;display:flex;align-items:center;justify-content:center;font:500 11.5px/1 var(--f-mono);color:var(--muted);opacity:.4;padding:0}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.cal .wd{font-size:12px;line-height:20px;color:var(--muted)}
+.day{height:36px;border-radius:50%;border:0;background:none;display:flex;align-items:center;justify-content:center;font:600 14px/1 var(--f-body);font-variant-numeric:tabular-nums;color:var(--muted);opacity:.35;padding:0;justify-self:center;width:36px}
 .day.has{cursor:pointer;opacity:1;color:var(--ink)}
-.day.has:hover{outline:1px solid var(--accent)}
-.day.part{background:var(--accent-soft);color:var(--accent);font-weight:600}
-.day.full{background:var(--accent);color:var(--surface);font-weight:600}
-.day.today{text-decoration:underline;text-underline-offset:3px}
-.day.sel{outline:2px solid var(--ink);outline-offset:-1px}
-.cal-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted);padding-top:2px}
-.cal-foot i{display:inline-block;width:9px;height:9px;border-radius:2px;vertical-align:-1px;margin-right:3px}
+.day.part{box-shadow:inset 0 0 0 2.5px var(--accent);color:var(--accent-ink)}
+.day.full{background:var(--accent);color:#fff}
+.day.today{text-decoration:underline;text-underline-offset:4px}
+.day.sel{outline:2px solid var(--ink);outline-offset:1px}
+.cal-foot{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+.cal-foot i{display:inline-block;width:11px;height:11px;border-radius:50%;vertical-align:-1px;margin-right:4px}
 
-/* 요금제: 무료 / 플러스(오디오·알림) / 프로(+직무 트랙). 결제 전이라 시험용으로 바꿔 볼 수 있어요. */
-.plan-btn{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 10px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;color:var(--muted)}
-.plan-btn[data-tier="plus"]{border-color:var(--accent);color:var(--accent)}
-.plan-btn[data-tier="pro"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.plans{display:grid;gap:12px}
+/* 요금제 (결제 전이라 시험용 전환) */
+.plans{display:grid;gap:14px}
 .tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.tier{border:1px solid var(--line);background:var(--bg);border-radius:6px;padding:10px;text-align:left;display:grid;gap:4px;align-content:start}
-.tier b{font-family:var(--f-display);font-size:16px}
-.tier span{font-size:12.5px;color:var(--muted);line-height:1.45}
-.tier[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:var(--accent-soft)}
-.plans select{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink)}
-.plans .url{font-family:var(--f-mono);font-size:12px;word-break:break-all;background:var(--bg);border-radius:4px;padding:6px 8px;user-select:all}
-.lock{display:grid;gap:8px;justify-items:start}
-.lock .badge{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;padding:1px 7px;border-radius:3px;background:var(--accent-soft);color:var(--accent)}
+.tier{border:1.5px solid var(--line);background:var(--surface);border-radius:var(--r-block);padding:12px;text-align:left;display:grid;gap:4px;align-content:start}
+.tier b{font-family:var(--f-display);font-size:17px;font-weight:800}
+.tier span{font-size:13px;color:var(--muted);line-height:1.5}
+.tier[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.plans select{font:inherit;padding:8px 10px;border:1.5px solid var(--line);border-radius:var(--r-ctl);background:var(--surface);color:var(--ink)}
+.plans .url{font-size:13px;word-break:break-all;background:var(--tint);border-radius:var(--r-ctl);padding:8px 10px;user-select:all}
+@media (max-width:480px){.tiers{grid-template-columns:1fr}.tier{grid-template-columns:56px 1fr;align-items:baseline;gap:10px}}
+.lock{display:grid;gap:6px;justify-items:start}
+.lock .badge{font-size:12.5px;font-weight:700;padding:1px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink)}
 a.btn{text-decoration:none;display:inline-block}
-@media (max-width:480px){.tiers{grid-template-columns:1fr}.tier{grid-template-columns:52px 1fr;align-items:baseline;gap:10px}}
+
+/* 오디오 */
 .audio-card{display:grid;gap:8px}
 .audio-card audio{width:100%}
 .audio-card .t{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
-.audio-card .t b{font-family:var(--f-display);font-size:17px}
-.agenda li.locked .nm b{color:var(--muted)}
-.agenda li.locked .chk{border-style:dashed}
+.audio-card .t b{font-family:var(--f-display);font-size:17px;font-weight:800}
 
-/* 안건 */
-.agenda{background:var(--surface);border:1px solid var(--line);border-radius:6px}
-.agenda-h{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line)}
+/* 노선도: 역 = 오늘 할 일. 다 하면 역이 채워지고 그 구간 선이 초록이 돼요. 단어장은 환승역 표시. */
+.agenda{background:var(--surface);border-radius:var(--r-sheet);padding:6px 0 10px}
+.agenda-h{display:flex;flex-wrap:wrap;gap:2px 12px;justify-content:space-between;align-items:baseline;padding:14px 18px 6px}
+.agenda-h .ttl{font-weight:700;font-size:16px;color:var(--ink)}
 .agenda ol{list-style:none;margin:0;padding:0}
-.agenda li{border-top:1px solid var(--line)}
-.agenda li:first-child{border-top:0}
-.ag{width:100%;display:grid;grid-template-columns:28px 1fr auto auto 14px;gap:10px;align-items:center;padding:13px 16px;border:0;background:none;text-align:left}
-.ag:hover{background:var(--accent-soft)}
-.ag .arr{width:8px;height:8px;border:solid var(--muted);border-width:0 1.5px 1.5px 0;transform:rotate(45deg);justify-self:center;margin-top:-4px;transition:transform .15s}
-.agenda li.open>.ag{background:var(--accent-soft)}
-.agenda li.open>.ag .arr{transform:rotate(-135deg);margin-top:4px}
-.agenda li.review .no{color:var(--accent)}
-.agenda li>section{padding:16px 16px 20px;background:var(--bg);border-top:1px solid var(--line)}
+.agenda li{position:relative}
+.agenda li::before{content:"";position:absolute;left:31px;top:0;bottom:0;width:4px;background:var(--rail)}
+.agenda li:first-child::before{top:28px}
+.agenda li:last-child::before{bottom:auto;height:28px}
+.agenda li.done::before{background:linear-gradient(var(--accent) 0 28px,var(--rail) 28px)}
+.agenda li.done:first-child::before{background:var(--rail)}
+.agenda li.done:has(+ li.done)::before{background:var(--accent)}
+.agenda li.locked::before{background:repeating-linear-gradient(var(--rail) 0 6px,transparent 6px 11px)}
+.ag{position:relative;z-index:1;width:100%;display:grid;grid-template-columns:34px 1fr auto 18px;grid-template-areas:"dot nm min arr";gap:12px;align-items:center;padding:14px 18px 14px 16px;border:0;background:none;text-align:left;min-height:56px}
+.ag .no{display:none}
+.ag .nm{grid-area:nm;min-width:0}
+.ag .min{grid-area:min;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.ag .cnt{grid-area:min;font-size:13px;font-weight:700;color:var(--accent-ink)}
+.ag .arr{grid-area:arr;width:9px;height:9px;border:solid var(--muted);border-width:0 2px 2px 0;transform:rotate(45deg);justify-self:center;margin-top:-5px;transition:transform .18s}
+.chk{grid-area:dot;justify-self:center;width:20px;height:20px;border-radius:50%;border:4px solid var(--rail);background:var(--surface)}
+.chk.on{border-color:var(--accent);background:var(--accent)}
+.agenda li.open .chk{border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.agenda li.locked .chk{border-style:dashed}
+.agenda li.review .no{display:block;grid-area:dot;justify-self:center;width:22px;height:22px;border-radius:50%;border:4px solid var(--ink);background:var(--surface);box-shadow:inset 0 0 0 3px var(--surface),inset 0 0 0 7px var(--ink);font-size:0}
+.agenda .nm b{font-family:"Gothic A1",var(--f-body);font-weight:700;font-size:16.5px}
+.agenda .nm span{color:var(--muted);font-size:14px;margin-left:8px;font-family:var(--f-display)}
+.agenda li.locked .nm b{color:var(--muted)}
+.ag:hover .nm b{text-decoration:underline;text-decoration-color:var(--rail);text-underline-offset:4px}
+.agenda li.open>.ag .arr{transform:rotate(-135deg);margin-top:5px}
+.agenda li>section{position:relative;z-index:1;padding:4px 18px 22px 56px}
 .agenda li>section>.sec-h{display:none}
-.next{justify-self:end}
-.cnt{font-family:var(--f-mono);font-size:12px;color:var(--accent);min-width:20px;text-align:right}
-.agenda .no{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
-.agenda .nm b{font-weight:600}
-.agenda .nm span{color:var(--muted);font-size:13px;margin-left:6px}
-.agenda .min{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
-.chk{width:20px;height:20px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center}
-.chk.on{background:var(--good);border-color:var(--good)}
-.chk.on::after{content:"";width:6px;height:10px;border:solid var(--surface);border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)}
+.next{justify-self:start}
+@media (max-width:480px){.agenda .min{display:none}.ag{grid-template-columns:34px 1fr 18px;grid-template-areas:"dot nm arr"}.agenda li>section{padding:2px 14px 20px 50px}.agenda li::before{left:31px}}
 
-/* 섹션 */
-section{display:grid;gap:14px;scroll-margin-top:16px}
-.sec-h{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:6px}
-.sec-h h2{font-family:var(--f-display);font-weight:700;font-size:22px;margin:0}
+/* 섹션 안 블록: 흰 판 위 연회색 블록. 테두리 대신 면으로 나눠요. */
+section{display:grid;gap:12px;scroll-margin-top:12px}
+.sec-h{display:flex;align-items:baseline;gap:10px;padding-bottom:6px}
+.sec-h h2{font-family:var(--f-display);font-weight:800;font-size:22px;margin:0}
 .sec-h .ko{color:var(--muted);font-size:14px}
 .sec-h .mono{margin-left:auto}
-.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px}
+.panel{background:var(--surface);border-radius:var(--r-sheet);padding:16px 18px}
+.agenda .panel{background:var(--tint);border-radius:var(--r-block);padding:14px 16px}
 
 /* 단어 */
 .words{display:grid}
-.word{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:12px 0;border-top:1px dashed var(--line)}
+.word{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:12px 0;border-top:1px solid var(--line)}
 .word:first-child{border-top:0;padding-top:0}
-.word .w{font-family:var(--f-display);font-weight:700;font-size:20px}
-.word .pos{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-left:6px;font-weight:400}
-.word .kr{grid-column:1/-1;font-weight:500}
-.word .ex{grid-column:1/-1;font-family:var(--f-read);font-size:15.5px}
-.word .exk{grid-column:1/-1;color:var(--muted);font-size:13px}
-.say{border:1px solid var(--line);background:transparent;border-radius:999px;width:32px;height:32px;display:inline-grid;place-items:center;flex:0 0 auto}
-.say:hover{border-color:var(--accent);color:var(--accent)}
-.say svg{width:15px;height:15px}
-mark{background:var(--marker);color:inherit;padding:0 2px;border-radius:2px}
+.word:last-child{padding-bottom:0}
+.word .w{font-family:var(--f-display);font-weight:800;font-size:21px;letter-spacing:-.005em}
+.word .pos{font-size:13px;color:var(--muted);margin-left:6px;font-weight:400}
+.word .kr{grid-column:1/-1;font-weight:700;font-family:"Gothic A1",var(--f-body)}
+.word .ex{grid-column:1/-1;font-size:16px}
+.word .exk{grid-column:1/-1;color:var(--muted);font-size:14px}
+.say{border:0;background:var(--surface);border-radius:50%;width:36px;height:36px;display:inline-grid;place-items:center;flex:0 0 auto;color:var(--accent-ink)}
+.agenda .panel .say{background:var(--surface)}
+.say:hover{background:var(--accent-soft)}
+.say svg{width:16px;height:16px}
+mark{background:var(--marker);color:inherit;padding:0 2px;border-radius:3px}
 
 /* 표현 */
-.exprs{display:grid;gap:10px}
+.exprs{display:grid;gap:8px}
 .expr{display:grid;gap:4px}
-.tag{justify-self:start;font-size:12px;padding:1px 8px;border-radius:3px;background:var(--accent-soft);color:var(--accent);font-weight:500}
+.tag{justify-self:start;font-size:12.5px;padding:1px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink);font-weight:700}
 .expr .big{display:flex;gap:10px;align-items:center;justify-content:space-between}
-.expr .big b{font-family:var(--f-display);font-size:19px;font-weight:700;line-height:1.3}
-.expr .ex{font-family:var(--f-read);color:var(--ink)}
+.expr .big b{font-family:var(--f-display);font-size:19px;font-weight:800;line-height:1.3}
+.expr .ex{color:var(--ink)}
 .expr .kr{color:var(--muted);font-size:14px}
 
 /* 퀴즈 */
-.quiz{display:grid;gap:14px}
+.quiz{display:grid;gap:16px}
 .quiz-h{display:flex;justify-content:space-between;align-items:center}
+.quiz-h .mono{font-weight:700}
 .q{display:grid;gap:8px}
 .q p{margin:0;font-weight:500}
-.q p .en{font-weight:700;font-size:17px}
+.q p .en{font-weight:800;font-size:18px}
 .opts{display:flex;flex-wrap:wrap;gap:6px}
-.opts button{border:1px solid var(--line);background:var(--bg);border-radius:4px;padding:7px 12px;text-align:left}
+.opts button{border:1.5px solid var(--line);background:var(--surface);border-radius:var(--r-ctl);padding:9px 14px 8px;text-align:left}
 .opts button:hover:not(:disabled){border-color:var(--accent)}
 .opts button:disabled{cursor:default}
-.opts button.ok{background:var(--good-soft);border-color:var(--good);color:var(--good);font-weight:600}
+.opts button.ok{background:var(--good-soft);border-color:var(--good);color:var(--good);font-weight:700}
 .opts button.no{background:var(--bad-soft);border-color:var(--bad);color:var(--bad);text-decoration:line-through}
-.result{font-weight:600}
-.btn{border:1px solid var(--ink);background:var(--ink);color:var(--bg);border-radius:4px;padding:8px 14px;font-weight:500}
-.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.result{font-weight:700}
+.btn{border:1.5px solid var(--ink);background:var(--ink);color:var(--surface);border-radius:var(--r-ctl);padding:9px 16px 8px;font-weight:700}
+.btn.ghost{background:var(--surface);color:var(--ink);border-color:var(--line)}
 .btn:disabled{opacity:.45;cursor:default}
-.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 
-/* 리스닝 */
-.player{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.play{width:48px;height:48px;border-radius:50%;border:0;background:var(--accent);color:var(--surface);display:grid;place-items:center}
+/* 듣기 */
+.player{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.play{width:52px;height:52px;border-radius:50%;border:0;background:var(--accent);color:#fff;display:grid;place-items:center}
 .play svg{width:20px;height:20px}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
-.seg button{border:0;background:transparent;padding:5px 10px;font-family:var(--f-mono);font-size:12px}
-.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.seg{display:inline-flex;background:var(--surface);border-radius:999px;padding:3px}
+.seg button{border:0;background:transparent;padding:4px 11px 3px;font-size:13px;font-weight:600;border-radius:999px;font-variant-numeric:tabular-nums}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
 .script{display:grid;gap:4px;margin:0;padding:0;list-style:none}
-.script li{display:grid;grid-template-columns:22px 1fr;gap:8px;font-family:var(--f-read);font-size:15.5px;padding:3px 6px;border-radius:3px}
-.script li b{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:3px}
+.script li{display:grid;grid-template-columns:22px 1fr;gap:8px;font-size:16px;padding:4px 8px;border-radius:8px}
+.script li b{font-size:13px;color:var(--muted);padding-top:2px}
 .script li.now{background:var(--marker)}
 .script.blur li span{filter:blur(5px);user-select:none}
-.dict input{width:100%;font:inherit;font-family:var(--f-read);font-size:16px;padding:9px 11px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink)}
-.dres{font-family:var(--f-read);font-size:16px;line-height:1.9}
+.dict input{width:100%;font:inherit;font-size:16px;padding:11px 13px 10px;border:1.5px solid var(--line);border-radius:var(--r-ctl);background:var(--surface);color:var(--ink)}
+.dres{font-size:16.5px;line-height:1.9}
 .dres .o{color:var(--good)}
 .dres .x{color:var(--bad);text-decoration:underline wavy;text-underline-offset:4px}
 .dres .miss{color:var(--muted)}
-.note{font-size:13px;color:var(--muted)}
-.sub{font-weight:600;font-size:14px;margin:0}
 
-/* 스피킹: 문장마다 듣기 → 따라 읽기 → 녹음해서 비교, 3번 읽으면 완료 */
-.spk{display:grid;gap:10px}
+/* 따라 읽기 */
+.spk{display:grid;gap:8px}
 .sp{display:grid;gap:8px}
 .sp .src{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.sp .line{font-family:var(--f-read);font-size:18px;line-height:1.5;margin:0}
-.sp .line.on{background:var(--marker);border-radius:3px}
-.sp .kr{font-size:13.5px;color:var(--muted);margin:0}
+.sp .line{font-size:18.5px;line-height:1.5;margin:0;font-weight:600}
+.sp .line.on{background:var(--marker);border-radius:4px}
+.sp .kr{font-size:14px;color:var(--muted);margin:0}
 .sp .ctl{display:flex;flex-wrap:wrap;gap:6px}
-.sp .ctl button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:6px 12px;font-size:13.5px;display:inline-flex;align-items:center;gap:6px}
-.sp .ctl button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.sp .ctl button{border:0;background:var(--surface);border-radius:999px;padding:7px 13px 6px;font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:6px}
+.sp .ctl button:hover:not(:disabled){color:var(--accent-ink)}
 .sp .ctl button:disabled{opacity:.45;cursor:default}
-.sp .ctl button.rec{border-color:var(--bad);color:var(--bad)}
-.sp .ctl button.rec.on{background:var(--bad);color:var(--surface)}
-.sp .ctl button.shadow.on{background:var(--accent);border-color:var(--accent);color:var(--surface)}
-.sp .ctl svg{width:13px;height:13px}
-.tally{display:flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
-.tally i{width:16px;height:5px;border-radius:3px;background:var(--line)}
-.tally i.on{background:var(--good)}
+.sp .ctl button.rec{color:var(--bad)}
+.sp .ctl button.rec.on{background:var(--bad);color:#fff}
+.sp .ctl button.shadow.on{background:var(--accent);color:#fff}
+.sp .ctl svg{width:14px;height:14px}
+.tally{display:flex;align-items:center;gap:5px;font-size:13px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.tally i{width:18px;height:6px;border-radius:3px;background:var(--line)}
+.tally i.on{background:var(--accent)}
 .tally.done{color:var(--good)}
 
-/* 리딩 */
-.doc{font-family:var(--f-read);font-size:16.5px;line-height:1.75;white-space:pre-wrap;max-width:65ch}
-.doc .kind{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:normal}
-.doc h3{font-family:var(--f-read);font-weight:600;font-size:19px;margin:2px 0 10px;white-space:normal}
-.gl{border:0;padding:0;background:none;font:inherit;border-bottom:1.5px dotted var(--accent);cursor:help}
+/* 읽기 */
+.doc{font-size:17px;line-height:1.75;white-space:pre-wrap;max-width:62ch}
+.doc .kind{font-size:13px;font-weight:700;color:var(--muted);white-space:normal}
+.doc h3{font-family:var(--f-display);font-weight:800;font-size:20px;line-height:1.3;margin:2px 0 10px;white-space:normal}
+.gl{border:0;padding:0;background:none;font:inherit;border-bottom:2px dotted var(--accent);cursor:help}
 .gl[aria-expanded="true"]{background:var(--marker)}
-.gl[aria-expanded="true"]::after{content:" (" attr(data-kr) ")";font-family:var(--f-body);font-size:13px;color:var(--accent)}
+.gl[aria-expanded="true"]::after{content:" (" attr(data-kr) ")";font-family:"Gothic A1",var(--f-body);font-size:13.5px;color:var(--accent-ink)}
 
-/* 라이팅 */
+/* 쓰기 */
 .task{font-weight:500}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.chips span{font-family:var(--f-display);font-size:13.5px;border:1px solid var(--line);border-radius:3px;padding:2px 8px;background:var(--bg)}
-textarea{width:100%;min-height:150px;resize:vertical;font-family:var(--f-read);font-size:16px;line-height:1.6;padding:10px 12px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink)}
+.chips span{font-size:14px;font-weight:600;border-radius:999px;padding:3px 11px 2px;background:var(--surface)}
+textarea{width:100%;min-height:150px;resize:vertical;font:inherit;font-size:16px;line-height:1.6;padding:12px 14px;border:1.5px solid var(--line);border-radius:var(--r-ctl);background:var(--surface);color:var(--ink)}
 .fb{display:grid;gap:12px;border-top:1px solid var(--line);padding-top:14px}
-.score{font-family:var(--f-display);font-size:30px;font-weight:700;line-height:1}
+.score{font-family:var(--f-display);font-size:32px;font-weight:800;line-height:1}
 .score small{font-size:14px;color:var(--muted);font-weight:500}
-.fix{display:grid;gap:2px;padding:8px 0;border-top:1px dashed var(--line)}
-.fix .b{font-family:var(--f-read);text-decoration:line-through;color:var(--bad)}
-.fix .a{font-family:var(--f-read);color:var(--good);font-weight:600}
-.fix .y{font-size:13.5px;color:var(--muted)}
-.model{font-family:var(--f-read);white-space:pre-wrap;background:var(--bg);border-radius:4px;padding:12px;margin:0;font-size:15.5px}
-.checklist{margin:0;padding-left:20px;font-size:14px}
+.fix{display:grid;gap:2px;padding:8px 0;border-top:1px solid var(--line)}
+.fix .b{text-decoration:line-through;color:var(--bad)}
+.fix .a{color:var(--good);font-weight:700}
+.fix .y{font-size:14px;color:var(--muted)}
+.model{font:inherit;white-space:pre-wrap;background:var(--surface);border-radius:var(--r-ctl);padding:12px 14px;margin:0;font-size:16px}
+.checklist{margin:0;padding-left:20px;font-size:14.5px}
 
 /* 단어장 */
 .vlist{display:grid;gap:0}
-.vlist div{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:8px 0;border-top:1px dashed var(--line)}
+.vlist div{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
 .vlist div:first-child{border-top:0}
-.vlist b{font-family:var(--f-display)}
-.vlist .x{border:0;background:none;color:var(--muted);font-size:13px}
-.empty{color:var(--muted);font-size:14px;margin:0}
-footer{color:var(--muted);font-size:12.5px;text-align:center}
+.vlist b{font-family:var(--f-display);font-weight:800}
+.vlist .x{border:0;background:none;color:var(--muted);font-size:13.5px}
+.empty{color:var(--muted);font-size:14.5px;margin:0}
+footer{color:var(--muted);font-size:13px;text-align:center}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-@media (max-width:480px){.ag{grid-template-columns:24px 1fr auto 14px}.agenda .min{display:none}.agenda li>section{padding-inline:10px}}
 </style>
 
 <div class="wrap">
   <div class="install" id="install" hidden><p id="installText">홈 화면에 설치하면 앱처럼 바로 열 수 있어요.</p>
   <button id="installBtn">설치하기</button><button id="installClose" class="plain">닫기</button></div>
   <header>
-    <div class="top">
-      <div style="display:grid;gap:10px;min-width:0">
-        <div>
-          <div class="brand"><b>Briefly <i>English</i></b><span>DAILY BRIEFING AT WORK</span><button class="plan-btn" id="planBtn" aria-expanded="false" aria-controls="plans">FREE</button></div>
-          <p class="dateline"><span class="chip" id="dateChip"></span><span id="dateLine"></span></p>
-          <h1 id="theme"></h1>
-          <p class="theme-en" id="themeEn"></p>
-        </div>
-        <button class="today-btn" id="todayBtn" hidden>오늘 브리핑으로</button>
+    <div class="brand"><b>Briefly <i>English</i></b><button class="plan-btn" id="planBtn" aria-expanded="false" aria-controls="plans">Free</button></div>
+    <div class="sign" role="group" aria-label="오늘의 주제">
+      <div class="sign-main"><h1 id="theme"></h1><p class="theme-en" id="themeEn"></p></div>
+      <div class="sign-band">
+        <button class="nb prev" id="prevDay" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg><span></span></button>
+        <i class="here" aria-hidden="true"></i>
+        <button class="nb next" id="nextDay" disabled><span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
       </div>
-      <nav class="calbox" aria-label="날짜 선택 달력">
-        <div class="cal-head">
-          <h2 id="calTitle"></h2>
-          <div class="arrows"><button id="calPrev" aria-label="이전 달">‹</button><button id="calNext" aria-label="다음 달">›</button></div>
-        </div>
-        <div class="cal" id="cal"></div>
-        <div class="cal-foot"><span><i style="background:var(--accent)"></i>완료 <i style="background:var(--accent-soft);margin-left:6px"></i>진행 중</span><span class="mono" id="streakTxt"></span></div>
-      </nav>
     </div>
+    <p class="dateline"><span class="chip" id="dateChip"></span><span id="dateLine"></span><span class="grow"></span><span id="streakTxt"></span><button class="today-btn" id="todayBtn" hidden>오늘로</button><button class="linkish" id="calBtn" aria-expanded="false" aria-controls="calbox">달력</button></p>
+    <nav class="calbox" id="calbox" aria-label="날짜 선택 달력" hidden>
+      <div class="cal-head">
+        <h2 id="calTitle"></h2>
+        <div class="arrows"><button id="calPrev" aria-label="이전 달">‹</button><button id="calNext" aria-label="다음 달">›</button></div>
+      </div>
+      <div class="cal" id="cal"></div>
+      <div class="cal-foot"><span><i style="background:var(--accent)"></i>다 끝낸 날 <i style="box-shadow:inset 0 0 0 2px var(--accent);margin-left:8px"></i>하다 만 날</span></div>
+    </nav>
   </header>
 
   <div class="panel plans" id="plans" hidden>
@@ -307,8 +340,8 @@ footer{color:var(--muted);font-size:12.5px;text-align:center}
 
   <p class="note" id="loadNote" style="margin:0"></p>
   <div class="panel audio-card" id="audioCard" hidden></div>
-  <nav class="agenda" aria-label="오늘의 안건">
-    <div class="agenda-h"><span class="mono">TODAY'S AGENDA</span><span class="mono" id="agendaSum"></span></div>
+  <nav class="agenda" aria-label="오늘 할 것">
+    <div class="agenda-h"><span class="ttl">오늘 할 것</span><span class="mono" id="agendaSum"></span></div>
     <ol id="agenda"></ol>
   </nav>
 
@@ -533,9 +566,18 @@ function quiz(el,title,qs,onDone){
 /* ===== 렌더 ===== */
 function renderHeader(){
   const d=toDate(selDate);
-  $("dateLine").textContent=`${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 ${WD[d.getDay()]}요일`;
-  $("dateChip").textContent=selDate===TODAY?"TODAY":"PAST";
+  $("dateLine").textContent=`${d.getMonth()+1}월 ${d.getDate()}일 ${WD[d.getDay()]}요일`;
+  $("dateChip").textContent=selDate===TODAY?"오늘":"지난 브리핑";
+  $("dateChip").classList.toggle("past",selDate!==TODAY);
   const m=META[selDate];
+  // 역명판 띠: 열 수 있는 날 중 바로 앞·뒤 날을 옆 역처럼
+  const days=Object.keys(META).filter(open).sort();
+  const pv=days.filter(x=>x<selDate).pop(), nx=days.find(x=>x>selDate);
+  [[$("prevDay"),pv],[$("nextDay"),nx]].forEach(([b,x])=>{
+    b.disabled=!x;b.querySelector("span").textContent=x?META[x].theme:"";
+    b.setAttribute("aria-label",x?`${+x.slice(5,7)}월 ${+x.slice(8)}일 ${META[x].theme} 브리핑으로`:"");
+    b.onclick=()=>x&&goDate(x);
+  });
   $("theme").textContent=m?m.theme:!indexReady?"":(selDate===TODAY?"오늘 브리핑 준비 중":"브리핑 없음");
   $("themeEn").textContent=m?m.en:"";
   $("todayBtn").hidden=selDate===TODAY;
@@ -544,6 +586,7 @@ function renderHeader(){
   $("loadNote").textContent=(m||!indexReady)?"불러오는 중…":selDate===TODAY?"오늘 브리핑이 아직 올라오지 않았어요. 그동안 달력에서 지난 브리핑을 풀어 보세요.":"이 날은 브리핑이 없어요.";
 }
 $("todayBtn").onclick=()=>goDate(TODAY);
+$("calBtn").onclick=()=>{const c=$("calbox");c.hidden=!c.hidden;$("calBtn").setAttribute("aria-expanded",!c.hidden);$("calBtn").textContent=c.hidden?"달력":"달력 닫기"};
 
 let calYM=[toDate(selDate).getFullYear(),toDate(selDate).getMonth()];
 const ymKey=([y,m])=>y*12+m;
@@ -611,11 +654,12 @@ function renderAgenda(){
     if(done[id])n++;
     const c=$("agenda").querySelector(`li[data-id="${id}"] [data-chk]`);
     c.classList.toggle("on",!!done[id]);c.setAttribute("aria-label",done[id]?"완료":"미완료");
+    c.closest("li").classList.toggle("done",!!done[id]);
   });
   const jc=$("agenda").querySelector('li[data-id="job"] [data-chk]');
-  jc.classList.toggle("on",isPro()&&!!done.job);
+  jc.classList.toggle("on",isPro()&&!!done.job);jc.closest("li").classList.toggle("done",isPro()&&!!done.job);
   const tot=PARTS.length+(isPro()?1:0), nn=n+(isPro()&&done.job?1:0);
-  $("agendaSum").textContent=`${nn} / ${tot} DONE · ~${TOTAL_MIN+(isPro()?5:0)} MIN`;
+  $("agendaSum").textContent=`${tot}개 중 ${nn}개 끝, 약 ${TOTAL_MIN+(isPro()?5:0)}분`;
 }
 
 function renderWords(){
@@ -695,7 +739,7 @@ let micOK=!!(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&window
 let recNow=null; const myAudio={};
 function spkLines(){
   if(Array.isArray(DAY.speak)&&DAY.speak.length)return DAY.speak.map(x=>Array.isArray(x)?x:[x,"",""]);
-  const out=DAY.exprs.map(e=>[e[3],e[0]+" · 오늘의 표현",`${e[1]} = ${e[2]}`]);
+  const out=DAY.exprs.map(e=>[e[3],e[0],`${e[1]} = ${e[2]}`]);
   const L=DAY.listen, wc=t=>t.split(/\s+/).length;
   out.push([L.dict,"대화",""]);
   const other=L.lines.map(l=>l[1]).filter(t=>!t.includes(L.dict.replace(/[.?!]$/,""))&&wc(t)<=18).sort((a,b)=>wc(b)-wc(a))[0];
@@ -884,7 +928,7 @@ $("trackSel").innerHTML=Object.entries(TRACKS).map(([k,v])=>`<option value="${k}
 $("trackSel").onchange=()=>{S.track=$("trackSel").value;save();renderPlan();renderAgenda();renderJob()};
 function renderPlan(){
   const t=S.tier;
-  $("planBtn").textContent=t.toUpperCase();$("planBtn").dataset.tier=t;
+  $("planBtn").textContent=t[0].toUpperCase()+t.slice(1);$("planBtn").dataset.tier=t;
   $("tiers").querySelectorAll(".tier").forEach(b=>b.setAttribute("aria-pressed",b.dataset.tier===t));
   $("trackRow").hidden=!isPro();$("trackSel").value=S.track;
   $("alarmBox").hidden=!isPlus();
@@ -898,7 +942,7 @@ function renderPlan(){
   const fbb=$("fbBtn"); if(sample)fbb.hidden=!isPro();
 }
 function lockBox(tier,title,desc){
-  return `<div class="lock"><span class="badge">${tier.toUpperCase()}</span><p class="sub" style="margin:0">${esc(title)}</p><p class="note" style="margin:0">${esc(desc)}</p><button class="btn ghost" data-up="${tier}">${tier==="pro"?"Pro":"Plus"}로 바꿔 보기 (시험용)</button></div>`;
+  return `<div class="lock"><span class="badge">${tier==="pro"?"Pro":"Plus"} 기능</span><p class="sub" style="margin:0">${esc(title)}</p><p class="note" style="margin:0">${esc(desc)}</p><button class="btn ghost" data-up="${tier}">${tier==="pro"?"Pro":"Plus"}로 바꿔 보기 (시험용)</button></div>`;
 }
 function wireUp(el){el.querySelectorAll("[data-up]").forEach(b=>b.onclick=()=>{S.tier=b.dataset.up;save();renderAll()})}
 
@@ -909,9 +953,9 @@ function renderAudio(){
   if(!DAY)return;
   if(!isPlus()){c.innerHTML=lockBox("plus","오디오 브리핑","오늘 브리핑을 5분짜리 음성으로 들어요. 화면을 꺼도, 이어폰으로 출퇴근길에.");wireUp(c);return}
   if(!m||!m.audio){c.innerHTML=`<div class="t"><b>Audio Briefing</b><span class="note">이 날은 오디오가 없어요.</span></div>`;return}
-  c.innerHTML=`<div class="t"><b>Audio Briefing</b><span class="mono">단어 → 표현 → 대화 → 따라 읽기 → 본문</span></div>
+  c.innerHTML=`<div class="t"><b>Audio Briefing</b><span class="mono">약 5분</span></div>
     <audio id="aud" controls preload="none" src="audio/${selDate}.mp3"></audio>
-    <p class="note" id="audNote" style="margin:0">화면을 꺼도 계속 들려요. 따라 읽기 부분에서는 소리 내어 따라 해 보세요.</p>`;
+    <p class="note" id="audNote" style="margin:0">단어, 표현, 대화, 따라 읽기, 본문 순서예요. 화면을 꺼도 계속 들려요.</p>`;
   const a=$("aud");
   a.onerror=()=>{$("audNote").textContent="오디오는 휴대폰 앱(nhs1816.github.io/briefly)에서 들을 수 있어요."};
   a.onplay=()=>{stopSpeak();try{if("mediaSession" in navigator)navigator.mediaSession.metadata=new MediaMetadata({title:`${m.theme} · ${m.en}`,artist:"Briefly English",album:selDate})}catch(e){}};
@@ -941,9 +985,9 @@ async function renderJob(){
   if(t!==jobToken)return;
   const hasAud=m.taudio.includes(S.track);
   body.innerHTML=`<div class="row" style="justify-content:space-between"><b style="font-size:17px">${esc(J.theme)}</b><span class="theme-en" style="margin:0;font-size:15px">${esc(J.en)}</span></div>
-    ${hasAud?`<div class="panel audio-card"><div class="t"><b>Job Audio</b><span class="mono">단어 → 표현 → 실무 문서</span></div>
+    ${hasAud?`<div class="panel audio-card"><div class="t"><b>Job Audio</b><span class="mono">약 2분</span></div>
       <audio data-ja controls preload="none" src="audio/${S.track}/${selDate}.mp3"></audio>
-      <p class="note" data-jn style="margin:0">약 2분. 기본 오디오 브리핑 다음에 이어 들어 보세요.</p></div>`:""}
+      <p class="note" data-jn style="margin:0">직무 단어, 표현, 실무 문서 순서예요. 기본 오디오 다음에 이어 들어 보세요.</p></div>`:""}
     <div class="panel words" data-w></div><div class="exprs" data-e></div>
     <div class="panel" style="display:grid;gap:10px"><p class="note" style="margin:0">점선 단어를 누르면 뜻이 나와요.</p>
       <div class="doc"><div class="kind">${esc(J.read.kind)}</div><h3>${esc(J.read.title)}</h3>${glossHTML(J.read.text,J.read.gloss)}</div></div>
