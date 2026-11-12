@@ -1,0 +1,31 @@
+{
+ "date": "2026-11-13",
+ "track": "ecom",
+ "theme": "FBA 재고 관리",
+ "en": "FBA Inventory",
+ "words": [
+  ["stockout", "n", "재고 소진, 품절", "A stockout during the holidays would hurt our ranking.", "연말 시즌에 품절되면 순위가 떨어질 거예요."],
+  ["replenish", "v", "(재고를) 다시 채우다", "We need to replenish our best-selling serum by next week.", "다음 주까지 가장 잘 팔리는 세럼 재고를 채워야 해요."],
+  ["storage fee", "n", "보관료", "Long-term storage fees go up if items sit too long.", "상품이 너무 오래 있으면 장기 보관료가 올라가요."]
+ ],
+ "exprs": [
+  ["보고", "We are running low on ...", "…가 얼마 남지 않았어요", "We are running low on the vitamin C serum.", ["We are running ___ on the vitamin C serum.", "low", ["low", "down", "off"]]],
+  ["계획", "... in time for ...", "…에 맞춰", "The new shipment will arrive in time for Black Friday.", ["The shipment will arrive ___ time for Black Friday.", "in", ["in", "on", "at"]]]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "FBA Stock Check Before Black Friday",
+  "text": "Team,\n\nOur weekly inventory check shows that we are running low on two products: the vitamin C serum (about 12 days of stock) and the sleeping mask (about 9 days). To avoid a stockout, please replenish both items this week so they reach the warehouse in time for Black Friday.\n\nOn the other hand, we still have too many units of the summer sunscreen. Please create a removal order for half of them to reduce storage fees.\n\nThanks,\nMinsu",
+  "gloss": {"inventory check": "재고 점검", "warehouse": "물류창고", "removal order": "회수(반출) 요청", "reduce": "줄이다"},
+  "qs": [
+   ["재고가 가장 적게 남은 상품은?", "슬리핑 마스크", ["슬리핑 마스크", "비타민C 세럼", "여름 선크림"]],
+   ["여름 선크림은 어떻게 하자고 하나요?", "절반을 회수해 보관료를 줄인다", ["절반을 회수해 보관료를 줄인다", "할인 행사를 한다", "추가로 입고한다"]]
+  ]
+ },
+ "write": {
+  "task": "FBA 재고를 점검했더니 인기 상품 하나가 곧 품절될 것 같아요. 팀에 상황을 알리고 재입고를 요청하는 짧은 메시지를 써 보세요.",
+  "en": "Write a short message telling your team a popular item is running low and asking them to restock it.",
+  "hints": ["We are running low on", "replenish", "in time for"],
+  "model": "Hi team,\n\nWe are running low on the cica cream. We only have about ten days of stock left at FBA. Could we replenish it this week so it arrives in time for the holiday sale? A stockout now would hurt our ranking.\n\nThanks,\nMinsu"
+ }
+}

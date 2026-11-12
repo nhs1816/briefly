@@ -1,0 +1,181 @@
+{
+ "date": "2026-11-13",
+ "theme": "가격 협상",
+ "en": "Negotiation",
+ "words": [
+  [
+   "proposal",
+   "n",
+   "제안(서)",
+   "Thanks for sending the proposal.",
+   "제안서 보내 주셔서 감사해요."
+  ],
+  [
+   "flexible",
+   "adj",
+   "유연한, 조정 가능한",
+   "We can be flexible on the delivery date.",
+   "납기일은 조정할 수 있어요."
+  ],
+  [
+   "discount",
+   "n",
+   "할인",
+   "Is there a discount for large orders?",
+   "대량 주문 할인이 있나요?"
+  ],
+  [
+   "compromise",
+   "n",
+   "타협, 절충",
+   "We reached a compromise on the price.",
+   "가격에서 절충점을 찾았어요."
+  ],
+  [
+   "budget",
+   "n",
+   "예산",
+   "That's above our budget.",
+   "저희 예산을 넘어요."
+  ]
+ ],
+ "exprs": [
+  [
+   "제안",
+   "Would you be open to ...?",
+   "…하실 의향이 있으세요?",
+   "Would you be open to a two-year contract?",
+   [
+    "Would you be ___ to a smaller order?",
+    "open",
+    [
+     "open",
+     "free",
+     "ready"
+    ]
+   ]
+  ],
+  [
+   "거절",
+   "That might be a bit difficult for us.",
+   "저희로선 좀 어려울 것 같아요.",
+   "A 20 percent discount might be a bit difficult for us.",
+   [
+    "That might be a ___ difficult for us.",
+    "bit",
+    [
+     "bit",
+     "few",
+     "lot"
+    ]
+   ]
+  ],
+  [
+   "절충",
+   "Let's meet halfway.",
+   "중간에서 절충하죠.",
+   "You want 15 and we offered 10. Let's meet halfway.",
+   [
+    "Let's meet ___ on the price.",
+    "halfway",
+    [
+     "halfway",
+     "between",
+     "middle"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "할인율 협상",
+  "lines": [
+   [
+    "A",
+    "Thanks for the proposal. The quality looks great, but the price is above our budget."
+   ],
+   [
+    "B",
+    "I understand. What price did you have in mind?"
+   ],
+   [
+    "A",
+    "We were hoping for a fifteen percent discount."
+   ],
+   [
+    "B",
+    "Fifteen percent might be a bit difficult for us. Would you be open to ten percent with a two-year contract?"
+   ],
+   [
+    "A",
+    "Hmm, let's meet halfway. Twelve percent, and we'll sign for two years."
+   ],
+   [
+    "B",
+    "I think we can work with that. I'll send the revised proposal tomorrow."
+   ]
+  ],
+  "qs": [
+   [
+    "처음 요청한 할인율은?",
+    "15%",
+    [
+     "15%",
+     "10%",
+     "12%"
+    ]
+   ],
+   [
+    "최종 합의 내용은?",
+    "12% 할인 + 2년 계약",
+    [
+     "12% 할인 + 2년 계약",
+     "10% 할인 + 1년 계약",
+     "15% 할인 + 2년 계약"
+    ]
+   ]
+  ],
+  "dict": "What price did you have in mind?"
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Re: Revised Proposal",
+  "text": "Dear Mr. Park,\n\nThank you for your quick response. We have reviewed your request and are happy to offer a 12 percent discount on the annual contract, as discussed on our call.\n\nIn return, we would ask that payment be made within 30 days of each invoice. We can also be flexible on the delivery schedule: shipments can be monthly or every two weeks, depending on your needs.\n\nPlease let us know which option you prefer, and we will prepare the final contract.\n\nKind regards,\nLaura Kim",
+  "gloss": {
+   "annual": "연간의",
+   "in return": "그 대신",
+   "invoice": "청구서",
+   "shipments": "발송(물량)",
+   "prefer": "선호하다"
+  },
+  "qs": [
+   [
+    "할인 대신 요구한 조건은?",
+    "청구서 발행 후 30일 안에 결제",
+    [
+     "청구서 발행 후 30일 안에 결제",
+     "계약 3년 연장",
+     "배송비 부담"
+    ]
+   ],
+   [
+    "고를 수 있는 배송 주기는?",
+    "매월 또는 2주마다",
+    [
+     "매월 또는 2주마다",
+     "매주 또는 매월",
+     "분기마다"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "거래처가 보낸 견적이 예산보다 높아요. 정중하게 가격 조정을 요청하는 이메일을 써 보세요.",
+  "en": "The supplier's quote is above your budget. Write a polite email asking them to adjust the price.",
+  "hints": [
+   "Would you be open to ...?",
+   "budget",
+   "flexible"
+  ],
+  "model": "Dear Ms. Kim,\n\nThank you for sending the proposal. We really like the quality of your products, but the price is a bit above our budget for this year. Would you be open to a 10 percent discount if we sign a two-year contract? We are flexible on the delivery schedule as well.\n\nBest regards,\nMinsu Lee"
+ }
+}

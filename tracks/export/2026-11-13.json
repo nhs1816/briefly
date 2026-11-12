@@ -1,0 +1,31 @@
+{
+ "date": "2026-11-13",
+ "track": "export",
+ "theme": "결제 조건 안내",
+ "en": "Payment Terms",
+ "words": [
+  ["deposit", "n", "선금, 계약금", "We require a 30% deposit before we start production.", "생산을 시작하기 전에 30% 선금이 필요해요."],
+  ["balance", "n", "잔금", "The balance is due before shipment.", "잔금은 선적 전까지 내셔야 해요."],
+  ["wire transfer", "n", "송금, 계좌 이체", "Most of our buyers pay by wire transfer.", "저희 바이어 대부분은 송금으로 결제해요."]
+ ],
+ "exprs": [
+  ["결제", "... is due upon receipt of ...", "…을 받는 즉시 지급해야 합니다", "Payment is due upon receipt of the invoice.", ["Payment is due ___ receipt of the invoice.", "upon", ["upon", "until", "for"]]],
+  ["협의", "We are willing to ...", "…할 의향이 있습니다", "We are willing to offer 60-day terms after your third order.", ["We are ___ to offer better terms after your third order.", "willing", ["willing", "glad of", "pleasing"]]]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Payment Terms for Your First Order",
+  "text": "Dear Mr. Haddad,\n\nThank you for confirming your first order of our cica toner. For new partners, our payment terms are a 30% deposit by wire transfer when the order is confirmed, and the balance before shipment.\n\nProduction will begin as soon as we receive the deposit. Payment of the balance is due upon receipt of the final invoice, which we will send once the goods are packed.\n\nAfter three successful orders, we are willing to discuss more flexible terms.\n\nBest regards,\nMinsu Lee",
+  "gloss": {"partners": "거래처, 파트너", "confirmed": "확정된", "final invoice": "최종 청구서", "flexible": "유연한"},
+  "qs": [
+   ["생산은 언제 시작되나요?", "선금을 받은 직후", ["선금을 받은 직후", "잔금을 받은 직후", "선적 직후"]],
+   ["더 유연한 결제 조건은 언제 논의할 수 있나요?", "주문 세 번이 잘 끝난 후", ["주문 세 번이 잘 끝난 후", "첫 주문 직후", "1년이 지난 후"]]
+  ]
+ },
+ "write": {
+  "task": "첫 거래 바이어가 결제 조건을 물어봤어요. 선금 비율과 잔금 지급 시점, 결제 방법을 알려 주는 답장을 써 보세요.",
+  "en": "Reply to a new buyer explaining the deposit, when the balance is due, and how to pay.",
+  "hints": ["deposit", "balance", "is due upon receipt of"],
+  "model": "Dear Ms. Novak,\n\nThank you for your question. For first orders, we ask for a 30% deposit by wire transfer when you confirm the order. The balance is due upon receipt of the final invoice, before shipment. We are willing to review these terms after a few orders.\n\nBest regards,\nMinsu Lee"
+ }
+}

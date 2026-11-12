@@ -1,0 +1,32 @@
+{
+ "date": "2026-11-13",
+ "track": "mkt",
+ "theme": "월간 콘텐츠 기획",
+ "en": "Content Planning",
+ "words": [
+  ["content calendar", "n", "콘텐츠 캘린더", "Let's finalize the December content calendar by Friday.", "금요일까지 12월 콘텐츠 캘린더를 확정해요."],
+  ["format", "n", "형식, 포맷", "Short videos are our best-performing format.", "짧은 영상이 성과가 가장 좋은 포맷이에요."],
+  ["posting frequency", "n", "게시 빈도", "We plan to increase our posting frequency to four times a week.", "게시 빈도를 주 4회로 늘릴 계획이에요."]
+ ],
+ "exprs": [
+  ["회의", "Let's focus on ...", "…에 집중합시다", "Let's focus on winter skincare tips this month.", ["Let's ___ on winter skincare tips this month.", "focus", ["focus", "attend", "watch"]]],
+  ["제안", "How about ...ing?", "…하는 건 어때요?", "How about adding a weekly Q&A series?", ["How about ___ a weekly Q&A series?", "adding", ["adding", "add", "to add"]]]
+ ]
+ ,
+ "read": {
+  "kind": "Memo",
+  "title": "December Content Plan Draft",
+  "text": "Hi all,\n\nHere is the draft of our December content calendar. Let's focus on two themes: winter dryness and holiday gift sets. Since short videos are our strongest format, we will post three Reels and one carousel each week, which raises our posting frequency from three to four posts.\n\nI'd also like to try something new. How about inviting followers to share their winter routines? We could repost the best ones every Friday.\n\nPlease leave your comments by Tuesday.\n\nMinsu",
+  "gloss": {"draft": "초안", "dryness": "건조함", "carousel": "여러 장 넘겨 보는 게시물", "repost": "다시 게시하다"},
+  "qs": [
+   ["12월 콘텐츠의 두 가지 주제는?", "겨울 건조함과 연말 선물 세트", ["겨울 건조함과 연말 선물 세트", "신제품과 할인 행사", "여름 선케어와 여행"]],
+   ["게시 빈도는 어떻게 바뀌나요?", "주 3회에서 4회로", ["주 3회에서 4회로", "주 4회에서 3회로", "매일 1회로"]]
+  ]
+ },
+ "write": {
+  "task": "다음 달 SNS 콘텐츠 계획을 팀에 공유해야 해요. 주제 하나와 주력 포맷을 정하고, 새 아이디어 하나를 제안하는 메시지를 써 보세요.",
+  "en": "Share next month's social content plan with your team: one theme, the main format, and one new idea.",
+  "hints": ["Let's focus on", "How about", "content calendar"],
+  "model": "Hi team,\n\nFor next month's content calendar, let's focus on hydration tips for dry skin. Short videos will be our main format, and we will post four times a week. How about starting a weekly 'Ask Our Chemist' series? I think it would build trust with our followers.\n\nMinsu"
+ }
+}
