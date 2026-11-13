@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-14",
+ "track": "mkt",
+ "theme": "신제품 런칭 공지",
+ "en": "Product Launch",
+ "words": [
+  ["launch", "n", "출시, 런칭", "The launch of our new serum is set for December 1.", "새 세럼 출시는 12월 1일로 정해졌어요."],
+  ["teaser", "n", "티저(예고 콘텐츠)", "We will post a short teaser on Instagram a week before the launch.", "출시 일주일 전에 인스타그램에 짧은 티저를 올릴 거예요."],
+  ["pre-order", "n", "사전 주문", "Pre-orders will open on our website this Friday.", "사전 주문은 이번 주 금요일 웹사이트에서 시작돼요."]
+ ],
+ "exprs": [
+  ["공지", "We're excited to announce ...", "…를 알리게 되어 기뻐요", "We're excited to announce our new vitamin C serum.", ["We're excited to ___ our new vitamin C serum.", "announce", ["announce", "inform", "notify"]]],
+  ["일정", "starting from ...", "…부터", "The launch discount is available starting from December 1.", ["The discount is available starting ___ December 1.", "from", ["from", "at", "since"]]]
+ ],
+ "read": {
+  "kind": "Notice",
+  "title": "Launch Plan: Glow Vitamin C Serum",
+  "text": "Team,\n\nWe're excited to announce that our Glow Vitamin C Serum will launch on December 1. A 15-second teaser will go live on Instagram and TikTok on November 24, and pre-orders will open on our online store starting from November 26.\n\nTwenty partner creators will receive the product this week and post reviews on launch day. Please make sure all posts follow the new brand guide, especially the color tone and product claims.\n\nThanks,\nMinsu",
+  "gloss": {
+   "go live": "공개되다",
+   "partner creators": "협업 크리에이터",
+   "product claims": "제품 효능 문구",
+   "color tone": "색감"
+  },
+  "qs": [
+   ["사전 주문은 언제 시작되나요?", "11월 26일", ["11월 26일", "11월 24일", "12월 1일"]],
+   ["크리에이터 게시물이 특히 지켜야 할 것은?", "색감과 제품 효능 문구", ["색감과 제품 효능 문구", "게시 시간", "해시태그 개수"]]
+  ]
+ },
+ "write": {
+  "task": "해외 협업 크리에이터들에게 신제품 출시일과 티저 공개일, 사전 주문 시작일을 알리는 짧은 공지를 써 보세요.",
+  "en": "Write a short notice to partner creators about the launch date, teaser date, and pre-order start date of a new product.",
+  "hints": ["We're excited to announce", "teaser", "pre-order", "starting from"],
+  "model": "Hi everyone,\n\nWe're excited to announce that our new Cica Calming Cream will launch on January 10. Our teaser video will go live on January 3, and pre-orders will be available starting from January 5. Your product kits will arrive next week, so please plan your posts for launch day.\n\nThank you,\nMinsu"
+ }
+}

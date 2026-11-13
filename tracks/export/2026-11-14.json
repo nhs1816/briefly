@@ -1,0 +1,37 @@
+{
+ "date": "2026-11-14",
+ "track": "export",
+ "theme": "선적 일정 안내",
+ "en": "Shipment Updates",
+ "words": [
+  ["bill of lading", "n", "선하증권(B/L)", "We will send you a copy of the bill of lading once the vessel departs.", "배가 출항하면 선하증권 사본을 보내 드릴게요."],
+  ["ETA", "n", "도착 예정일(시간)", "The ETA at the port of Los Angeles is December 2.", "LA 항 도착 예정일은 12월 2일이에요."],
+  ["container", "n", "컨테이너", "Your order will be loaded into one 20-foot container.", "주문하신 물량은 20피트 컨테이너 한 대에 실릴 거예요."]
+ ],
+ "exprs": [
+  ["이메일", "I'm writing to let you know that ...", "…를 알려 드리려고 연락드려요", "I'm writing to let you know that your order has been shipped.", ["I'm writing to ___ you know that your order has shipped.", "let", ["let", "make", "inform"]]],
+  ["안내", "Please let us know if ...", "…하면 알려 주세요", "Please let us know if you need any other documents for customs.", ["Please let us know ___ you need any other documents.", "if", ["if", "so", "what"]]]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Shipment Notice – Order No. 2481",
+  "text": "Dear Mr. Silva,\n\nI'm writing to let you know that your order of 6,000 sheet masks left Busan this morning. The goods were loaded into one 20-foot container, and the vessel's ETA at the port of Santos is December 9.\n\nPlease find attached the commercial invoice, packing list, and a copy of the bill of lading. The original documents will be sent by courier after we receive the balance payment.\n\nPlease let us know if your customs broker needs any other documents.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "vessel": "선박",
+   "commercial invoice": "상업 송장",
+   "packing list": "포장 명세서",
+   "customs broker": "관세사, 통관 대행인",
+   "original documents": "원본 서류"
+  },
+  "qs": [
+   ["선적된 물건이 산투스 항에 도착할 예정일은?", "12월 9일", ["12월 9일", "오늘 아침", "잔금 입금일"]],
+   ["원본 서류는 언제 보내나요?", "잔금을 받은 후", ["잔금을 받은 후", "출항 전", "통관이 끝난 후"]]
+  ]
+ },
+ "write": {
+  "task": "바이어의 주문 물량이 오늘 출항했어요. 출항 사실, 도착 예정일, 첨부한 선적 서류를 알리는 짧은 이메일을 써 보세요.",
+  "en": "Write a short email telling a buyer that their order has shipped, when it should arrive, and which documents you attached.",
+  "hints": ["I'm writing to let you know that", "ETA", "bill of lading", "Please let us know if"],
+  "model": "Dear Ms. Wong,\n\nI'm writing to let you know that your order of 3,000 toner pads was shipped from Busan today. The ETA at the port of Singapore is November 24. Please find attached the packing list and a copy of the bill of lading. Please let us know if you need any other documents for customs clearance.\n\nBest regards,\nMinsu Lee"
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-14",
+ "track": "ecom",
+ "theme": "광고 성과 점검",
+ "en": "Ad Performance",
+ "words": [
+  ["ACoS", "n", "광고비 매출 비율", "Our ACoS dropped to 22% after we paused the broad keywords.", "광범위 키워드를 멈춘 뒤 광고비 매출 비율이 22%로 내려갔어요."],
+  ["bid", "n", "입찰가", "Let's lower the bid on keywords that get clicks but no sales.", "클릭은 있지만 판매가 없는 키워드는 입찰가를 낮춰요."],
+  ["click-through rate", "n", "클릭률(CTR)", "The new main image raised our click-through rate by almost one point.", "새 메인 이미지로 클릭률이 거의 1%p 올랐어요."]
+ ],
+ "exprs": [
+  ["보고", "compared to last week", "지난주와 비교해", "Ad sales grew by 15% compared to last week.", ["Ad sales grew by 15% ___ to last week.", "compared", ["compared", "comparing", "compare"]]],
+  ["제안", "I'd suggest that we ...", "…하는 것을 제안해요", "I'd suggest that we move more budget to the toner pad campaign.", ["I'd ___ that we move more budget to this campaign.", "suggest", ["suggest", "offer", "invite"]]]
+ ],
+ "read": {
+  "kind": "Report",
+  "title": "Weekly Ad Review – Collagen Mask",
+  "text": "Ad sales for the collagen mask reached $8,400 this week, up 12% compared to last week. However, ACoS rose from 24% to 31% because several broad keywords spent a lot without converting.\n\nThe click-through rate on our main campaign stayed at 0.6%, which is below the category average. I'd suggest that we lower the bid on the five weakest keywords and test a new main image next week.\n\nWe will review the results again next Friday.",
+  "gloss": {
+   "converting": "구매로 이어지는",
+   "category average": "카테고리 평균",
+   "weakest": "가장 성과가 낮은",
+   "spent": "(돈을) 썼다"
+  },
+  "qs": [
+   ["ACoS가 오른 이유는?", "일부 광범위 키워드가 판매 없이 비용을 많이 써서", ["일부 광범위 키워드가 판매 없이 비용을 많이 써서", "광고 매출이 줄어서", "메인 이미지를 바꿔서"]],
+   ["다음 주에 하자고 제안한 것은?", "약한 키워드 입찰가 인하와 새 메인 이미지 테스트", ["약한 키워드 입찰가 인하와 새 메인 이미지 테스트", "광고 예산 두 배로 늘리기", "캠페인 전체 중지"]]
+  ]
+ },
+ "write": {
+  "task": "팀장님께 이번 주 아마존 광고 성과를 짧게 보고하세요. 지난주 대비 변화 하나와 다음 주 개선 제안 하나를 넣어 보세요.",
+  "en": "Write a short update to your manager on this week's Amazon ad results, with one change from last week and one suggestion for next week.",
+  "hints": ["compared to last week", "ACoS", "I'd suggest that we", "bid"],
+  "model": "Hi Jiwon,\n\nHere is this week's ad update. Ad sales were $5,200, up 9% compared to last week, but ACoS increased to 28%. Most of the extra spend came from two broad keywords. I'd suggest that we lower the bid on those keywords and add three exact-match keywords next week.\n\nThanks,\nMinsu"
+ }
+}

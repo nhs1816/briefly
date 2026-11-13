@@ -1,0 +1,182 @@
+{
+ "date": "2026-11-14",
+ "theme": "피드백 주고받기",
+ "en": "Feedback",
+ "words": [
+  [
+   "constructive",
+   "adj",
+   "건설적인",
+   "Thanks for the constructive comments.",
+   "건설적인 의견 감사해요."
+  ],
+  [
+   "improve",
+   "v",
+   "개선하다",
+   "How can we improve the process?",
+   "절차를 어떻게 개선할 수 있을까요?"
+  ],
+  [
+   "appreciate",
+   "v",
+   "고맙게 여기다",
+   "I appreciate your help.",
+   "도와주셔서 고마워요."
+  ],
+  [
+   "clarify",
+   "v",
+   "명확히 하다",
+   "Could you clarify what you mean?",
+   "무슨 뜻인지 명확히 해 주시겠어요?"
+  ],
+  [
+   "rushed",
+   "adj",
+   "서두른, 급한",
+   "The ending felt a little rushed.",
+   "마무리가 좀 급하게 느껴졌어요."
+  ]
+ ],
+ "exprs": [
+  [
+   "감사",
+   "I really appreciate your input.",
+   "의견 주셔서 정말 감사해요.",
+   "I really appreciate your input on the draft.",
+   [
+    "I really ___ your input.",
+    "appreciate",
+    [
+     "appreciate",
+     "thank",
+     "grateful"
+    ]
+   ]
+  ],
+  [
+   "피드백",
+   "One thing you could improve is ...",
+   "개선할 점을 하나 꼽자면 …",
+   "One thing you could improve is the summary.",
+   [
+    "One thing you ___ improve is the summary.",
+    "could",
+    [
+     "could",
+     "are",
+     "did"
+    ]
+   ]
+  ],
+  [
+   "확인",
+   "Could you clarify what you mean by ...?",
+   "…가 무슨 뜻인지 설명해 주시겠어요?",
+   "Could you clarify what you mean by \"urgent\"?",
+   [
+    "Could you ___ what you mean by \"urgent\"?",
+    "clarify",
+    [
+     "clarify",
+     "clean",
+     "clear"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "발표 피드백",
+  "lines": [
+   [
+    "A",
+    "Do you have a few minutes to go over your presentation from yesterday?"
+   ],
+   [
+    "B",
+    "Sure. I'd love some feedback."
+   ],
+   [
+    "A",
+    "Overall, it was clear and well organized. The client liked your charts."
+   ],
+   [
+    "B",
+    "Thanks, I really appreciate that."
+   ],
+   [
+    "A",
+    "One thing you could improve is the ending. You ran out of time, so the summary felt rushed."
+   ],
+   [
+    "B",
+    "That's fair. Next time I'll cut a few slides and practice with a timer."
+   ]
+  ],
+  "qs": [
+   [
+    "고객이 좋아한 것은?",
+    "차트",
+    [
+     "차트",
+     "결론",
+     "발표 시간"
+    ]
+   ],
+   [
+    "개선할 점으로 꼽은 것은?",
+    "마무리가 급했다",
+    [
+     "마무리가 급했다",
+     "슬라이드가 너무 적었다",
+     "목소리가 작았다"
+    ]
+   ]
+  ],
+  "dict": "Next time I'll cut a few slides."
+ },
+ "read": {
+  "kind": "Guide",
+  "title": "How to Give Feedback That Helps",
+  "text": "Good feedback is specific, timely, and focused on behavior rather than personality. Instead of saying \"Your report was bad,\" say \"The report needs a clearer summary on the first page.\" This tells the person exactly what to change.\n\nTiming matters, too. Feedback given a week later loses much of its value, because people may not remember the details. Try to share your thoughts within a day or two.\n\nFinally, make it a conversation. Ask the other person how they felt about their work, and agree together on one or two next steps.",
+  "gloss": {
+   "specific": "구체적인",
+   "timely": "시기적절한",
+   "behavior": "행동",
+   "personality": "성격",
+   "value": "가치",
+   "next steps": "다음 단계"
+  },
+  "qs": [
+   [
+    "좋은 피드백의 특징이 아닌 것은?",
+    "성격에 초점을 맞춘다",
+    [
+     "성격에 초점을 맞춘다",
+     "구체적이다",
+     "시기적절하다"
+    ]
+   ],
+   [
+    "피드백은 언제 주라고 하나요?",
+    "하루 이틀 안에",
+    [
+     "하루 이틀 안에",
+     "일주일 뒤에",
+     "분기 평가 때"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "후배가 만든 보고서에 피드백 메시지를 써 보세요. 잘한 점 하나와 개선할 점 하나를 넣으세요.",
+  "en": "Write a feedback message on a junior colleague's report: one thing they did well and one thing to improve.",
+  "hints": [
+   "One thing you could improve is",
+   "appreciate",
+   "clarify"
+  ],
+  "model": "Hi Jiwoo,\n\nThanks for the report. The data section was very well organized, and the charts were easy to follow. One thing you could improve is the summary on the first page. Could you make it shorter and add the key numbers? Great work overall.\n\nMinsu"
+ }
+}
