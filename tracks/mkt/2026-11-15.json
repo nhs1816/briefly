@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-15",
+ "track": "mkt",
+ "theme": "고객 후기(UGC) 활용 허락받기",
+ "en": "UGC Permission",
+ "words": [
+  ["repost", "v", "(남의 게시물을) 다시 올리다", "Can we repost your photo on our brand account?", "고객님 사진을 저희 브랜드 계정에 다시 올려도 될까요?"],
+  ["credit", "n", "출처 표시, 공로 인정", "We always give credit to the original creator.", "저희는 항상 원 제작자의 출처를 밝혀요."],
+  ["usage rights", "n", "사용 권한", "The usage rights cover social media for one year.", "사용 권한은 1년 동안 SNS 사용을 포함해요."]
+ ],
+ "exprs": [
+  ["요청", "Would you mind if we ...?", "…해도 괜찮을까요?", "Would you mind if we shared your video on our brand page?", ["Would you ___ if we shared your video?", "mind", ["mind", "allow", "agree"]]],
+  ["SNS", "with full credit to ...", "…의 출처를 밝혀서", "We will repost the photo with full credit to the creator.", ["We will repost the photo with full ___ to you.", "credit", ["credit", "thanks", "source"]]]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Can We Share Your Review?",
+  "text": "Hi Jenna,\n\nWe came across your review of our rice toner on Instagram, and our whole team loved it! Your before-and-after photos were clear and honest.\n\nWould you mind if we reposted your video on our brand account and used it on our Amazon listing? We will tag your account with full credit to you. In return, we'd like to send you our new sunscreen as a thank-you gift.\n\nIf you agree, I'll send a short usage rights form for you to sign. The rights would cover social media and online store use for twelve months.\n\nThanks so much,\nMinsu",
+  "gloss": {
+   "came across": "우연히 보다",
+   "tag": "태그하다",
+   "in return": "보답으로",
+   "cover": "(범위를) 포함하다"
+  },
+  "qs": [
+   ["민수가 영상을 쓰려는 곳이 아닌 것은?", "TV 광고", ["TV 광고", "브랜드 계정", "아마존 리스팅"]],
+   ["사용 권한 기간은 얼마인가요?", "12개월", ["12개월", "6개월", "기간 제한 없음"]]
+  ]
+ },
+ "write": {
+  "task": "고객이 올린 제품 후기 사진을 브랜드 계정에 올리고 싶어요. 출처를 꼭 밝히겠다고 하며 허락을 구하는 DM을 써 보세요.",
+  "en": "Write a DM asking a customer for permission to repost their review photo, promising to give them credit.",
+  "hints": ["Would you mind if we ...?", "with full credit to ...", "repost"],
+  "model": "Hi Sora,\n\nThank you for sharing such a lovely photo of our cica cream! Would you mind if we reposted it on our brand account? We would post it with full credit to you and tag your account. Please let us know if that works for you.\n\nBest,\nMinsu"
+ }
+}

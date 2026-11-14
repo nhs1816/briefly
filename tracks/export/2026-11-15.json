@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-15",
+ "track": "export",
+ "theme": "박람회 후속 연락",
+ "en": "Trade Show Follow-up",
+ "words": [
+  ["booth", "n", "(박람회) 부스", "Many buyers stopped by our booth to test the new cushion.", "많은 바이어가 우리 부스에 들러 새 쿠션을 테스트해 봤어요."],
+  ["distributor", "n", "유통업체, 대리점", "We are looking for a reliable distributor in Central Europe.", "중부 유럽에서 믿을 만한 유통업체를 찾고 있어요."],
+  ["exclusive", "adj", "독점의", "They asked for exclusive rights to sell our products in Poland.", "그들은 폴란드에서 우리 제품을 판매할 독점권을 요청했어요."]
+ ],
+ "exprs": [
+  ["박람회", "It was a pleasure meeting you at ...", "…에서 만나 뵙게 되어 반가웠습니다", "It was a pleasure meeting you at our booth last week.", ["It was a ___ meeting you at our booth.", "pleasure", ["pleasure", "pleased", "please"]]],
+  ["후속", "I'd like to follow up on ...", "…에 대해 후속 연락드립니다", "I'd like to follow up on our conversation about the toner pads.", ["I'd like to follow ___ on our conversation.", "up", ["up", "out", "off"]]]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Great Meeting You at the Beauty Expo",
+  "text": "Dear Mr. Novak,\n\nIt was a pleasure meeting you at our booth at the Beauty Expo in Las Vegas last week. Thank you for taking the time to try our cica cream and toner pads.\n\nAs discussed, I'd like to follow up on your interest in becoming our distributor in Central Europe. At this stage, we are open to an exclusive agreement for a two-year term, provided that the first-year sales target is met.\n\nI have attached our catalog and wholesale price list. Would you be available for a video call next Tuesday to discuss the details?\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "wholesale": "도매",
+   "term": "기간",
+   "provided that": "…라는 조건으로",
+   "sales target": "판매 목표"
+  },
+  "qs": [
+   ["두 사람은 어디서 처음 만났나요?", "라스베이거스 뷰티 엑스포 부스", ["라스베이거스 뷰티 엑스포 부스", "회사 사무실", "화상회의"]],
+   ["민수가 제안한 독점 계약 기간은?", "2년", ["2년", "1년", "3년"]]
+  ]
+ },
+ "write": {
+  "task": "박람회에서 만난 바이어에게 후속 메일을 보내요. 만나서 반가웠다고 인사하고, 카탈로그를 첨부했다고 알리며 다음 미팅을 제안해 보세요.",
+  "en": "Write a follow-up email to a buyer you met at a trade show, mention the attached catalog, and suggest a next meeting.",
+  "hints": ["It was a pleasure meeting you at ...", "I'd like to follow up on ...", "distributor"],
+  "model": "Dear Ms. Silva,\n\nIt was a pleasure meeting you at our booth in Las Vegas. I'd like to follow up on your interest in our sheet mask line. I have attached our catalog and price list for your review. If you are interested in becoming our distributor in Brazil, could we have a video call next week?\n\nBest regards,\nMinsu Lee"
+ }
+}

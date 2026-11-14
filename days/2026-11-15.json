@@ -1,0 +1,181 @@
+{
+ "date": "2026-11-15",
+ "theme": "화상회의",
+ "en": "Video Calls",
+ "words": [
+  [
+   "mute",
+   "n/v",
+   "음소거(하다)",
+   "Please mute yourself when you're not speaking.",
+   "말하지 않을 때는 음소거해 주세요."
+  ],
+  [
+   "connection",
+   "n",
+   "(인터넷) 연결",
+   "My connection is a bit slow today.",
+   "오늘 연결이 좀 느려요."
+  ],
+  [
+   "share",
+   "v",
+   "공유하다",
+   "Let me share my screen.",
+   "제 화면을 공유할게요."
+  ],
+  [
+   "interrupt",
+   "v",
+   "말을 끊다, 끼어들다",
+   "Sorry to interrupt, but we're out of time.",
+   "말씀 중에 죄송하지만 시간이 다 됐어요."
+  ],
+  [
+   "follow up",
+   "phr",
+   "후속 조치하다, 다시 연락하다",
+   "I'll follow up with an email.",
+   "이메일로 다시 연락드릴게요."
+  ]
+ ],
+ "exprs": [
+  [
+   "화상회의",
+   "You're on mute.",
+   "음소거 상태세요.",
+   "Daniel, I think you're on mute.",
+   [
+    "Sorry, you're on ___.",
+    "mute",
+    [
+     "mute",
+     "silent",
+     "quiet"
+    ]
+   ]
+  ],
+  [
+   "화면 공유",
+   "Can everyone see my screen?",
+   "제 화면 다들 보이세요?",
+   "Okay, can everyone see my screen now?",
+   [
+    "Can everyone ___ my screen?",
+    "see",
+    [
+     "see",
+     "look",
+     "watch"
+    ]
+   ]
+  ],
+  [
+   "연결",
+   "Sorry, you broke up.",
+   "죄송해요, 소리가 끊겼어요.",
+   "Sorry, you broke up for a second. Could you say that again?",
+   [
+    "Sorry, you broke ___ for a second.",
+    "up",
+    [
+     "up",
+     "down",
+     "out"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "화상회의 연결 문제",
+  "lines": [
+   [
+    "A",
+    "Hi Daniel, can you hear me? I think you're on mute."
+   ],
+   [
+    "B",
+    "Sorry about that. Can you hear me now?"
+   ],
+   [
+    "A",
+    "Yes, loud and clear. Can you share your screen?"
+   ],
+   [
+    "B",
+    "Sure. Can you see the sales dashboard?"
+   ],
+   [
+    "A",
+    "Yes. Sorry, you broke up for a second. Could you repeat the last part?"
+   ],
+   [
+    "B",
+    "I said the numbers for Japan are lower than expected. I'll follow up with a detailed email after the call."
+   ]
+  ],
+  "qs": [
+   [
+    "처음에 생긴 문제는?",
+    "Daniel이 음소거 상태였다",
+    [
+     "Daniel이 음소거 상태였다",
+     "화면이 보이지 않았다",
+     "회의 링크가 틀렸다"
+    ]
+   ],
+   [
+    "Daniel이 통화 뒤에 할 일은?",
+    "자세한 이메일 보내기",
+    [
+     "자세한 이메일 보내기",
+     "일본 출장 가기",
+     "대시보드 고치기"
+    ]
+   ]
+  ],
+  "dict": "Could you repeat the last part?"
+ },
+ "read": {
+  "kind": "Notice",
+  "title": "Video Meeting Etiquette",
+  "text": "To keep our online meetings efficient, please follow these simple rules. Join a few minutes early to test your connection and audio. Keep yourself on mute when you are not speaking, especially in large meetings, to reduce background noise.\n\nIf you want to speak, use the raise-hand button instead of interrupting. When you share your screen, close any private messages or unrelated tabs first.\n\nAfter each meeting, the organizer will follow up with a short summary and a list of action items within 24 hours.",
+  "gloss": {
+   "efficient": "효율적인",
+   "background noise": "주변 소음",
+   "unrelated": "관련 없는",
+   "organizer": "주최자",
+   "action items": "실행할 일"
+  },
+  "qs": [
+   [
+    "말하고 싶을 때는 어떻게 하라고 하나요?",
+    "손들기 버튼을 누른다",
+    [
+     "손들기 버튼을 누른다",
+     "바로 말한다",
+     "채팅에 쓴다"
+    ]
+   ],
+   [
+    "회의 뒤 주최자가 하는 일은?",
+    "24시간 안에 요약과 할 일 목록 공유",
+    [
+     "24시간 안에 요약과 할 일 목록 공유",
+     "녹화 파일 삭제",
+     "다음 회의 예약"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "화상회의 도중 연결이 끊겨 나가게 됐어요. 참석자들에게 사과하고, 놓친 내용을 알려 달라는 메시지를 써 보세요.",
+  "en": "You dropped off a video meeting because of a bad connection. Write a message apologizing and asking what you missed.",
+  "hints": [
+   "connection",
+   "follow up",
+   "Could you ...?"
+  ],
+  "model": "Hi all,\n\nSorry about dropping off the call earlier. My connection was unstable, and I couldn't rejoin. Could someone share a quick summary of what I missed after the budget discussion? I'll follow up on my action items by tomorrow.\n\nThanks,\nMinsu"
+ }
+}

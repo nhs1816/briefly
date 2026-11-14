@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-15",
+ "track": "ecom",
+ "theme": "반품 원인 파악",
+ "en": "Returns",
+ "words": [
+  ["return rate", "n", "반품률", "Our return rate went up after we changed the bottle design.", "병 디자인을 바꾼 뒤 반품률이 올라갔어요."],
+  ["defective", "adj", "불량의, 결함이 있는", "The customer said the pump was defective.", "고객은 펌프가 불량이라고 했어요."],
+  ["restock", "v", "재입고하다, 다시 재고로 넣다", "Unopened items will be restocked and sold again.", "개봉하지 않은 상품은 재입고해서 다시 판매해요."]
+ ],
+ "exprs": [
+  ["분석", "account for ...", "…를 차지하다", "Leaking pumps account for most of our returns this month.", ["Leaking pumps ___ for most of our returns.", "account", ["account", "make", "take"]]],
+  ["요청", "Could you look into ...?", "…를 확인해 주실 수 있나요?", "Could you look into why this order was marked as unsellable?", ["Could you ___ into why this order was marked as unsellable?", "look", ["look", "see", "watch"]]]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "Return Rate for Vitamin Serum",
+  "text": "To: E-commerce Team\n\nOur return rate for the vitamin serum rose to 6.2% last month, up from 2.5%. Customer comments show that leaking pumps account for most of these returns. Some units were also returned as defective after being damaged in transit.\n\nReturned items in good condition will be restocked, but anything opened will be marked as unsellable. I have asked the packaging team to look into a stronger pump. Until then, please add a note to the listing about how to lock the pump before use.\n\nThanks,\nMinsu",
+  "gloss": {
+   "leaking": "(내용물이) 새는",
+   "in transit": "배송 중에",
+   "unsellable": "판매 불가",
+   "packaging": "포장"
+  },
+  "qs": [
+   ["지난달 비타민 세럼의 반품률은?", "6.2%", ["6.2%", "2.5%", "3.7%"]],
+   ["반품의 가장 큰 원인은?", "펌프에서 내용물이 샘", ["펌프에서 내용물이 샘", "유통기한이 지남", "다른 상품이 배송됨"]]
+  ]
+ },
+ "write": {
+  "task": "최근 반품이 늘었어요. 반품의 주된 원인을 짧게 정리하고, 물류팀에 확인을 부탁하는 메일을 써 보세요.",
+  "en": "Write a short email to the logistics team explaining the main cause of recent returns and asking them to check it.",
+  "hints": ["return rate", "account for ...", "Could you look into ...?"],
+  "model": "Hi Daniel,\n\nOur return rate for the cleansing oil has doubled this month. Broken caps account for about half of the returns, and most customers said the item arrived damaged. Could you look into whether the boxes are being packed properly at the warehouse? Please let me know what you find.\n\nThanks,\nMinsu"
+ }
+}
