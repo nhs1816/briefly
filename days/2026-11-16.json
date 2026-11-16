@@ -1,0 +1,55 @@
+{
+ "date": "2026-11-16",
+ "theme": "출장 준비",
+ "en": "Business Trips",
+ "words": [
+  ["itinerary", "n", "여행 일정표", "I'll send you the itinerary for the Tokyo trip by Friday.", "도쿄 출장 일정표를 금요일까지 보내 드릴게요."],
+  ["reimburse", "v", "(비용을) 돌려주다, 정산하다", "The company will reimburse your taxi fares.", "회사가 택시비를 정산해 줄 거예요."],
+  ["accommodation", "n", "숙소", "Accommodation near the venue is already booked.", "행사장 근처 숙소는 이미 예약돼 있어요."],
+  ["receipt", "n", "영수증", "Please keep all your receipts for the expense report.", "경비 보고서를 위해 영수증을 모두 챙겨 주세요."],
+  ["per diem", "n", "일당, 하루 출장비", "The per diem covers meals and local transportation.", "일당에는 식비와 현지 교통비가 포함돼요."]
+ ],
+ "exprs": [
+  ["출장", "I'll be out of the office from ... to ...", "…부터 …까지 자리를 비워요", "I'll be out of the office from Monday to Wednesday for a trip to Osaka.", ["I'll be ___ of the office from Monday to Wednesday.", "out", ["out", "off", "away"]]],
+  ["이메일", "Could you book ... for me?", "…를 예약해 주실 수 있을까요?", "Could you book a hotel near the convention center for me?", ["Could you ___ a hotel near the convention center for me?", "book", ["book", "make", "take"]]],
+  ["보고", "submit an expense report", "경비 보고서를 제출하다", "Please submit an expense report within a week of your return.", ["Please ___ an expense report within a week.", "submit", ["submit", "deliver", "hand"]]]
+ ],
+ "listen": {
+  "title": "출장 일정 확인",
+  "lines": [
+   ["A", "Hi Minsu, are you all set for the trip to Singapore next week?"],
+   ["B", "Almost. I have my flight, but I still need a hotel."],
+   ["A", "I can book one near the client's office for you."],
+   ["B", "That would be great. I'll be out of the office from Tuesday to Friday."],
+   ["A", "Okay. Don't forget to keep your receipts for the expense report."],
+   ["B", "Got it. Could you also send me the itinerary when it's ready?"]
+  ],
+  "qs": [
+   ["민수가 아직 준비하지 못한 것은?", "호텔", ["호텔", "항공권", "비자"]],
+   ["민수는 언제 자리를 비우나요?", "화요일부터 금요일까지", ["화요일부터 금요일까지", "월요일부터 수요일까지", "다음 달 내내"]]
+  ],
+  "dict": "Almost. I have my flight, but I still need a hotel."
+ },
+ "read": {
+  "kind": "Memo",
+  "title": "Updated Business Travel Policy",
+  "text": "To all staff,\n\nStarting next month, all business trips must be approved by your team leader at least two weeks in advance. Once your trip is approved, the travel desk will book your flights and accommodation and send you a full itinerary.\n\nDuring the trip, you will receive a per diem of 60 dollars for meals and local transportation. Hotel costs are paid directly by the company.\n\nAfter you return, please submit an expense report with original receipts within seven days. Costs without receipts cannot be reimbursed.\n\nThank you for your cooperation.\n\nHR Team",
+  "gloss": {
+   "approved": "승인된",
+   "in advance": "미리",
+   "travel desk": "출장 지원 담당",
+   "original": "원본의",
+   "cooperation": "협조"
+  },
+  "qs": [
+   ["출장은 언제까지 승인을 받아야 하나요?", "최소 2주 전", ["최소 2주 전", "최소 1주 전", "출발 전날"]],
+   ["영수증이 없는 비용은 어떻게 되나요?", "정산받을 수 없다", ["정산받을 수 없다", "절반만 정산된다", "팀장이 대신 낸다"]]
+  ]
+ },
+ "write": {
+  "task": "다음 주 부산 출장이 잡혔어요. 총무팀에 출장 기간을 알리고, 행사장 근처 호텔 예약을 부탁하는 이메일을 써 보세요.",
+  "en": "Write an email to the admin team telling them your trip dates and asking them to book a hotel near the venue.",
+  "hints": ["I'll be out of the office from ... to ...", "Could you book ... for me?", "accommodation"],
+  "model": "Hi Jiyoung,\n\nI'm going on a business trip to Busan next week for the beauty fair. I'll be out of the office from Wednesday to Friday. Could you book a hotel near the BEXCO venue for me? A single room for two nights would be fine. Please let me know if you need any other details.\n\nThanks,\nMinsu"
+ }
+}

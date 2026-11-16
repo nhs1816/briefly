@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-17",
+ "track": "ecom",
+ "theme": "셀러 지원팀 문의",
+ "en": "Seller Support",
+ "words": [
+  [
+   "case",
+   "n",
+   "(문의) 케이스, 건",
+   "I opened a case with Seller Support this morning.",
+   "오늘 아침 셀러 지원팀에 케이스를 열었어요."
+  ],
+  [
+   "suppressed",
+   "adj",
+   "(리스팅이) 노출 중지된",
+   "Our listing was suppressed because the main image has a white border.",
+   "메인 이미지에 흰 테두리가 있어서 리스팅이 노출 중지됐어요."
+  ],
+  [
+   "escalate",
+   "v",
+   "상급 부서로 올리다",
+   "If they don't solve it, we'll escalate the case.",
+   "해결이 안 되면 케이스를 상급 부서로 올릴 거예요."
+  ]
+ ],
+ "exprs": [
+  [
+   "문의",
+   "I'm writing regarding ...",
+   "…와 관련해 문의드립니다",
+   "I'm writing regarding our suppressed listing for the vitamin C serum.",
+   [
+    "I'm writing ___ our suppressed listing.",
+    "regarding",
+    [
+     "regarding",
+     "regard",
+     "regarded"
+    ]
+   ]
+  ],
+  [
+   "문의",
+   "Could you look into ...?",
+   "…를 확인해 주실 수 있을까요?",
+   "Could you look into why our inventory is not showing as available?",
+   [
+    "Could you look ___ why our inventory is not showing?",
+    "into",
+    [
+     "into",
+     "up",
+     "over"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Case ID 1234567: Suppressed Listing",
+  "text": "Hello Seller Support,\n\nI'm writing regarding our listing for the vitamin C serum. It has been suppressed since Monday, and the reason shown is \"missing safety information.\"\n\nWe uploaded the safety data sheet on Tuesday, but the listing is still not active. Could you look into this issue? This is our best-selling product, and we are losing sales every day.\n\nIf this case needs to be escalated, please let us know what other documents are required.\n\nThank you,\nMinsu Lee",
+  "gloss": {
+   "safety data sheet": "물질안전보건자료(SDS)",
+   "active": "활성화된",
+   "best-selling": "가장 잘 팔리는",
+   "required": "필요한"
+  },
+  "qs": [
+   [
+    "리스팅이 노출 중지된 이유로 표시된 것은?",
+    "안전 정보 누락",
+    [
+     "안전 정보 누락",
+     "가격 오류",
+     "이미지 규정 위반"
+    ]
+   ],
+   [
+    "안전 자료는 언제 올렸나요?",
+    "화요일",
+    [
+     "화요일",
+     "월요일",
+     "수요일"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "FBA 창고에 입고된 재고가 2주째 '입고 중'으로만 표시돼요. 셀러 지원팀에 상황을 설명하고 확인을 요청하는 문의를 써 보세요.",
+  "en": "Write a message to Seller Support about inventory that has shown 'receiving' for two weeks and ask them to check it.",
+  "hints": [
+   "I'm writing regarding ...",
+   "Could you look into ...?",
+   "case"
+  ],
+  "model": "Hello Seller Support,\n\nI'm writing regarding shipment FBA17XK9 of our cica toner pads. It was delivered to the warehouse two weeks ago, but it is still showing as \"receiving.\" Could you look into this? Our stock is running low.\n\nThank you,\nMinsu Lee"
+ }
+}

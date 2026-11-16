@@ -1,0 +1,54 @@
+{
+ "date": "2026-11-17",
+ "theme": "휴가 신청",
+ "en": "Time Off",
+ "words": [
+  ["annual leave", "n", "연차 휴가", "I'd like to use two days of annual leave next month.", "다음 달에 연차 이틀을 쓰고 싶어요."],
+  ["cover", "v", "(업무를) 대신 맡다", "Jisoo will cover my tasks while I'm away.", "제가 없는 동안 지수 씨가 제 일을 맡아 줄 거예요."],
+  ["urgent", "adj", "급한", "For urgent issues, please call my mobile.", "급한 일이 있으면 제 휴대폰으로 전화 주세요."],
+  ["approve", "v", "승인하다", "My manager approved my vacation request this morning.", "오늘 아침 팀장님이 제 휴가 신청을 승인했어요."],
+  ["workload", "n", "업무량", "The workload is lighter after the year-end audit.", "연말 감사가 끝나면 업무량이 줄어요."]
+ ],
+ "exprs": [
+  ["요청", "I'd like to request ... off.", "…에 휴가를 내고 싶어요", "I'd like to request next Thursday and Friday off.", ["I'd like to ___ next Friday off.", "request", ["request", "ask", "apply"]]],
+  ["인수인계", "... will be handling ... while I'm away.", "제가 없는 동안 …가 …를 맡아요", "Jisoo will be handling client emails while I'm away.", ["Jisoo will be handling client emails ___ I'm away.", "while", ["while", "during", "for"]]],
+  ["부재", "I'll have limited access to email.", "이메일 확인이 어려울 거예요", "I'll have limited access to email during my vacation.", ["I'll have ___ access to email during my vacation.", "limited", ["limited", "limit", "limiting"]]]
+ ],
+ "listen": {
+  "title": "휴가 신청하기",
+  "lines": [
+   ["A", "Do you have a minute? I'd like to request a few days off."],
+   ["B", "Sure. When are you thinking?"],
+   ["A", "From December 23rd to the 27th. I want to visit my family."],
+   ["B", "That should be fine. The workload is usually lighter then."],
+   ["A", "Thanks. Jisoo will be handling my client emails while I'm away."],
+   ["B", "Great. Just submit the request in the system, and I'll approve it today."]
+  ],
+  "qs": [
+   ["휴가를 내는 이유는?", "가족을 만나러 가려고", ["가족을 만나러 가려고", "이사를 하려고", "건강 검진 때문에"]],
+   ["팀장이 마지막에 하라고 한 것은?", "시스템에 신청서를 올리기", ["시스템에 신청서를 올리기", "지수에게 메일 보내기", "날짜를 바꾸기"]]
+  ],
+  "dict": "The workload is usually lighter then."
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Out of Office: December 23-27",
+  "text": "Hi team,\n\nJust a reminder that I'll be on annual leave from December 23rd to the 27th and will be back in the office on Monday, December 30th.\n\nWhile I'm away, Jisoo will be handling all client emails and sample requests. Daniel will cover the weekly sales report. I've shared a handover document in our team folder with the status of each project.\n\nI'll have limited access to email during this time. For anything urgent, please call my mobile, but I'd appreciate it if you could contact Jisoo first.\n\nThanks for your support, and happy holidays!\n\nBest,\nMinsu",
+  "gloss": {
+   "reminder": "다시 알려 드림",
+   "handover document": "인수인계 문서",
+   "status": "진행 상황",
+   "I'd appreciate it if": "…해 주시면 감사하겠어요"
+  },
+  "qs": [
+   ["민수가 사무실에 돌아오는 날은?", "12월 30일 월요일", ["12월 30일 월요일", "12월 27일 금요일", "1월 2일 목요일"]],
+   ["주간 매출 보고서는 누가 맡나요?", "Daniel", ["Daniel", "Jisoo", "민수"]]
+  ]
+ },
+ "write": {
+  "task": "다음 주 금요일에 연차를 쓰고 싶어요. 팀장님께 휴가를 요청하고, 누가 업무를 대신 맡는지 알리는 이메일을 써 보세요.",
+  "en": "Write an email to your manager requesting next Friday off and explaining who will cover your work.",
+  "hints": ["I'd like to request ... off.", "... will be handling ... while I'm away.", "urgent"],
+  "model": "Hi Sarah,\n\nI'd like to request next Friday, November 28th, off as annual leave. I'll finish the monthly report by Thursday. Jisoo will be handling any client emails while I'm away. If something urgent comes up, you can reach me on my mobile.\n\nThank you,\nMinsu"
+ }
+}

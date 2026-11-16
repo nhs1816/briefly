@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-17",
+ "track": "mkt",
+ "theme": "브랜드 가이드 공유",
+ "en": "Brand Guidelines",
+ "words": [
+  [
+   "logo placement",
+   "n",
+   "로고 위치",
+   "Please check the logo placement before you post.",
+   "게시하기 전에 로고 위치를 확인해 주세요."
+  ],
+  [
+   "consistent",
+   "adj",
+   "일관된",
+   "Our visuals should be consistent across all channels.",
+   "모든 채널에서 비주얼이 일관돼야 해요."
+  ],
+  [
+   "prohibited",
+   "adj",
+   "금지된",
+   "Medical claims are prohibited in our captions.",
+   "캡션에 의학적 효능 표현은 금지예요."
+  ]
+ ],
+ "exprs": [
+  [
+   "가이드",
+   "Please refer to ... for ...",
+   "…는 …를 참고해 주세요",
+   "Please refer to the brand guide for color codes.",
+   [
+    "Please ___ to the brand guide for color codes.",
+    "refer",
+    [
+     "refer",
+     "check",
+     "see"
+    ]
+   ]
+  ],
+  [
+   "가이드",
+   "Make sure (that) ...",
+   "꼭 …하도록 해 주세요",
+   "Make sure the product name is spelled correctly.",
+   [
+    "Make ___ the product name is spelled correctly.",
+    "sure",
+    [
+     "sure",
+     "safe",
+     "right"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Guide",
+  "title": "Brand Guide for Creator Partners",
+  "text": "Thank you for working with Lumiere Skin. Please refer to this guide when you create content for us.\n\nKeep our look consistent: use natural light and soft pink or white backgrounds. Make sure our logo is visible in the first three seconds of every video.\n\nPlease tag @lumiereskin and use #LumiereGlow in every post.\n\nMedical claims such as \"cures acne\" or \"removes wrinkles\" are prohibited. Instead, talk about how the product feels and how your skin looks after using it.",
+  "gloss": {
+   "visible": "잘 보이는",
+   "backgrounds": "배경",
+   "cures": "치료하다",
+   "removes": "없애다"
+  },
+  "qs": [
+   [
+    "영상에서 로고는 언제 보여야 하나요?",
+    "처음 3초 안에",
+    [
+     "처음 3초 안에",
+     "마지막 장면에",
+     "설명란에만"
+    ]
+   ],
+   [
+    "금지된 표현의 예는?",
+    "여드름을 치료한다",
+    [
+     "여드름을 치료한다",
+     "촉촉하게 느껴진다",
+     "피부가 환해 보인다"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "새로 협업하는 인플루언서에게 브랜드 가이드를 보내요. 가이드를 참고해 달라고 하고, 해시태그와 금지 표현을 꼭 지켜 달라고 메일을 써 보세요.",
+  "en": "Write an email sending the brand guide to a new influencer and reminding them about hashtags and prohibited claims.",
+  "hints": [
+   "Please refer to ... for ...",
+   "Make sure (that) ...",
+   "prohibited"
+  ],
+  "model": "Hi Emma,\n\nWe're excited to work with you! I've attached our brand guide. Please refer to it for colors and logo placement. Make sure you include #LumiereGlow in your post. Also, medical claims like \"cures acne\" are prohibited.\n\nBest,\nMinsu"
+ }
+}

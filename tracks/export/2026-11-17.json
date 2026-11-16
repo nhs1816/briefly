@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-17",
+ "track": "export",
+ "theme": "클레임 처리",
+ "en": "Handling Claims",
+ "words": [
+  [
+   "damaged",
+   "adj",
+   "파손된",
+   "Twenty cartons arrived damaged at the warehouse.",
+   "20박스가 파손된 채로 창고에 도착했어요."
+  ],
+  [
+   "compensation",
+   "n",
+   "보상",
+   "We will offer compensation for the broken items.",
+   "파손된 제품에 대해 보상해 드릴게요."
+  ],
+  [
+   "investigate",
+   "v",
+   "조사하다",
+   "Our logistics team will investigate the cause.",
+   "물류팀이 원인을 조사할 거예요."
+  ]
+ ],
+ "exprs": [
+  [
+   "클레임",
+   "We sincerely apologize for ...",
+   "…에 대해 진심으로 사과드립니다",
+   "We sincerely apologize for the damaged shipment.",
+   [
+    "We sincerely apologize ___ the damaged shipment.",
+    "for",
+    [
+     "for",
+     "at",
+     "to"
+    ]
+   ]
+  ],
+  [
+   "보상",
+   "We will issue a credit note for ...",
+   "…에 대해 크레디트 노트를 발행할게요",
+   "We will issue a credit note for the 200 broken bottles.",
+   [
+    "We will ___ a credit note for the broken bottles.",
+    "issue",
+    [
+     "issue",
+     "make",
+     "open"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Re: Damaged Goods in Order #4471",
+  "text": "Dear Mr. Haddad,\n\nWe sincerely apologize for the damaged toner bottles in order #4471. Thank you for sending the photos so quickly.\n\nOur logistics team is investigating the cause. It appears that the pallets were not wrapped properly at the port.\n\nAs compensation, we will issue a credit note for the 240 damaged bottles, which will be deducted from your next invoice. We will also use stronger outer cartons from the next shipment.\n\nPlease let us know if this solution works for you.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "pallets": "팔레트(화물 받침)",
+   "wrapped": "포장된",
+   "deducted": "차감된",
+   "outer cartons": "외박스"
+  },
+  "qs": [
+   [
+    "파손 원인으로 보이는 것은?",
+    "항구에서 팔레트 포장이 제대로 안 됐다",
+    [
+     "항구에서 팔레트 포장이 제대로 안 됐다",
+     "공장에서 병이 불량이었다",
+     "트럭 사고가 났다"
+    ]
+   ],
+   [
+    "보상 방법은?",
+    "다음 인보이스에서 차감",
+    [
+     "다음 인보이스에서 차감",
+     "현금 환불",
+     "새 제품 즉시 발송"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "바이어가 일부 제품이 새는 채로 도착했다고 클레임을 걸었어요. 사과하고, 원인을 조사 중이며 크레디트 노트로 보상하겠다고 답장해 보세요.",
+  "en": "Reply to a buyer's claim about leaking products, apologize, and offer a credit note.",
+  "hints": [
+   "We sincerely apologize for ...",
+   "We will issue a credit note for ...",
+   "investigate"
+  ],
+  "model": "Dear Ms. Lopez,\n\nWe sincerely apologize for the leaking serum bottles in your last shipment. Our quality team is investigating the cause now. We will issue a credit note for the 150 affected units, and we will check the caps more carefully from now on.\n\nBest regards,\nMinsu Lee"
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-16",
+ "track": "mkt",
+ "theme": "대행사와 소통하기",
+ "en": "Agency Communication",
+ "words": [
+  [
+   "deliverable",
+   "n",
+   "결과물, 산출물",
+   "The agency's first deliverable is a mood board.",
+   "대행사의 첫 결과물은 무드보드예요."
+  ],
+  [
+   "revision",
+   "n",
+   "수정",
+   "The contract includes two rounds of revisions.",
+   "계약에는 두 차례 수정이 포함돼 있어요."
+  ],
+  [
+   "tone and manner",
+   "phr",
+   "톤앤매너, 표현 분위기",
+   "The copy doesn't match our brand's tone and manner.",
+   "카피가 우리 브랜드 톤앤매너와 맞지 않아요."
+  ]
+ ],
+ "exprs": [
+  [
+   "요청",
+   "Could you take another pass at ...?",
+   "…를 한 번 더 손봐 주실 수 있을까요?",
+   "Could you take another pass at the headline?",
+   [
+    "Could you take another ___ at the headline?",
+    "pass",
+    [
+     "pass",
+     "pace",
+     "path"
+    ]
+   ]
+  ],
+  [
+   "일정",
+   "What's the turnaround time for ...?",
+   "…는 얼마나 걸리나요?",
+   "What's the turnaround time for the video edits?",
+   [
+    "What's the ___ time for the video edits?",
+    "turnaround",
+    [
+     "turnaround",
+     "turnover",
+     "turndown"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Feedback on Holiday Campaign Visuals",
+  "text": "Hi Chloe,\n\nThank you for the first draft of the holiday campaign visuals. The layout looks great, and the team loves the snow theme.\n\nHowever, the colors feel a bit too dark for our brand's tone and manner. Could you take another pass at the key visual using lighter pink tones? We'd also like the product to be larger in the Instagram version.\n\nThis will be our first round of revisions. What's the turnaround time for these changes? We need the final deliverables by December 1st.\n\nBest,\nMinsu",
+  "gloss": {
+   "draft": "초안",
+   "layout": "배치",
+   "key visual": "메인 이미지",
+   "final": "최종의"
+  },
+  "qs": [
+   [
+    "민수가 지적한 문제는?",
+    "색이 너무 어둡다",
+    [
+     "색이 너무 어둡다",
+     "글자가 너무 작다",
+     "눈 테마가 어색하다"
+    ]
+   ],
+   [
+    "최종 결과물 마감일은?",
+    "12월 1일",
+    [
+     "12월 1일",
+     "11월 30일",
+     "12월 15일"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "광고 대행사가 보낸 영상 초안을 받았어요. 좋은 점을 먼저 말하고, 자막을 더 짧게 수정해 달라며 소요 기간을 묻는 메일을 써 보세요.",
+  "en": "Write an email to an agency praising their video draft, asking for shorter captions, and asking about the turnaround time.",
+  "hints": [
+   "Could you take another pass at ...?",
+   "What's the turnaround time for ...?",
+   "revision"
+  ],
+  "model": "Hi Ryan,\n\nThanks for the video draft. The music and pacing are excellent. Could you take another pass at the captions and make them shorter? Viewers often watch without sound, so short text works better. What's the turnaround time for this revision?\n\nBest,\nMinsu"
+ }
+}

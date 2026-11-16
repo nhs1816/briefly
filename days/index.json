@@ -5,5 +5,7 @@
  {"date": "2026-11-12", "theme": "발표하기", "en": "Presentations", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
  {"date": "2026-11-13", "theme": "가격 협상", "en": "Negotiation", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
  {"date": "2026-11-14", "theme": "피드백 주고받기", "en": "Feedback", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
- {"date": "2026-11-15", "theme": "화상회의", "en": "Video Calls", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]}
+ {"date": "2026-11-15", "theme": "화상회의", "en": "Video Calls", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
+ {"date": "2026-11-16", "theme": "출장 준비", "en": "Business Trips", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
+ {"date": "2026-11-17", "theme": "휴가 신청", "en": "Time Off", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]}
 ]

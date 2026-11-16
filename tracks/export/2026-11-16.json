@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-16",
+ "track": "export",
+ "theme": "단가 협상",
+ "en": "Price Negotiation",
+ "words": [
+  [
+   "unit price",
+   "n",
+   "단가",
+   "The buyer asked us to lower the unit price for orders over 10,000 pieces.",
+   "바이어가 1만 개 이상 주문에 대해 단가를 낮춰 달라고 했어요."
+  ],
+  [
+   "margin",
+   "n",
+   "이윤, 마진",
+   "A five percent discount would cut our margin too much.",
+   "5% 할인은 우리 마진을 너무 많이 줄여요."
+  ],
+  [
+   "counteroffer",
+   "n",
+   "역제안",
+   "We sent a counteroffer of 2.40 dollars per unit.",
+   "개당 2.40달러로 역제안을 보냈어요."
+  ]
+ ],
+ "exprs": [
+  [
+   "협상",
+   "We can offer ... if you ...",
+   "…해 주시면 …를 드릴 수 있어요",
+   "We can offer a three percent discount if you increase the order to 20,000 units.",
+   [
+    "We can offer a discount ___ you increase the order.",
+    "if",
+    [
+     "if",
+     "unless",
+     "although"
+    ]
+   ]
+  ],
+  [
+   "협상",
+   "meet you halfway",
+   "절충하다, 중간에서 맞추다",
+   "We can't accept 2.20 dollars, but we can meet you halfway at 2.35.",
+   [
+    "We can meet you ___ at 2.35 dollars.",
+    "halfway",
+    [
+     "halfway",
+     "middle",
+     "half"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Re: Price Request for Ceramide Cream",
+  "text": "Dear Ms. Tan,\n\nThank you for your order plan for the ceramide cream. We understand that your target unit price is 2.20 dollars. Unfortunately, this price would leave us with almost no margin because of rising packaging costs.\n\nAs a counteroffer, we can offer 2.35 dollars per unit if you increase the first order to 15,000 pieces. We believe this meets you halfway and still allows you a healthy retail margin.\n\nThis price is valid until the end of this month.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "target": "목표의",
+   "packaging costs": "포장재 비용",
+   "retail margin": "소매 마진",
+   "valid": "유효한"
+  },
+  "qs": [
+   [
+    "민수가 역제안한 단가는?",
+    "2.35달러",
+    [
+     "2.35달러",
+     "2.20달러",
+     "2.40달러"
+    ]
+   ],
+   [
+    "역제안의 조건은?",
+    "첫 주문을 15,000개로 늘리기",
+    [
+     "첫 주문을 15,000개로 늘리기",
+     "선금 전액 지급",
+     "독점 계약 체결"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "바이어가 단가를 10% 내려 달라고 했어요. 그대로는 어렵다고 정중히 말하고, 주문 수량을 늘리면 4% 할인해 주겠다고 역제안하는 메일을 써 보세요.",
+  "en": "Write an email declining a 10% price cut and offering a 4% discount for a larger order.",
+  "hints": [
+   "We can offer ... if you ...",
+   "meet you halfway",
+   "margin"
+  ],
+  "model": "Dear Mr. Kim,\n\nThank you for your proposal. Unfortunately, a 10% discount is difficult for us because of our current margin. However, we can offer a 4% discount if you increase the order to 12,000 units. We hope this meets you halfway. Please let me know your thoughts.\n\nBest regards,\nMinsu Lee"
+ }
+}

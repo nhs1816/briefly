@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-16",
+ "track": "ecom",
+ "theme": "A+ 콘텐츠 만들기",
+ "en": "A+ Content",
+ "words": [
+  [
+   "module",
+   "n",
+   "(A+ 콘텐츠) 모듈, 구성 칸",
+   "Let's add a comparison chart module at the bottom.",
+   "맨 아래에 비교표 모듈을 추가해요."
+  ],
+  [
+   "highlight",
+   "v",
+   "강조하다",
+   "The first image should highlight the key ingredient.",
+   "첫 이미지는 핵심 성분을 강조해야 해요."
+  ],
+  [
+   "guideline",
+   "n",
+   "가이드라인, 규정",
+   "Amazon's guidelines don't allow price claims in A+ content.",
+   "아마존 가이드라인은 A+ 콘텐츠에 가격 문구를 허용하지 않아요."
+  ]
+ ],
+ "exprs": [
+  [
+   "콘텐츠",
+   "Let's swap ... for ...",
+   "…를 …로 바꿔요",
+   "Let's swap the lifestyle photo for a texture shot.",
+   [
+    "Let's swap the lifestyle photo ___ a texture shot.",
+    "for",
+    [
+     "for",
+     "of",
+     "at"
+    ]
+   ]
+  ],
+  [
+   "검토",
+   "It was rejected for ...",
+   "…때문에 반려됐어요",
+   "Our A+ content was rejected for using the word \"best.\"",
+   [
+    "Our A+ content was rejected ___ using the word \"best.\"",
+    "for",
+    [
+     "for",
+     "at",
+     "to"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "A+ Content Update for Snail Essence",
+  "text": "Team,\n\nOur new A+ content for the snail essence was rejected for including a customer review quote. Amazon's guidelines do not allow reviews or quotes in A+ modules.\n\nPlease remove the quote from the third module and swap it for an ingredient image that highlights the 92% snail mucin. We should also add a comparison chart so shoppers can see the differences between our three essences.\n\nPlease send the revised design by Thursday so we can resubmit it before the holiday sale.\n\nThanks,\nMinsu",
+  "gloss": {
+   "rejected": "반려된",
+   "quote": "인용문",
+   "shoppers": "쇼핑객",
+   "resubmit": "다시 제출하다"
+  },
+  "qs": [
+   [
+    "A+ 콘텐츠가 반려된 이유는?",
+    "고객 리뷰 인용문을 넣어서",
+    [
+     "고객 리뷰 인용문을 넣어서",
+     "가격을 표시해서",
+     "이미지가 흐려서"
+    ]
+   ],
+   [
+    "새로 추가할 모듈은?",
+    "비교표",
+    [
+     "비교표",
+     "동영상",
+     "FAQ"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "디자이너에게 A+ 콘텐츠 수정 요청 메시지를 써요. 두 번째 모듈의 사진을 성분 이미지로 바꾸고, 수요일까지 보내 달라고 해 보세요.",
+  "en": "Write a message asking the designer to replace the photo in the second module with an ingredient image by Wednesday.",
+  "hints": [
+   "Let's swap ... for ...",
+   "highlight",
+   "module"
+  ],
+  "model": "Hi Yuna,\n\nThanks for the A+ draft. One change: let's swap the photo in the second module for an ingredient image that highlights the centella extract. Could you send the revised version by Wednesday?\n\nThanks,\nMinsu"
+ }
+}
