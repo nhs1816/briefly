@@ -1,0 +1,37 @@
+{
+ "date": "2026-11-18",
+ "track": "mkt",
+ "theme": "캠페인 브리프 작성",
+ "en": "Campaign Briefs",
+ "words": [
+  ["objective", "n", "목표", "The main objective of this campaign is brand awareness.", "이번 캠페인의 주된 목표는 브랜드 인지도예요."],
+  ["target audience", "n", "타깃 고객층", "Our target audience is women in their twenties with oily skin.", "타깃 고객층은 지성 피부인 20대 여성이에요."],
+  ["key message", "n", "핵심 메시지", "Every video should deliver the same key message.", "모든 영상이 같은 핵심 메시지를 전해야 해요."]
+ ],
+ "exprs": [
+  ["협업", "in line with", "…에 맞게, …와 일치하게", "All captions should be in line with our brand voice.", ["The content should be in ___ with our brand tone.", "line", ["line", "row", "order"]]],
+  ["일정", "no later than", "늦어도 …까지", "Please submit the first draft no later than Friday.", ["Please send the draft no ___ than Friday.", "later", ["later", "late", "latest"]]]
+ ],
+ "read": {
+  "kind": "Guide",
+  "title": "Campaign Brief: Calm Skin Toner Launch",
+  "text": "Objective: Increase awareness of our new Calm Skin Toner among first-time buyers.\n\nTarget audience: Women aged 20 to 30 in the US with sensitive skin.\n\nKey message: Gentle enough for daily use, even on red and irritated skin.\n\nDeliverables: One 30-second Reel and three Stories per creator. Please show the product on bare skin, and keep the tone calm and honest, in line with our brand guide.\n\nTimeline: Submit drafts no later than December 5. Posts go live from December 10.",
+  "gloss": {
+   "awareness": "인지도",
+   "sensitive skin": "민감성 피부",
+   "irritated": "자극받은, 예민해진",
+   "bare skin": "맨 피부",
+   "go live": "게시되다, 공개되다"
+  },
+  "qs": [
+   ["크리에이터 한 명이 만들어야 하는 콘텐츠는?", "릴스 1개와 스토리 3개", ["릴스 1개와 스토리 3개", "릴스 3개와 스토리 1개", "피드 게시물 2개"]],
+   ["초안 제출 마감일은?", "12월 5일", ["12월 5일", "12월 10일", "12월 3일"]]
+  ]
+ },
+ "write": {
+  "task": "인플루언서에게 보낼 캠페인 브리프 요약을 써요. 캠페인 목표, 핵심 메시지, 초안 마감일을 짧게 정리해 보세요.",
+  "en": "Write a short campaign brief summary for influencers, including the objective, key message, and draft deadline.",
+  "hints": ["objective", "key message", "no later than"],
+  "model": "Hi Emma,\n\nHere is a quick summary of our campaign brief. The objective is to introduce our new sun cushion to first-time buyers. The key message is \"light coverage with all-day sun protection.\" Please keep the tone in line with our brand guide and send your draft no later than November 28.\n\nThanks,\nMinsu"
+ }
+}

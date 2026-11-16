@@ -1,0 +1,56 @@
+{
+ "date": "2026-11-18",
+ "theme": "신입 온보딩",
+ "en": "Onboarding",
+ "words": [
+  ["orientation", "n", "오리엔테이션, 입문 교육", "The orientation session starts at nine on Monday.", "오리엔테이션은 월요일 9시에 시작해요."],
+  ["mentor", "n", "멘토, 업무를 이끌어 주는 선배", "Your mentor will help you during your first month.", "첫 한 달 동안 멘토가 도와줄 거예요."],
+  ["familiarize", "v", "익숙하게 하다, 익히다", "Please take time to familiarize yourself with our products.", "시간을 내서 우리 제품을 익혀 두세요."],
+  ["handbook", "n", "안내서, 핸드북", "You can find the leave policy in the employee handbook.", "휴가 규정은 직원 안내서에서 찾을 수 있어요."],
+  ["probation", "n", "수습 기간", "New employees have a three-month probation period.", "신입 직원은 3개월 수습 기간이 있어요."]
+ ],
+ "exprs": [
+  ["인사", "Welcome aboard!", "함께하게 된 걸 환영해요!", "Welcome aboard! We're glad to have you on the team.", ["Welcome ___! We're glad you joined us.", "aboard", ["aboard", "abroad", "along"]]],
+  ["이메일", "Don't hesitate to reach out.", "언제든 편하게 연락 주세요.", "If you have any questions, don't hesitate to reach out.", ["Don't ___ to reach out if you need help.", "hesitate", ["hesitate", "doubt", "worry"]]],
+  ["업무", "get up to speed", "(업무를) 빨리 파악하다", "It usually takes a few weeks to get up to speed.", ["It takes time to get up to ___ on a new job.", "speed", ["speed", "pace", "rate"]]]
+ ],
+ "listen": {
+  "title": "첫 출근 날 멘토와의 대화",
+  "lines": [
+   ["A", "Good morning, Jisoo. Welcome aboard! I'm Daniel, your mentor."],
+   ["B", "Nice to meet you, Daniel. I'm a little nervous today."],
+   ["A", "That's normal. This morning you'll have orientation with HR."],
+   ["B", "Okay. What should I do after that?"],
+   ["A", "After lunch, I'll show you our sales system and introduce you to the team."],
+   ["B", "Great. Is there anything I should read first?"],
+   ["A", "Please look through the employee handbook this week. Don't hesitate to reach out if you have questions."]
+  ],
+  "qs": [
+   ["지수가 오늘 오전에 하는 일은?", "인사팀과 오리엔테이션", ["인사팀과 오리엔테이션", "판매 시스템 교육", "팀원 소개"]],
+   ["이번 주 안에 읽어야 할 것은?", "직원 안내서", ["직원 안내서", "판매 보고서", "제품 카탈로그"]]
+  ],
+  "dict": "What should I do after that?"
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Welcome to the Global Sales Team",
+  "text": "Hi Jisoo,\n\nWelcome aboard! We are excited to have you join the Global Sales Team at Lumina Cosmetics.\n\nYour first week will focus on orientation and training. On Monday morning, HR will explain company policies and help you set up your laptop and email account. In the afternoon, you will meet Daniel, who will be your mentor for the next three months.\n\nFrom Tuesday to Thursday, please familiarize yourself with our main product lines and the export process. Daniel will also invite you to our weekly team meeting so you can see how we work with overseas partners.\n\nOn Friday, we will have a short check-in to see how you are doing. We know it takes time to get up to speed, so don't worry about learning everything at once.\n\nIf you need anything, don't hesitate to reach out.\n\nBest regards,\nSarah Kim\nTeam Leader",
+  "gloss": {
+   "policies": "규정, 정책",
+   "set up": "설정하다, 준비하다",
+   "product lines": "제품군",
+   "overseas partners": "해외 거래처",
+   "check-in": "중간 점검(면담)"
+  },
+  "qs": [
+   ["월요일 오전에 인사팀이 해 주는 일은?", "회사 규정 설명과 노트북·메일 설정", ["회사 규정 설명과 노트북·메일 설정", "해외 거래처 소개", "주간 팀 회의 진행"]],
+   ["금요일에 있는 일정은?", "짧은 중간 점검 면담", ["짧은 중간 점검 면담", "제품 교육 시험", "멘토 배정"]]
+  ]
+ },
+ "write": {
+  "task": "다음 주에 신입 사원이 우리 팀에 들어와요. 멘토로서 환영 인사와 첫날 일정, 궁금한 점은 언제든 물어보라는 내용을 담아 짧은 이메일을 써 보세요.",
+  "en": "As a mentor, write a short email welcoming a new team member, explaining their first-day schedule and inviting them to ask questions.",
+  "hints": ["Welcome aboard!", "orientation", "Don't hesitate to reach out."],
+  "model": "Hi Jiwon,\n\nWelcome aboard! I'm Minsu, and I'll be your mentor for the next few months.\n\nOn your first day, you'll start with orientation at 9 a.m. After lunch, I'll introduce you to the team and show you our main tools. It may take a few weeks to get up to speed, so please take your time.\n\nIf you have any questions, don't hesitate to reach out.\n\nSee you on Monday,\nMinsu"
+ }
+}

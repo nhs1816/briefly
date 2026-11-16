@@ -1,0 +1,37 @@
+{
+ "date": "2026-11-18",
+ "track": "export",
+ "theme": "수출 서류 준비",
+ "en": "Export Documents",
+ "words": [
+  ["commercial invoice", "n", "상업 송장", "Please check the unit prices on the commercial invoice.", "상업 송장의 단가를 확인해 주세요."],
+  ["packing list", "n", "포장 명세서", "The packing list shows the number of cartons and their weight.", "포장 명세서에 박스 수와 무게가 나와 있어요."],
+  ["certificate of origin", "n", "원산지 증명서", "The buyer needs a certificate of origin to get a lower tariff.", "바이어가 낮은 관세를 받으려면 원산지 증명서가 필요해요."]
+ ],
+ "exprs": [
+  ["이메일", "As requested, ...", "요청하신 대로 …", "As requested, we have attached the shipping documents.", ["As ___, we have attached the documents.", "requested", ["requested", "requesting", "request"]]],
+  ["요청", "at your earliest convenience", "편하신 대로 빨리", "Please review the draft documents at your earliest convenience.", ["Please reply at your earliest ___.", "convenience", ["convenience", "comfort", "ease"]]]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Shipping Documents for Order #2047",
+  "text": "Dear Mr. Nguyen,\n\nAs requested, please find attached the draft shipping documents for Order #2047: the commercial invoice, the packing list, and the certificate of origin.\n\nCould you check the consignee name and address before we finalize them? Your customs broker mentioned that the address must match your import license exactly.\n\nOnce you confirm, we will send the original documents by courier, and scanned copies will follow by email. Please reply at your earliest convenience so that the goods can clear customs without delay.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "consignee": "수하인(물건 받는 사람)",
+   "finalize": "확정하다",
+   "customs broker": "관세사",
+   "import license": "수입 허가(증)",
+   "clear customs": "통관하다"
+  },
+  "qs": [
+   ["확정 전에 바이어에게 확인해 달라고 한 것은?", "수하인 이름과 주소", ["수하인 이름과 주소", "제품 단가", "선적 날짜"]],
+   ["서류 원본은 어떻게 보내나요?", "특송으로", ["특송으로", "이메일로만", "물건과 함께 컨테이너로"]]
+  ]
+ },
+ "write": {
+  "task": "해외 바이어가 선적 서류를 요청했어요. 상업 송장과 포장 명세서 초안을 첨부했다고 알리고, 내용 확인을 빨리 부탁하는 답장을 써 보세요.",
+  "en": "Reply to a buyer who asked for shipping documents: say you attached the draft invoice and packing list, and ask them to check them soon.",
+  "hints": ["As requested", "commercial invoice", "at your earliest convenience"],
+  "model": "Dear Ms. Park,\n\nAs requested, I have attached the draft commercial invoice and packing list for your order. Please check the product codes and quantities at your earliest convenience. Once you confirm, we will issue the final documents and the certificate of origin.\n\nBest regards,\nMinsu Lee"
+ }
+}

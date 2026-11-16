@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-18",
+ "track": "ecom",
+ "theme": "프로모션 준비",
+ "en": "Promotions",
+ "words": [
+  ["coupon", "n", "쿠폰", "We added a 15% coupon to our best-selling serum.", "가장 잘 팔리는 세럼에 15% 쿠폰을 붙였어요."],
+  ["Lightning Deal", "n", "라이트닝 딜(아마존 시간 한정 할인)", "Our sunscreen was selected for a Lightning Deal next week.", "우리 선크림이 다음 주 라이트닝 딜에 선정됐어요."],
+  ["sell-through", "n", "판매 소진(율)", "The deal had a sell-through of 85% in six hours.", "그 딜은 6시간 만에 85%가 팔렸어요."]
+ ],
+ "exprs": [
+  ["보고", "be eligible for", "…의 자격이 되다", "Only products with a 3.5-star rating are eligible for this deal.", ["This product is ___ for a Lightning Deal.", "eligible", ["eligible", "capable", "entitled"]]],
+  ["요청", "keep an eye on", "…을 계속 지켜보다", "Please keep an eye on our stock level during the sale.", ["Please keep an ___ on the sales during the deal.", "eye", ["eye", "look", "watch"]]]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "Black Friday Promotion Plan",
+  "text": "Team,\n\nOur Vitamin C serum is eligible for a Lightning Deal on Black Friday. The deal will run for six hours at a 30% discount. We will also add a 10% coupon to the toner from Thursday to Monday.\n\nBefore the event, please make sure FBA has at least 2,000 units in stock. During the deal, keep an eye on the sell-through and the ad budget every hour. If the serum sells out early, pause the related ads right away.\n\nAfter the promotion, we will compare sales and margin with last year.\n\nThanks,\nHana",
+  "gloss": {
+   "discount": "할인",
+   "in stock": "재고가 있는",
+   "sells out": "다 팔리다, 품절되다",
+   "pause": "일시 중지하다"
+  },
+  "qs": [
+   ["라이트닝 딜의 할인율은?", "30%", ["30%", "10%", "15%"]],
+   ["세럼이 일찍 품절되면 해야 할 일은?", "관련 광고를 바로 중지한다", ["관련 광고를 바로 중지한다", "쿠폰 할인율을 올린다", "재고를 추가 주문한다"]]
+  ]
+ },
+ "write": {
+  "task": "다음 주 아마존 프로모션을 앞두고 팀에 공지해요. 어떤 제품이 딜에 선정됐는지, 행사 중에 무엇을 지켜봐야 하는지 짧게 써 보세요.",
+  "en": "Write a short note to your team about next week's Amazon promotion: which product was selected and what to watch during the deal.",
+  "hints": ["Lightning Deal", "be eligible for", "keep an eye on"],
+  "model": "Hi team,\n\nGood news: our hyaluronic cream is eligible for a Lightning Deal next Tuesday. The deal will run for eight hours at a 25% discount. During the deal, please keep an eye on inventory and ad spending. If stock drops below 300 units, let me know right away.\n\nThanks,\nMinsu"
+ }
+}
