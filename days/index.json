@@ -8,5 +8,6 @@
  {"date": "2026-11-15", "theme": "화상회의", "en": "Video Calls", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
  {"date": "2026-11-16", "theme": "출장 준비", "en": "Business Trips", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
  {"date": "2026-11-17", "theme": "휴가 신청", "en": "Time Off", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
- {"date": "2026-11-18", "theme": "신입 온보딩", "en": "Onboarding", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]}
+ {"date": "2026-11-18", "theme": "신입 온보딩", "en": "Onboarding", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
+ {"date": "2026-11-19", "theme": "고객 불만 응대", "en": "Handling Complaints", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]}
 ]

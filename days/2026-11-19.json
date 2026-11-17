@@ -1,0 +1,191 @@
+{
+ "date": "2026-11-19",
+ "theme": "고객 불만 응대",
+ "en": "Handling Complaints",
+ "words": [
+  [
+   "complaint",
+   "n",
+   "불만, 항의",
+   "We received a complaint about the late delivery.",
+   "배송이 늦었다는 불만이 들어왔어요."
+  ],
+  [
+   "resolve",
+   "v",
+   "해결하다",
+   "We will resolve this issue as quickly as possible.",
+   "이 문제를 최대한 빨리 해결할게요."
+  ],
+  [
+   "faulty",
+   "adj",
+   "결함이 있는, 불량인",
+   "The customer returned the faulty product yesterday.",
+   "고객이 어제 불량 제품을 반품했어요."
+  ],
+  [
+   "upset",
+   "adj",
+   "속상한, 화가 난",
+   "She was upset because nobody answered her email.",
+   "아무도 메일에 답하지 않아서 그분이 화가 났어요."
+  ],
+  [
+   "priority",
+   "n",
+   "우선순위, 가장 먼저 할 일",
+   "Customer satisfaction is our top priority.",
+   "고객 만족이 저희의 최우선이에요."
+  ]
+ ],
+ "exprs": [
+  [
+   "전화",
+   "I'm sorry to hear that.",
+   "그런 일이 있으셨다니 죄송해요.",
+   "I'm sorry to hear that. Could you tell me what happened?",
+   [
+    "I'm sorry to ___ that your order arrived late.",
+    "hear",
+    [
+     "hear",
+     "listen",
+     "sound"
+    ]
+   ]
+  ],
+  [
+   "응대",
+   "Let me look into it.",
+   "제가 확인해 볼게요.",
+   "Let me look into it and get back to you by noon.",
+   [
+    "Let me look ___ it and call you back.",
+    "into",
+    [
+     "into",
+     "onto",
+     "among"
+    ]
+   ]
+  ],
+  [
+   "이메일",
+   "We apologize for the inconvenience.",
+   "불편을 드려 죄송합니다.",
+   "We apologize for the inconvenience and will send a new item today.",
+   [
+    "We ___ for the inconvenience this has caused.",
+    "apologize",
+    [
+     "apologize",
+     "sorry",
+     "regret"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "불량 제품 문의 전화",
+  "lines": [
+   [
+    "A",
+    "Thank you for calling customer support. How can I help you?"
+   ],
+   [
+    "B",
+    "Hi. I ordered a desk lamp last week, but it arrived with a faulty switch."
+   ],
+   [
+    "A",
+    "I'm sorry to hear that. Could you give me your order number?"
+   ],
+   [
+    "B",
+    "I sent it by email this morning. Honestly, I'm a bit upset because this is my second complaint."
+   ],
+   [
+    "A",
+    "I completely understand. Let me look into it right away."
+   ],
+   [
+    "B",
+    "Thank you. How long will it take to fix this?"
+   ],
+   [
+    "A",
+    "We'll send a new lamp tomorrow, and you don't need to return the old one."
+   ],
+   [
+    "B",
+    "That's great. I appreciate your help."
+   ]
+  ],
+  "qs": [
+   [
+    "고객이 겪은 문제는?",
+    "램프 스위치가 불량이었다",
+    [
+     "램프 스위치가 불량이었다",
+     "램프가 아예 오지 않았다",
+     "다른 색상이 배송됐다"
+    ]
+   ],
+   [
+    "상담원이 제안한 해결 방법은?",
+    "내일 새 램프를 보낸다",
+    [
+     "내일 새 램프를 보낸다",
+     "기존 램프를 수리해 준다",
+     "매장에서 교환하게 한다"
+    ]
+   ]
+  ],
+  "dict": "Let me look into it right away."
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Our Apology for Your Recent Order",
+  "text": "Dear Ms. Carter,\n\nThank you for contacting us about your recent order. We are very sorry that the coffee machine you received was faulty, and we apologize for the inconvenience this has caused.\n\nWe looked into the issue and found that the machine was damaged during shipping. A replacement was sent out this morning by express delivery, and it should arrive within two business days. You do not need to return the faulty machine.\n\nTo make up for the trouble, we have also added a discount voucher to your account. You can use it on your next purchase.\n\nResolving your complaint is our top priority. If the problem is not fully solved, please reply to this email and I will personally assist you.\n\nSincerely,\nDaniel Reed\nCustomer Care Team",
+  "gloss": {
+   "replacement": "교환품",
+   "express delivery": "특급 배송",
+   "make up for": "~을 보상하다, 만회하다",
+   "voucher": "할인권, 쿠폰",
+   "personally": "직접",
+   "assist": "돕다"
+  },
+  "qs": [
+   [
+    "커피 머신에 문제가 생긴 이유는?",
+    "배송 중에 파손돼서",
+    [
+     "배송 중에 파손돼서",
+     "고객이 잘못 사용해서",
+     "다른 모델이 발송돼서"
+    ]
+   ],
+   [
+    "회사가 추가로 제공한 것은?",
+    "할인 쿠폰",
+    [
+     "할인 쿠폰",
+     "전액 환불",
+     "무료 수리 서비스"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "납품한 사무용 의자 중 일부가 파손된 채 도착해서 거래처 담당자가 불만 메일을 보냈어요. 사과하고, 원인을 확인하겠다는 말과 해결 방법(새 제품 발송)을 알리는 답장을 써 보세요.",
+  "en": "Reply to a client's complaint about damaged office chairs: apologize, say you will look into the cause, and explain how you will resolve it.",
+  "hints": [
+   "I'm sorry to hear that",
+   "We apologize for the inconvenience",
+   "look into",
+   "resolve"
+  ],
+  "model": "Dear Ms. Evans,\n\nI'm sorry to hear that some of the chairs arrived damaged. We apologize for the inconvenience. I will look into the cause with our shipping team today. To resolve this quickly, we will send new chairs tomorrow morning at no extra cost. Please let me know if there is anything else we can do.\n\nBest regards,\nMinsu"
+ }
+}

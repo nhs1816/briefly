@@ -1,0 +1,104 @@
+{
+ "date": "2026-11-19",
+ "track": "ecom",
+ "theme": "상품 이미지 준비",
+ "en": "Product Images",
+ "words": [
+  [
+   "main image",
+   "n",
+   "대표 이미지",
+   "The main image must show only the product itself.",
+   "대표 이미지에는 제품만 보여야 해요."
+  ],
+  [
+   "lifestyle image",
+   "n",
+   "사용 장면 이미지",
+   "We added a lifestyle image of a model applying the cream.",
+   "모델이 크림을 바르는 사용 장면 이미지를 넣었어요."
+  ],
+  [
+   "resolution",
+   "n",
+   "해상도",
+   "Please send the photos in high resolution so customers can zoom in.",
+   "고객이 확대해 볼 수 있게 사진을 고해상도로 보내 주세요."
+  ]
+ ],
+ "exprs": [
+  [
+   "요건",
+   "comply with ...",
+   "…을 지키다, 따르다",
+   "All images must comply with Amazon's image requirements.",
+   [
+    "All images must ___ with Amazon's image requirements.",
+    "comply",
+    [
+     "comply",
+     "obey",
+     "follow"
+    ]
+   ]
+  ],
+  [
+   "기획",
+   "stand out",
+   "눈에 띄다",
+   "A clean main image helps your product stand out in search results.",
+   [
+    "A clean main image helps your product stand ___ in search results.",
+    "out",
+    [
+     "out",
+     "over",
+     "off"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Guide",
+  "title": "Image Checklist for the New Serum Listing",
+  "text": "Before we upload the new serum listing, please check the images against this list.\n\nThe main image must have a pure white background and show only the product, with no text, logos, or props. The product should fill most of the frame. All files need a resolution of at least 2,000 pixels on the longest side so that the zoom function works.\n\nFor the other six slots, use a mix of images: one lifestyle image, one image that explains the key ingredients, one that shows how to use the product, and one size comparison. Short text is allowed on these images, but keep it large enough to read on a phone.\n\nImages that do not comply with these rules may be removed, and the listing can be hidden from search.",
+  "gloss": {
+   "props": "소품",
+   "frame": "화면, 틀",
+   "slots": "(이미지를 넣는) 자리",
+   "ingredients": "성분",
+   "comparison": "비교"
+  },
+  "qs": [
+   [
+    "대표 이미지에 넣을 수 있는 것은?",
+    "제품만",
+    [
+     "제품만",
+     "제품과 브랜드 로고",
+     "제품과 짧은 문구"
+    ]
+   ],
+   [
+    "규칙을 지키지 않은 이미지는 어떻게 될 수 있나요?",
+    "삭제되고 리스팅이 검색에서 숨겨질 수 있다",
+    [
+     "삭제되고 리스팅이 검색에서 숨겨질 수 있다",
+     "광고비가 더 많이 청구된다",
+     "자동으로 흰 배경으로 바뀐다"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "디자이너에게 새 선크림 리스팅용 이미지를 요청하는 메시지를 써 보세요. 대표 이미지 조건(흰 배경, 제품만)과 사용 장면 이미지 1장, 고해상도 파일이 필요하다는 점을 넣어요.",
+  "en": "Ask a designer for images for a new sunscreen listing: a main image on a white background, one lifestyle image, and high-resolution files.",
+  "hints": [
+   "main image",
+   "lifestyle image",
+   "comply with",
+   "stand out"
+  ],
+  "model": "Hi Sarah,\n\nCould you prepare the images for our new sunscreen listing by Thursday? The main image needs a pure white background and should show only the product so that it will comply with Amazon's rules. We also need one lifestyle image of someone using it at the beach to help the listing stand out. Please send all files in high resolution.\n\nThanks,\nMinsu"
+ }
+}

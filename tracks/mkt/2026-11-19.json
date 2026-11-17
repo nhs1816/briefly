@@ -1,0 +1,104 @@
+{
+ "date": "2026-11-19",
+ "track": "mkt",
+ "theme": "경품 이벤트 공지",
+ "en": "Giveaway Post",
+ "words": [
+  [
+   "giveaway",
+   "n",
+   "경품 이벤트",
+   "We are running a giveaway to celebrate 100,000 followers.",
+   "팔로워 10만 명을 기념해 경품 이벤트를 열어요."
+  ],
+  [
+   "entry",
+   "n",
+   "응모, 참가",
+   "Each comment counts as one entry.",
+   "댓글 하나가 응모 한 번으로 계산돼요."
+  ],
+  [
+   "announce",
+   "v",
+   "발표하다",
+   "We will announce the winners on our Stories next Monday.",
+   "당첨자는 다음 주 월요일 스토리에서 발표할게요."
+  ]
+ ],
+ "exprs": [
+  [
+   "공지",
+   "for a chance to win",
+   "당첨 기회를 얻으려면",
+   "Follow us and tag a friend for a chance to win our new toner.",
+   [
+    "Tag a friend for a ___ to win our new toner.",
+    "chance",
+    [
+     "chance",
+     "change",
+     "choice"
+    ]
+   ]
+  ],
+  [
+   "규칙",
+   "at random",
+   "무작위로",
+   "Three winners will be chosen at random.",
+   [
+    "Three winners will be chosen at ___.",
+    "random",
+    [
+     "random",
+     "luck",
+     "chance"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Notice",
+  "title": "Glow Set Giveaway",
+  "text": "GIVEAWAY TIME!\n\nTo thank you for your support this year, we are giving away our full Glow Set to five lucky followers.\n\nHow to enter:\nFollow our account, like this post, and tag two friends in the comments. Share this post to your Stories for a bonus entry.\n\nEntries close on Sunday at midnight. Five winners will be chosen at random, and we will announce them on our Stories on Tuesday. Winners will be contacted by direct message from this account only, so please watch out for fake accounts.\n\nThis giveaway is open to residents of the United States and Canada aged 18 or over. It is not sponsored by or connected with Instagram.\n\nGood luck!",
+  "gloss": {
+   "giving away": "(경품으로) 나눠 주는",
+   "bonus": "추가의",
+   "direct message": "다이렉트 메시지(DM)",
+   "watch out for": "~을 조심하다",
+   "residents": "거주자"
+  },
+  "qs": [
+   [
+    "추가 응모 기회를 얻는 방법은?",
+    "게시물을 스토리에 공유한다",
+    [
+     "게시물을 스토리에 공유한다",
+     "친구를 세 명 이상 태그한다",
+     "제품을 구매한다"
+    ]
+   ],
+   [
+    "당첨자는 어떻게 연락받나요?",
+    "이 계정의 DM으로",
+    [
+     "이 계정의 DM으로",
+     "이메일로",
+     "댓글 답글로"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "새 립밤 출시를 기념하는 인스타그램 경품 이벤트 공지 문구를 써 보세요. 참여 방법, 마감일, 당첨자 수와 발표 방법을 넣어요.",
+  "en": "Write an Instagram giveaway caption for a new lip balm launch, including how to enter, the closing date, and how winners will be announced.",
+  "hints": [
+   "giveaway",
+   "for a chance to win",
+   "at random",
+   "announce"
+  ],
+  "model": "Our new Berry Lip Balm is here, and we are celebrating with a giveaway! Follow us, like this post, and tag one friend for a chance to win a set of three lip balms. Entries close on Friday at 6 p.m. Ten winners will be chosen at random, and we will announce them on our Stories on Monday. Good luck!"
+ }
+}
