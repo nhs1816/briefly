@@ -1,0 +1,191 @@
+{
+ "date": "2026-11-20",
+ "theme": "회의록 공유",
+ "en": "Meeting Minutes",
+ "words": [
+  [
+   "minutes",
+   "n",
+   "회의록",
+   "I will send the minutes of today's meeting by this afternoon.",
+   "오늘 회의록은 오후까지 보내 드릴게요."
+  ],
+  [
+   "action item",
+   "n",
+   "실행 과제, 할 일",
+   "Each action item has an owner and a due date.",
+   "실행 과제마다 담당자와 마감일이 정해져 있어요."
+  ],
+  [
+   "circulate",
+   "v",
+   "(문서를) 돌리다, 공유하다",
+   "Please circulate the minutes to everyone on the project.",
+   "프로젝트 관련자 모두에게 회의록을 공유해 주세요."
+  ],
+  [
+   "outcome",
+   "n",
+   "결과, 결론",
+   "The main outcome of the meeting was a new launch date.",
+   "회의의 핵심 결론은 새 출시일이었어요."
+  ],
+  [
+   "owner",
+   "n",
+   "담당자, 책임자",
+   "Who is the owner of this task?",
+   "이 업무 담당자는 누구예요?"
+  ]
+ ],
+ "exprs": [
+  [
+   "이메일",
+   "Please find attached ...",
+   "…을 첨부해 드려요",
+   "Please find attached the minutes from Monday's meeting.",
+   [
+    "Please find ___ the minutes from our meeting.",
+    "attached",
+    [
+     "attached",
+     "attaching",
+     "attach"
+    ]
+   ]
+  ],
+  [
+   "회의",
+   "To recap, ...",
+   "다시 정리하면, …",
+   "To recap, we agreed to finish the report by Friday.",
+   [
+    "To ___, we agreed on three action items.",
+    "recap",
+    [
+     "recap",
+     "recall",
+     "repeat"
+    ]
+   ]
+  ],
+  [
+   "보고",
+   "Let me know if I missed anything.",
+   "빠진 내용이 있으면 알려 주세요.",
+   "Here are the notes. Let me know if I missed anything.",
+   [
+    "Let me know if I ___ anything important.",
+    "missed",
+    [
+     "missed",
+     "lost",
+     "failed"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "회의 끝나고 회의록 정리하기",
+  "lines": [
+   [
+    "A",
+    "Thanks, everyone. Who can take care of the minutes today?"
+   ],
+   [
+    "B",
+    "I can do it. I took notes during the whole meeting."
+   ],
+   [
+    "A",
+    "Great. To recap, we have three action items."
+   ],
+   [
+    "B",
+    "Right. Jenny will update the budget, and Tom will contact the supplier."
+   ],
+   [
+    "A",
+    "And I'll follow up with the marketing team about the event."
+   ],
+   [
+    "B",
+    "Got it. I'll send the minutes to all attendees by four o'clock."
+   ],
+   [
+    "A",
+    "Perfect. Please add the due date for each task."
+   ],
+   [
+    "B",
+    "Sure. Let me know if I missed anything."
+   ]
+  ],
+  "qs": [
+   [
+    "회의록은 누가 쓰기로 했나요?",
+    "회의 중 메모를 한 B",
+    [
+     "회의 중 메모를 한 B",
+     "예산을 맡은 Jenny",
+     "공급업체에 연락할 Tom"
+    ]
+   ],
+   [
+    "A가 회의록에 꼭 넣어 달라고 한 것은?",
+    "과제별 마감일",
+    [
+     "과제별 마감일",
+     "참석자 서명",
+     "다음 회의 장소"
+    ]
+   ]
+  ],
+  "dict": "I took notes during the whole meeting."
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Minutes from Our Weekly Sales Meeting",
+  "text": "Hi team,\n\nThank you for joining yesterday's weekly sales meeting. Please find attached the full minutes. Here is a short summary.\n\nFirst, the attendees reviewed last month's results. Online sales grew by 12 percent, but store sales were slightly below target. Second, we discussed the holiday campaign and decided to start it one week earlier than planned.\n\nThere are three action items. Sarah will prepare a new price list by Tuesday. Kevin will check stock levels with the warehouse. I will follow up with the agency on the campaign schedule.\n\nThe next meeting will be held on Thursday at 10 a.m. in Room 3. Please review the minutes and let me know if I missed anything by the end of the day.\n\nBest regards,\nMinsu",
+  "gloss": {
+   "summary": "요약",
+   "slightly": "약간, 조금",
+   "below target": "목표에 못 미치는",
+   "warehouse": "창고",
+   "be held": "열리다, 개최되다",
+   "stock levels": "재고 수준"
+  },
+  "qs": [
+   [
+    "회의에서 홀리데이 캠페인에 대해 정한 것은?",
+    "계획보다 1주일 일찍 시작한다",
+    [
+     "계획보다 1주일 일찍 시작한다",
+     "캠페인을 취소한다",
+     "예산을 12% 늘린다"
+    ]
+   ],
+   [
+    "Kevin이 맡은 일은?",
+    "창고와 재고 수준 확인",
+    [
+     "창고와 재고 수준 확인",
+     "새 가격표 준비",
+     "대행사와 일정 조율"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "오늘 신제품 회의가 끝났어요. 참석자들에게 회의록을 첨부해 보내면서, 결정된 내용 하나와 실행 과제 두 개를 짧게 정리하고 빠진 내용이 있으면 알려 달라는 메일을 써 보세요.",
+  "en": "Email the attendees the minutes of today's new product meeting, summarizing one decision and two action items, and ask them to tell you if anything is missing.",
+  "hints": [
+   "Please find attached",
+   "To recap",
+   "action item",
+   "Let me know if I missed anything"
+  ],
+  "model": "Hi all,\n\nThank you for attending today's new product meeting. Please find attached the minutes. To recap, we decided to launch the new serum in April. There are two action items: Jisoo will finalize the package design by next Friday, and I will follow up with the factory on the production schedule. Let me know if I missed anything.\n\nBest regards,\nMinsu"
+ }
+}

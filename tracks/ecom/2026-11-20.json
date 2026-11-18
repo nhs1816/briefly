@@ -1,0 +1,103 @@
+{
+ "date": "2026-11-20",
+ "track": "ecom",
+ "theme": "검색 키워드 정리",
+ "en": "Search Keywords",
+ "words": [
+  [
+   "search term",
+   "n",
+   "검색어",
+   "Most shoppers find our toner with the search term 'hydrating toner'.",
+   "고객 대부분이 '수분 토너'라는 검색어로 저희 토너를 찾아요."
+  ],
+  [
+   "backend keyword",
+   "n",
+   "백엔드 키워드(화면에 안 보이는 검색용 키워드)",
+   "We added Korean skincare terms as backend keywords.",
+   "한국 스킨케어 관련 단어를 백엔드 키워드로 넣었어요."
+  ],
+  [
+   "organic ranking",
+   "n",
+   "자연 검색 순위(광고 아닌 순위)",
+   "Our organic ranking improved after we updated the title.",
+   "제목을 바꾼 뒤 자연 검색 순위가 올랐어요."
+  ]
+ ],
+ "exprs": [
+  [
+   "보고",
+   "rank for ...",
+   "…(검색어)로 순위에 오르다",
+   "Our serum now ranks for 'vitamin C serum' on page one.",
+   [
+    "Our cream now ___ for 'night cream' on page one.",
+    "ranks",
+    [
+     "ranks",
+     "places",
+     "rates"
+    ]
+   ]
+  ],
+  [
+   "업무",
+   "drive traffic to ...",
+   "…로 유입을 늘리다",
+   "Better keywords will drive traffic to our listing.",
+   [
+    "New keywords should ___ traffic to the product page.",
+    "drive",
+    [
+     "drive",
+     "ride",
+     "dive"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "Keyword Update for the Cica Cream Listing",
+  "text": "Team,\n\nLast month, our Cica Cream listing lost sales because its organic ranking dropped to page three. After checking the search term report, we found that many shoppers use phrases like 'redness relief cream' and 'sensitive skin moisturizer.'\n\nWe have added these phrases to the title and bullet points. Similar words, such as 'centella' and 'barrier cream,' were added as backend keywords. Please do not repeat words that already appear in the title.\n\nOur goal is to rank for both phrases on page one within four weeks. This should drive traffic to the listing without raising our ad spend.\n\nThanks,\nMinsu",
+  "gloss": {
+   "dropped": "떨어졌다",
+   "redness relief": "붉은기 완화",
+   "moisturizer": "보습제",
+   "ad spend": "광고비"
+  },
+  "qs": [
+   [
+    "판매가 줄어든 원인은?",
+    "자연 검색 순위가 3페이지로 떨어져서",
+    [
+     "자연 검색 순위가 3페이지로 떨어져서",
+     "재고가 떨어져서",
+     "부정적인 리뷰가 늘어서"
+    ]
+   ],
+   [
+    "백엔드 키워드를 넣을 때 주의할 점은?",
+    "제목에 이미 있는 단어는 반복하지 않는다",
+    [
+     "제목에 이미 있는 단어는 반복하지 않는다",
+     "브랜드 이름을 꼭 넣는다",
+     "경쟁사 이름을 넣는다"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "팀장님께 선크림 리스팅의 키워드 정리 결과를 짧게 보고해 보세요. 새로 찾은 검색어, 백엔드 키워드에 넣은 단어, 기대 효과(유입 증가)를 담아 보세요.",
+  "en": "Report to your manager on the sunscreen listing keyword update: new search terms, backend keywords added, and the expected traffic increase.",
+  "hints": [
+   "search term",
+   "backend keyword",
+   "rank for",
+   "drive traffic to"
+  ],
+  "model": "Hi Ms. Park,\n\nI reviewed the search term report for our sunscreen listing. Many shoppers search for 'no white cast sunscreen,' so I added it to the title. I also added 'reef safe' and 'daily SPF' as backend keywords. We hope to rank for these terms on page one, which should drive traffic to the listing next month.\n\nBest,\nMinsu"
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "date": "2026-11-20",
+ "track": "export",
+ "theme": "신규 바이어 첫 연락",
+ "en": "Buyer Outreach",
+ "words": [
+  [
+   "prospect",
+   "n",
+   "잠재 고객, 거래 후보",
+   "We met several new prospects at the beauty fair in Dubai.",
+   "두바이 뷰티 박람회에서 새 거래 후보를 여럿 만났어요."
+  ],
+  [
+   "product range",
+   "n",
+   "제품 구성, 제품 라인업",
+   "Our product range includes sheet masks, toners, and sunscreens.",
+   "저희 제품 구성에는 시트 마스크, 토너, 선크림이 있어요."
+  ],
+  [
+   "best-seller",
+   "n",
+   "가장 잘 팔리는 제품",
+   "This ampoule has been our best-seller in Japan for two years.",
+   "이 앰플은 2년째 일본에서 저희 베스트셀러예요."
+  ]
+ ],
+ "exprs": [
+  [
+   "이메일",
+   "I'm reaching out to ...",
+   "…하려고 연락드려요",
+   "I'm reaching out to introduce our new skincare line.",
+   [
+    "I'm ___ out to introduce our brand.",
+    "reaching",
+    [
+     "reaching",
+     "getting",
+     "pulling"
+    ]
+   ]
+  ],
+  [
+   "제안",
+   "would be a good fit for ...",
+   "…에 잘 맞을 것이다",
+   "We believe our masks would be a good fit for your stores.",
+   [
+    "Our line would be a good ___ for your customers.",
+    "fit",
+    [
+     "fit",
+     "fix",
+     "fill"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Introducing Our K-Beauty Skincare Line",
+  "text": "Dear Ms. Haddad,\n\nMy name is Minsu Lee, and I work in overseas sales at Lumora Cosmetics in Seoul. I'm reaching out to introduce our skincare brand.\n\nOur product range covers sheet masks, toners, and sunscreens made with gentle ingredients. Our best-seller, the Calming Cica Mask, is now sold in eight countries.\n\nI noticed that your stores focus on clean beauty, so I believe our line would be a good fit for your customers. I have attached our catalog and price list.\n\nWould you be available for a short call next week?\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "overseas sales": "해외 영업",
+   "gentle": "순한, 자극이 적은",
+   "ingredients": "성분",
+   "clean beauty": "클린 뷰티(유해 성분을 줄인 화장품)",
+   "catalog": "제품 카탈로그"
+  },
+  "qs": [
+   [
+    "Minsu가 이 회사에 연락한 이유로 든 것은?",
+    "매장이 클린 뷰티에 집중해서",
+    [
+     "매장이 클린 뷰티에 집중해서",
+     "가격이 가장 저렴해서",
+     "박람회에서 주문을 받아서"
+    ]
+   ],
+   [
+    "메일 마지막에 요청한 것은?",
+    "다음 주 짧은 통화",
+    [
+     "다음 주 짧은 통화",
+     "샘플 비용 송금",
+     "계약서 서명"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "인터넷에서 찾은 말레이시아 화장품 유통사에 처음 연락하는 메일을 써 보세요. 회사와 제품을 짧게 소개하고, 그 회사에 잘 맞는 이유와 카탈로그 첨부, 통화 요청을 담아 보세요.",
+  "en": "Write a first email to a Malaysian cosmetics distributor: introduce your company and products, say why they are a good fit, attach a catalog, and ask for a call.",
+  "hints": [
+   "I'm reaching out to",
+   "product range",
+   "best-seller",
+   "would be a good fit for"
+  ],
+  "model": "Dear Mr. Tan,\n\nI'm reaching out to introduce Lumora Cosmetics, a K-beauty brand from Seoul. Our product range includes toners, serums, and sunscreens. Our best-seller is a light daily sunscreen for hot weather. Since your shops serve many young customers, I believe it would be a good fit for your market. Please see our catalog attached. Could we have a short call next week?\n\nBest regards,\nMinsu Lee"
+ }
+}
