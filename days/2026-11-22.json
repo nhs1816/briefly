@@ -1,0 +1,181 @@
+{
+ "date": "2026-11-22",
+ "theme": "업무 인수인계",
+ "en": "Handovers",
+ "words": [
+  [
+   "handover",
+   "n",
+   "인수인계",
+   "Let's schedule a handover meeting before you leave.",
+   "떠나시기 전에 인수인계 회의를 잡읍시다."
+  ],
+  [
+   "pending",
+   "adj",
+   "보류 중인, 처리 대기 중인",
+   "Two orders are still pending payment.",
+   "주문 두 건이 아직 결제 대기 중이에요."
+  ],
+  [
+   "access",
+   "n",
+   "접근 권한",
+   "I'll give you access to the shared folder today.",
+   "오늘 공유 폴더 접근 권한을 드릴게요."
+  ],
+  [
+   "point of contact",
+   "n",
+   "담당 창구, 연락 담당자",
+   "Jiwon will be your point of contact while I'm away.",
+   "제가 없는 동안 지원 씨가 연락 담당자예요."
+  ],
+  [
+   "brief",
+   "v",
+   "(요점을) 간단히 설명하다",
+   "I'll brief you on the project before I leave.",
+   "떠나기 전에 프로젝트를 간단히 설명해 드릴게요."
+  ]
+ ],
+ "exprs": [
+  [
+   "이메일",
+   "I'll be taking over ...",
+   "…을 이어받게 되었어요",
+   "Hello, I'll be taking over the Lopez account from Monday.",
+   [
+    "I'll be taking ___ the Lopez account from Monday.",
+    "over",
+    [
+     "over",
+     "off",
+     "out"
+    ]
+   ]
+  ],
+  [
+   "회의",
+   "Just to give you some background, ...",
+   "배경을 조금 설명드리면, …",
+   "Just to give you some background, this client has worked with us for five years.",
+   [
+    "Just to give you some ___, this client has been with us for years.",
+    "background",
+    [
+     "background",
+     "ground",
+     "backing"
+    ]
+   ]
+  ],
+  [
+   "이메일",
+   "Don't hesitate to contact me if ...",
+   "…하면 언제든 연락 주세요",
+   "Don't hesitate to contact me if anything urgent comes up.",
+   [
+    "Don't ___ to contact me if anything comes up.",
+    "hesitate",
+    [
+     "hesitate",
+     "doubt",
+     "delay"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "휴가 전 인수인계",
+  "lines": [
+   [
+    "A",
+    "Thanks for meeting me. I'm going on leave next week, so let's go over the handover."
+   ],
+   [
+    "B",
+    "Sure. What should I focus on first?"
+   ],
+   [
+    "A",
+    "The Seoul Beauty account. Their order is still pending, and they need an update by Wednesday."
+   ],
+   [
+    "B",
+    "Got it. Who's my point of contact there?"
+   ],
+   [
+    "A",
+    "Ms. Grant in purchasing. I'll introduce you to her by email today."
+   ],
+   [
+    "B",
+    "Great. Could you also give me access to the shared folder?"
+   ]
+  ],
+  "qs": [
+   [
+    "수요일까지 해야 할 일은?",
+    "거래처에 주문 진행 상황 알리기",
+    [
+     "거래처에 주문 진행 상황 알리기",
+     "새 계약서 보내기",
+     "공유 폴더 정리하기"
+    ]
+   ],
+   [
+    "B가 마지막에 요청한 것은?",
+    "공유 폴더 접근 권한",
+    [
+     "공유 폴더 접근 권한",
+     "Grant 씨의 전화번호",
+     "A의 휴가 일정"
+    ]
+   ]
+  ],
+  "dict": "What should I focus on first?"
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Handover Notes: Key Accounts",
+  "text": "Hi Jiwon,\n\nAs you know, I'll be on leave from December 1 to December 19, and you'll be covering my accounts while I'm away. Here is a quick summary.\n\nFirst, the Lopez Trading order of 3,000 sheet masks is pending final payment. Once the payment arrives, please ask the warehouse to ship it within two days.\n\nSecond, Green Leaf Cosmetics is waiting for a revised quotation. The draft is saved in the shared folder under \"Quotes 2026.\" Please check the prices with Mr. Han before you send it.\n\nI've already told both clients that you will be their point of contact during my absence. I'll check email once a week, but please call me only for urgent issues.\n\nThanks so much,\nMinsu",
+  "gloss": {
+   "covering": "(업무를) 대신 맡는",
+   "warehouse": "창고",
+   "revised quotation": "수정 견적서",
+   "absence": "부재",
+   "urgent": "급한"
+  },
+  "qs": [
+   [
+    "지원 씨가 업무를 대신 맡는 기간은?",
+    "12월 1일~19일",
+    [
+     "12월 1일~19일",
+     "12월 1일~9일",
+     "11월 19일~12월 1일"
+    ]
+   ],
+   [
+    "견적서를 보내기 전에 해야 할 일은?",
+    "한 씨와 가격 확인하기",
+    [
+     "한 씨와 가격 확인하기",
+     "고객에게 전화하기",
+     "창고에 문의하기"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "다음 주 출장 동안 동료가 내 업무를 맡아 줘요. 남은 일과 담당자를 정리한 짧은 인수인계 이메일을 써 보세요.",
+  "en": "Write a short handover email to a coworker who will cover your work during your business trip next week.",
+  "hints": [
+   "pending",
+   "point of contact",
+   "Don't hesitate to contact me"
+  ],
+  "model": "Hi Sora,\n\nThanks for covering for me while I'm on my business trip next week. The only pending task is the monthly sales report, which is due on Thursday. All the data is in the shared folder. Ms. Choi from the agency is the point of contact for the banner project. Don't hesitate to contact me if anything comes up.\n\nBest,\nMinsu"
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "date": "2026-11-23",
+ "theme": "일정 지연 알림",
+ "en": "Delay Notices",
+ "words": [
+  [
+   "setback",
+   "n",
+   "차질, 걸림돌",
+   "The supplier problem was a major setback for the launch.",
+   "공급업체 문제는 출시에 큰 차질이었어요."
+  ],
+  [
+   "revised",
+   "adj",
+   "수정된, 변경된",
+   "Please check the revised schedule in the attachment.",
+   "첨부한 변경 일정을 확인해 주세요."
+  ],
+  [
+   "unforeseen",
+   "adj",
+   "예상치 못한",
+   "Due to unforeseen circumstances, the event has been canceled.",
+   "예상치 못한 사정으로 행사가 취소되었어요."
+  ],
+  [
+   "behind schedule",
+   "phr",
+   "일정보다 늦은",
+   "The construction is two weeks behind schedule.",
+   "공사가 일정보다 2주 늦어지고 있어요."
+  ],
+  [
+   "notify",
+   "v",
+   "알리다, 통보하다",
+   "We will notify you as soon as the date is confirmed.",
+   "날짜가 확정되는 대로 알려 드릴게요."
+  ]
+ ],
+ "exprs": [
+  [
+   "이메일",
+   "I regret to inform you that ...",
+   "…을 알려 드리게 되어 유감이에요",
+   "I regret to inform you that your order will be delayed.",
+   [
+    "I ___ to inform you that the launch will be delayed.",
+    "regret",
+    [
+     "regret",
+     "sorry",
+     "apologize"
+    ]
+   ]
+  ],
+  [
+   "보고",
+   "due to ...",
+   "… 때문에",
+   "The flight was canceled due to heavy snow.",
+   [
+    "The shipment is delayed ___ to bad weather.",
+    "due",
+    [
+     "due",
+     "because",
+     "since"
+    ]
+   ]
+  ],
+  [
+   "이메일",
+   "We appreciate your patience.",
+   "기다려 주셔서 감사해요",
+   "We know this is frustrating. We appreciate your patience.",
+   [
+    "We appreciate your ___ and understanding.",
+    "patience",
+    [
+     "patience",
+     "patient",
+     "patiently"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "포장재 지연 소식",
+  "lines": [
+   [
+    "A",
+    "Hi Kevin, I have some bad news about the packaging for the new toner."
+   ],
+   [
+    "B",
+    "Oh no. What happened?"
+   ],
+   [
+    "A",
+    "The printer had a machine problem, so we're about a week behind schedule."
+   ],
+   [
+    "B",
+    "So when can we expect the boxes?"
+   ],
+   [
+    "A",
+    "The revised date is December fifth. I'll notify the buyer this afternoon."
+   ],
+   [
+    "B",
+    "Thanks. Let's also check if we can still make the holiday promotion."
+   ]
+  ],
+  "qs": [
+   [
+    "지연된 이유는?",
+    "인쇄 업체의 기계 문제",
+    [
+     "인쇄 업체의 기계 문제",
+     "원료 부족",
+     "디자인 수정"
+    ]
+   ],
+   [
+    "변경된 날짜는?",
+    "12월 5일",
+    [
+     "12월 5일",
+     "12월 15일",
+     "11월 25일"
+    ]
+   ]
+  ],
+  "dict": "So when can we expect the boxes?"
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Delay in Product Launch",
+  "text": "Dear Ms. Carter,\n\nI regret to inform you that the launch of our Vitamin Glow Serum will be delayed by about three weeks. Due to an unforeseen problem with a key ingredient supplier, our production is currently behind schedule.\n\nThe revised launch date is January 15. We have already secured a new supplier, and our quality team is running final tests this week. We will notify you immediately if there are any further changes.\n\nTo make up for this setback, we would like to offer your stores a 5% discount on the first order. Our sales team will contact you to discuss the details.\n\nWe appreciate your patience and understanding.\n\nSincerely,\nMinsu Park",
+  "gloss": {
+   "ingredient": "성분, 원료",
+   "secured": "확보했다",
+   "immediately": "즉시",
+   "make up for": "만회하다, 보상하다"
+  },
+  "qs": [
+   [
+    "출시는 얼마나 늦어지나요?",
+    "약 3주",
+    [
+     "약 3주",
+     "약 3일",
+     "약 3개월"
+    ]
+   ],
+   [
+    "지연에 대한 보상으로 제안한 것은?",
+    "첫 주문 5% 할인",
+    [
+     "첫 주문 5% 할인",
+     "무료 배송",
+     "샘플 추가 증정"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "시장 보고서 제출이 이틀 늦어지게 되었어요. 팀장님께 이유와 새 제출일을 알리는 짧은 이메일을 써 보세요.",
+  "en": "Write a short email to your manager explaining that your market report will be two days late, with the reason and the new date.",
+  "hints": [
+   "I regret to inform you that",
+   "due to",
+   "We appreciate your patience"
+  ],
+  "model": "Hi Mr. Lee,\n\nI regret to inform you that the market report will be two days late. Due to a delay in receiving the sales data from our U.S. partner, I couldn't finish the analysis on time. I will submit it by Thursday noon. I appreciate your patience.\n\nBest regards,\nMinsu"
+ }
+}

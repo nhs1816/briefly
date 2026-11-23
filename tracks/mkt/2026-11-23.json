@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-23",
+ "track": "mkt",
+ "theme": "광고 소재 A/B 테스트",
+ "en": "A/B Testing",
+ "words": [
+  [
+   "variation",
+   "n",
+   "변형안, 버전",
+   "We tested three variations of the ad.",
+   "광고 변형안 세 개를 테스트했어요."
+  ],
+  [
+   "hook",
+   "n",
+   "훅(첫 몇 초에 관심을 끄는 장면·문구)",
+   "A strong hook keeps people watching.",
+   "강한 훅이 사람들이 계속 보게 만들어요."
+  ],
+  [
+   "significant",
+   "adj",
+   "(차이가) 의미 있는, 유의미한",
+   "There was no significant difference between the two ads.",
+   "두 광고 사이에 의미 있는 차이는 없었어요."
+  ]
+ ],
+ "exprs": [
+  [
+   "보고",
+   "... performed better than ...",
+   "…가 …보다 성과가 좋았어요",
+   "The video ad performed better than the image ad.",
+   [
+    "Version B performed ___ than version A.",
+    "better",
+    [
+     "better",
+     "best",
+     "good"
+    ]
+   ]
+  ],
+  [
+   "회의",
+   "Let's run a quick test.",
+   "간단히 테스트해 봐요",
+   "Let's run a quick test before we scale up.",
+   [
+    "Let's ___ a quick test before we scale up.",
+    "run",
+    [
+     "run",
+     "go",
+     "play"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Report",
+  "title": "A/B Test Results: Sun Cream Ads",
+  "text": "Here are the results of our two-week A/B test on Instagram ads for the Centella Sun Cream. We ran two variations with the same budget and audience.\n\nVersion A opened with a product close-up, while version B used a creator's face and a three-second hook: \"No white cast, ever.\" Version B performed better, with a click-through rate of 2.1% versus 1.3%, and the difference was statistically significant.\n\nWe suggest moving 70% of the budget to version B and testing a new headline next week.",
+  "gloss": {
+   "close-up": "클로즈업",
+   "white cast": "백탁",
+   "statistically": "통계적으로",
+   "versus": "…대비"
+  },
+  "qs": [
+   [
+    "성과가 더 좋았던 쪽은?",
+    "B안(크리에이터 얼굴과 3초 훅)",
+    [
+     "B안(크리에이터 얼굴과 3초 훅)",
+     "A안(제품 클로즈업)",
+     "차이 없음"
+    ]
+   ],
+   [
+    "다음 주에 제안한 것은?",
+    "예산 70%를 B안으로 옮기고 새 헤드라인 테스트",
+    [
+     "예산 70%를 B안으로 옮기고 새 헤드라인 테스트",
+     "광고 중단",
+     "타깃 고객 변경"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "연말 캠페인을 키우기 전에, 대행사에 쿠션 광고 영상 두 가지 버전으로 A/B 테스트를 해 보자고 요청하는 이메일을 써 보세요.",
+  "en": "Ask your agency to run an A/B test with two versions of the cushion video ad before scaling up the holiday campaign.",
+  "hints": [
+   "Let's run a quick test",
+   "variation",
+   "hook"
+  ],
+  "model": "Hi Sarah,\n\nBefore we scale up the holiday campaign, let's run a quick A/B test. Could you make two variations of the cushion video: one with a product close-up and one with a creator's hook in the first three seconds? Please use the same budget for both.\n\nThanks,\nMinsu"
+ }
+}

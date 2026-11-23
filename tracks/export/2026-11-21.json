@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-21",
+ "track": "export",
+ "theme": "수출 라벨 표기 확인",
+ "en": "Labeling Requirements",
+ "words": [
+  [
+   "label",
+   "n",
+   "라벨, 표기",
+   "The label must show the ingredients in the local language.",
+   "라벨에는 전성분을 현지 언어로 표기해야 해요."
+  ],
+  [
+   "compliance",
+   "n",
+   "(규정) 준수",
+   "Our team checks compliance before every shipment.",
+   "저희 팀은 매 선적 전에 규정 준수 여부를 확인해요."
+  ],
+  [
+   "regulation",
+   "n",
+   "규정, 규제",
+   "Cosmetics regulations differ from country to country.",
+   "화장품 규정은 나라마다 달라요."
+  ]
+ ],
+ "exprs": [
+  [
+   "이메일",
+   "Could you confirm whether ...?",
+   "…인지 확인해 주실 수 있나요?",
+   "Could you confirm whether the label meets local rules?",
+   [
+    "Could you ___ whether the label meets local rules?",
+    "confirm",
+    [
+     "confirm",
+     "ensure",
+     "assure"
+    ]
+   ]
+  ],
+  [
+   "요청",
+   "in advance",
+   "미리",
+   "Please send us the label file in advance.",
+   [
+    "Please send us the label file in ___.",
+    "advance",
+    [
+     "advance",
+     "before",
+     "ahead"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Label Check Before Printing",
+  "text": "Dear Mr. Nguyen,\n\nThank you for your order. Before we print the boxes, could you confirm whether our English label meets the cosmetics regulation in Vietnam? We understand that a Vietnamese label sticker may also be required.\n\nPlease find attached the label draft, including the full ingredient list and expiry date. If any changes are needed for compliance, please let us know in advance, as printing takes about ten days.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "sticker": "스티커",
+   "ingredient list": "전성분 표기",
+   "expiry date": "사용기한",
+   "printing": "인쇄"
+  },
+  "qs": [
+   [
+    "바이어에게 확인을 요청한 것은?",
+    "영어 라벨이 현지 규정에 맞는지",
+    [
+     "영어 라벨이 현지 규정에 맞는지",
+     "주문 수량",
+     "결제 일정"
+    ]
+   ],
+   [
+    "인쇄에 걸리는 기간은?",
+    "약 10일",
+    [
+     "약 10일",
+     "약 3일",
+     "약 한 달"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "미국 바이어에게 신제품 라벨 시안을 보내면서, 현지 표기 규정에 맞는지 확인해 달라고 요청하는 이메일을 써 보세요.",
+  "en": "Send a label draft to a U.S. buyer and ask them to confirm whether it meets local labeling rules.",
+  "hints": [
+   "Could you confirm whether",
+   "in advance",
+   "Please find attached"
+  ],
+  "model": "Dear Ms. Reed,\n\nPlease find attached the label draft for our new cleansing foam. Could you confirm whether it meets the labeling rules in the U.S.? If any changes are needed, please let us know in advance so we can update the file before printing.\n\nBest regards,\nMinsu Lee"
+ }
+}

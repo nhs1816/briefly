@@ -1,0 +1,103 @@
+{
+ "date": "2026-11-21",
+ "track": "ecom",
+ "theme": "고객 질문(Q&A) 답변",
+ "en": "Customer Questions",
+ "words": [
+  [
+   "inquiry",
+   "n",
+   "문의",
+   "We try to answer every customer inquiry within a day.",
+   "모든 고객 문의에 하루 안에 답하려고 해요."
+  ],
+  [
+   "fragrance-free",
+   "adj",
+   "무향의",
+   "This toner is fragrance-free and gentle on skin.",
+   "이 토너는 무향이라 피부에 순해요."
+  ],
+  [
+   "patch test",
+   "n",
+   "패치 테스트",
+   "Please do a patch test before using a new product.",
+   "새 제품을 쓰기 전에 패치 테스트를 해 주세요."
+  ]
+ ],
+ "exprs": [
+  [
+   "답변",
+   "Great question!",
+   "좋은 질문이에요!",
+   "Great question! Yes, this cream is safe for daily use.",
+   [
+    "___ question! This toner is fragrance-free.",
+    "Great",
+    [
+     "Great",
+     "Large",
+     "Tall"
+    ]
+   ]
+  ],
+  [
+   "안내",
+   "We recommend ...ing",
+   "…하시길 권해요",
+   "We recommend applying it after cleansing.",
+   [
+    "We recommend ___ a patch test first.",
+    "doing",
+    [
+     "doing",
+     "to do",
+     "do"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Guide",
+  "title": "Answering Customer Questions on Amazon",
+  "text": "Customer questions on the product page are a great chance to build trust. Try to reply to every inquiry within 24 hours, because unanswered questions can lower conversion.\n\nKeep your answers short and factual. For example, if a shopper asks whether a toner is fragrance-free, answer clearly and mention the key ingredients. Never make medical claims such as \"cures acne.\"\n\nFor skin concerns, we recommend suggesting a patch test before regular use. Finally, check older answers every month and update them when the formula changes.",
+  "gloss": {
+   "build trust": "신뢰를 쌓다",
+   "unanswered": "답변이 없는",
+   "factual": "사실에 근거한",
+   "medical claims": "의학적 효능 주장",
+   "formula": "제형, 처방"
+  },
+  "qs": [
+   [
+    "문의에 답하는 권장 시간은?",
+    "24시간 이내",
+    [
+     "24시간 이내",
+     "일주일 이내",
+     "1시간 이내"
+    ]
+   ],
+   [
+    "답변에서 피해야 할 것은?",
+    "의학적 효능 주장",
+    [
+     "의학적 효능 주장",
+     "성분 언급",
+     "패치 테스트 권유"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "\"이 크림을 민감한 피부에도 쓸 수 있나요?\"라는 아마존 고객 질문에 답변을 써 보세요.",
+  "en": "Answer an Amazon customer who asks whether your cream is okay for sensitive skin.",
+  "hints": [
+   "Great question!",
+   "fragrance-free",
+   "We recommend ...ing"
+  ],
+  "model": "Great question! Our Cica Calming Cream is fragrance-free and was tested on sensitive skin. However, everyone's skin is different, so we recommend doing a patch test on your inner arm before using it on your face. Thank you for your interest!"
+ }
+}

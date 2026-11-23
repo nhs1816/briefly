@@ -10,5 +10,8 @@
  {"date": "2026-11-17", "theme": "휴가 신청", "en": "Time Off", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
  {"date": "2026-11-18", "theme": "신입 온보딩", "en": "Onboarding", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
  {"date": "2026-11-19", "theme": "고객 불만 응대", "en": "Handling Complaints", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
- {"date": "2026-11-20", "theme": "회의록 공유", "en": "Meeting Minutes", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]}
+ {"date": "2026-11-20", "theme": "회의록 공유", "en": "Meeting Minutes", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
+ {"date": "2026-11-21", "theme": "예산 요청", "en": "Budget Requests", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
+ {"date": "2026-11-22", "theme": "업무 인수인계", "en": "Handovers", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
+ {"date": "2026-11-23", "theme": "일정 지연 알림", "en": "Delay Notices", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]}
 ]

@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-23",
+ "track": "export",
+ "theme": "생산 지연 안내",
+ "en": "Production Delays",
+ "words": [
+  [
+   "shortage",
+   "n",
+   "부족, 품귀",
+   "There is a global shortage of glass bottles.",
+   "유리병이 전 세계적으로 부족해요."
+  ],
+  [
+   "raw material",
+   "n",
+   "원료, 원자재",
+   "Raw material prices went up 15% this year.",
+   "올해 원료 가격이 15% 올랐어요."
+  ],
+  [
+   "expedite",
+   "v",
+   "(처리를) 앞당기다, 서두르다",
+   "Is there any way to expedite the shipment?",
+   "선적을 앞당길 방법이 있을까요?"
+  ]
+ ],
+ "exprs": [
+  [
+   "이메일",
+   "We are doing our best to ...",
+   "…하도록 최선을 다하고 있어요",
+   "We are doing our best to ship the order on time.",
+   [
+    "We are doing our ___ to ship the order on time.",
+    "best",
+    [
+     "best",
+     "most",
+     "better"
+    ]
+   ]
+  ],
+  [
+   "제안",
+   "As an alternative, ...",
+   "대안으로, …",
+   "As an alternative, we can ship half the order first.",
+   [
+    "As an ___, we can ship half the order first.",
+    "alternative",
+    [
+     "alternative",
+     "instead",
+     "other"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Update on Your Eye Patch Order",
+  "text": "Dear Mr. Haddad,\n\nI'm sorry to let you know that your order of 10,000 hydrogel eye patches will be delayed by about ten days. Due to a shortage of a raw material, our factory had to stop the line for three days last week.\n\nWe are doing our best to expedite production, and the new shipping date is December 18. As an alternative, we can ship 4,000 units by air on December 8 at our cost, and send the rest by sea later.\n\nPlease let us know which option you prefer.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "by air": "항공으로",
+   "at our cost": "저희 부담으로",
+   "by sea": "해상으로",
+   "prefer": "선호하다"
+  },
+  "qs": [
+   [
+    "생산이 늦어진 원인은?",
+    "원료 부족",
+    [
+     "원료 부족",
+     "디자인 변경",
+     "선박 부족"
+    ]
+   ],
+   [
+    "대안으로 제안한 것은?",
+    "4,000개를 먼저 항공으로 보내기",
+    [
+     "4,000개를 먼저 항공으로 보내기",
+     "전체 주문 할인",
+     "주문 취소"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "포장재 부족으로 바이어 주문이 일주일 늦어지게 되었어요. 사과하고 대안(절반 먼저 선적)을 제안하는 이메일을 써 보세요.",
+  "en": "Tell a buyer their order will be one week late because of a packaging shortage, and offer to ship half first.",
+  "hints": [
+   "shortage",
+   "We are doing our best to",
+   "As an alternative"
+  ],
+  "model": "Dear Ms. Wong,\n\nI'm sorry to inform you that your order will be delayed by one week due to a shortage of packaging materials. We are doing our best to expedite production. As an alternative, we can ship half the order this Friday. Please let us know which you prefer.\n\nBest regards,\nMinsu Lee"
+ }
+}

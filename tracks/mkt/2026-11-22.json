@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-22",
+ "track": "mkt",
+ "theme": "라이브 커머스 준비",
+ "en": "Live Shopping",
+ "words": [
+  [
+   "livestream",
+   "n",
+   "라이브 방송",
+   "Our livestream sold 800 units in one hour.",
+   "라이브 방송으로 한 시간 만에 800개를 팔았어요."
+  ],
+  [
+   "host",
+   "n",
+   "진행자",
+   "The host answered questions about the texture.",
+   "진행자가 제형에 관한 질문에 답했어요."
+  ],
+  [
+   "viewer",
+   "n",
+   "시청자",
+   "More than 3,000 viewers joined the stream.",
+   "3천 명이 넘는 시청자가 방송에 들어왔어요."
+  ]
+ ],
+ "exprs": [
+  [
+   "안내",
+   "We'll be going live at ...",
+   "…시에 라이브를 시작해요",
+   "We'll be going live at 8 p.m. on Friday.",
+   [
+    "We'll be going ___ at 8 p.m. on Friday.",
+    "live",
+    [
+     "live",
+     "alive",
+     "living"
+    ]
+   ]
+  ],
+  [
+   "홍보",
+   "Don't miss out!",
+   "놓치지 마세요!",
+   "Don't miss out on our live-only deals!",
+   [
+    "Don't miss ___ on our live-only deals!",
+    "out",
+    [
+     "out",
+     "off",
+     "away"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "First Amazon Live Stream",
+  "text": "Hi all,\n\nOur first Amazon Live livestream for the Mugwort Clay Mask will be held this Friday. We'll be going live at 8 p.m. Eastern Time for 45 minutes.\n\nOur host, beauty creator Jenna Moore, will show the mask on camera and answer viewer questions in real time. During the stream, we will offer a live-only 20% discount code.\n\nPlease send me any product facts you want her to mention by Wednesday. A short rehearsal is scheduled for Thursday at 4 p.m.\n\nThanks,\nMinsu",
+  "gloss": {
+   "Eastern Time": "미국 동부 시간",
+   "in real time": "실시간으로",
+   "rehearsal": "리허설, 예행연습",
+   "on camera": "카메라 앞에서"
+  },
+  "qs": [
+   [
+    "라이브 방송 시간은 얼마나 되나요?",
+    "45분",
+    [
+     "45분",
+     "20분",
+     "1시간 30분"
+    ]
+   ],
+   [
+    "수요일까지 보내야 하는 것은?",
+    "진행자가 말할 제품 정보",
+    [
+     "진행자가 말할 제품 정보",
+     "할인 코드",
+     "리허설 장소"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "토요일 저녁 7시 신제품 쿠션 라이브 방송을 인스타그램 팔로워에게 예고하는 짧은 글을 써 보세요.",
+  "en": "Write a short Instagram post announcing a live stream for your new cushion foundation this Saturday at 7 p.m.",
+  "hints": [
+   "We'll be going live",
+   "host",
+   "Don't miss out!"
+  ],
+  "model": "We're going live! Join us this Saturday at 7 p.m. as our host Mia tries our new cushion foundation and answers your questions. We'll share a live-only discount code during the stream. Don't miss out!"
+ }
+}

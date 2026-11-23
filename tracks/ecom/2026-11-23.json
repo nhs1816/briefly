@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-23",
+ "track": "ecom",
+ "theme": "무단 판매자 대응",
+ "en": "Unauthorized Sellers",
+ "words": [
+  [
+   "counterfeit",
+   "adj",
+   "위조의, 가짜의",
+   "Counterfeit products can hurt our brand reputation.",
+   "위조품은 브랜드 평판을 해칠 수 있어요."
+  ],
+  [
+   "Brand Registry",
+   "n",
+   "브랜드 레지스트리(아마존 브랜드 보호 제도)",
+   "We reported the listing through Brand Registry.",
+   "브랜드 레지스트리를 통해 그 리스팅을 신고했어요."
+  ],
+  [
+   "test buy",
+   "n",
+   "테스트 구매",
+   "Our test buy showed that the product was fake.",
+   "테스트 구매 결과 그 제품은 가짜였어요."
+  ]
+ ],
+ "exprs": [
+  [
+   "이메일",
+   "We have reason to believe ...",
+   "…라고 볼 근거가 있어요",
+   "We have reason to believe this seller is selling fakes.",
+   [
+    "We have ___ to believe these items are fake.",
+    "reason",
+    [
+     "reason",
+     "sense",
+     "mind"
+    ]
+   ]
+  ],
+  [
+   "요청",
+   "take action against ...",
+   "…에 조치를 취하다",
+   "Please take action against this seller.",
+   [
+    "Please take ___ against this seller.",
+    "action",
+    [
+     "action",
+     "act",
+     "acting"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "Suspicious Seller on Our Listing",
+  "text": "Team,\n\nA new seller called \"BestDealz\" joined our Snail Repair Cream listing yesterday and is selling it 30% below our price. We have reason to believe the items are counterfeit, because the photos in their reviews show a different cap color.\n\nI placed a test buy this morning. When the package arrives, we will compare the batch number with our records. If it is fake, we will report the seller through Brand Registry and ask Amazon to take action.\n\nPlease do not lower our price for now.\n\nMinsu",
+  "gloss": {
+   "batch number": "제조번호",
+   "records": "기록",
+   "report": "신고하다",
+   "cap": "뚜껑"
+  },
+  "qs": [
+   [
+    "가짜라고 의심하는 근거는?",
+    "리뷰 사진의 뚜껑 색이 다르다",
+    [
+     "리뷰 사진의 뚜껑 색이 다르다",
+     "판매자 이름이 이상하다",
+     "배송이 느리다"
+    ]
+   ],
+   [
+    "팀에 당부한 것은?",
+    "당분간 가격을 내리지 말 것",
+    [
+     "당분간 가격을 내리지 말 것",
+     "바로 판매자에게 연락할 것",
+     "리스팅을 내릴 것"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "테스트 구매로 위조품을 확인했어요. 셀러 지원팀에 해당 판매자를 신고하고 조치를 요청하는 짧은 메시지를 써 보세요.",
+  "en": "Write a short message to Seller Support reporting a seller of counterfeit products and asking them to take action.",
+  "hints": [
+   "We have reason to believe",
+   "test buy",
+   "take action against"
+  ],
+  "model": "Hello,\n\nI'm contacting you to report a seller on our listing. We have reason to believe they are selling counterfeit products. Our test buy showed a fake batch number and different packaging. Please take action against this seller as soon as possible.\n\nThank you,\nMinsu"
+ }
+}

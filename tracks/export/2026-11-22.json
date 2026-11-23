@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-22",
+ "track": "export",
+ "theme": "재주문 유도",
+ "en": "Reorder Follow-up",
+ "words": [
+  [
+   "reorder",
+   "n",
+   "재주문",
+   "We received a reorder of 5,000 units from Brazil.",
+   "브라질에서 5천 개 재주문을 받았어요."
+  ],
+  [
+   "stock level",
+   "n",
+   "재고 수준",
+   "Could you share your current stock level?",
+   "현재 재고 수준을 공유해 주실 수 있나요?"
+  ],
+  [
+   "forecast",
+   "n",
+   "(판매) 예측",
+   "Our sales forecast for next quarter is 20% higher.",
+   "다음 분기 판매 예측은 20% 더 높아요."
+  ]
+ ],
+ "exprs": [
+  [
+   "이메일",
+   "I hope ... is going well",
+   "…이 잘 되고 있길 바라요",
+   "I hope the launch is going well in your market.",
+   [
+    "I hope sales are ___ well in your market.",
+    "going",
+    [
+     "going",
+     "getting",
+     "making"
+    ]
+   ]
+  ],
+  [
+   "제안",
+   "to avoid any delays",
+   "지연이 없도록",
+   "Please confirm the order this week to avoid any delays.",
+   [
+    "Please place your order soon to ___ any delays.",
+    "avoid",
+    [
+     "avoid",
+     "escape",
+     "miss"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Planning Your Next Order",
+  "text": "Dear Ms. Silva,\n\nI hope sales of our sheet masks are going well in Brazil. According to your last report, your stock level was about 2,000 units, which may last only four more weeks.\n\nSince our factory is very busy before the Lunar New Year, I recommend placing your next reorder by December 10 to avoid any delays. If you share your sales forecast for the first quarter, we can reserve production capacity for you.\n\nLooking forward to hearing from you.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "Lunar New Year": "설 연휴",
+   "reserve": "확보해 두다",
+   "production capacity": "생산 능력",
+   "quarter": "분기"
+  },
+  "qs": [
+   [
+    "현재 재고가 버틸 수 있는 기간은?",
+    "약 4주",
+    [
+     "약 4주",
+     "약 4개월",
+     "약 2주"
+    ]
+   ],
+   [
+    "재주문을 권한 마감일은?",
+    "12월 10일",
+    [
+     "12월 10일",
+     "1월 10일",
+     "12월 1일"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "일본 거래처에 클렌징 밤의 현재 재고를 묻고, 지연이 없도록 미리 재주문하자고 제안하는 이메일을 써 보세요.",
+  "en": "Ask a Japanese distributor about their stock level of your cleansing balm and suggest reordering early to avoid delays.",
+  "hints": [
+   "I hope ... is going well",
+   "stock level",
+   "to avoid any delays"
+  ],
+  "model": "Dear Mr. Ito,\n\nI hope sales are going well in Japan. Could you let me know your current stock level of our cleansing balm? Our factory will be busy in January, so I suggest placing your reorder by mid-December to avoid any delays.\n\nBest regards,\nMinsu Lee"
+ }
+}

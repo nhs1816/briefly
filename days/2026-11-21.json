@@ -1,0 +1,181 @@
+{
+ "date": "2026-11-21",
+ "theme": "예산 요청",
+ "en": "Budget Requests",
+ "words": [
+  [
+   "allocate",
+   "v",
+   "배정하다, 할당하다",
+   "We allocated $10,000 to online ads this quarter.",
+   "이번 분기에 온라인 광고에 1만 달러를 배정했어요."
+  ],
+  [
+   "justify",
+   "v",
+   "정당성을 설명하다",
+   "You'll need to justify the extra cost to the finance team.",
+   "추가 비용이 왜 필요한지 재무팀에 설명해야 해요."
+  ],
+  [
+   "estimate",
+   "n",
+   "견적, 추정치",
+   "Could you send me a rough estimate by Friday?",
+   "금요일까지 대략적인 견적을 보내 주실 수 있나요?"
+  ],
+  [
+   "approval",
+   "n",
+   "승인",
+   "We can't start the project without the director's approval.",
+   "이사님 승인 없이는 프로젝트를 시작할 수 없어요."
+  ],
+  [
+   "cost-effective",
+   "adj",
+   "비용 대비 효과가 좋은",
+   "Online training is more cost-effective than hiring a coach.",
+   "온라인 교육이 코치를 고용하는 것보다 비용 대비 효과가 좋아요."
+  ]
+ ],
+ "exprs": [
+  [
+   "보고",
+   "I'd like to request ...",
+   "…을 요청드리고 싶어요",
+   "I'd like to request an additional budget for the trade show.",
+   [
+    "I'd like to ___ an additional budget of $5,000.",
+    "request",
+    [
+     "request",
+     "ask",
+     "apply"
+    ]
+   ]
+  ],
+  [
+   "회의",
+   "in the long run",
+   "장기적으로 보면",
+   "This tool is expensive, but it will save us money in the long run.",
+   [
+    "It will save us money in the long ___.",
+    "run",
+    [
+     "run",
+     "time",
+     "way"
+    ]
+   ]
+  ],
+  [
+   "이메일",
+   "Please let me know if you need any further information.",
+   "더 필요한 자료가 있으면 말씀해 주세요",
+   "I've attached the estimate. Please let me know if you need any further information.",
+   [
+    "Please let me know if you need any ___ information.",
+    "further",
+    [
+     "further",
+     "farther",
+     "furthest"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "디자인 툴 예산 요청하기",
+  "lines": [
+   [
+    "A",
+    "Do you have a few minutes? I'd like to talk about our design budget."
+   ],
+   [
+    "B",
+    "Sure. What do you need?"
+   ],
+   [
+    "A",
+    "I'd like to request two thousand dollars for a new design tool."
+   ],
+   [
+    "B",
+    "That's a lot. Can you justify the cost?"
+   ],
+   [
+    "A",
+    "It will cut our outsourcing costs in half, so it will save us money in the long run."
+   ],
+   [
+    "B",
+    "Okay. Send me a short estimate by Friday, and I'll take it to finance."
+   ]
+  ],
+  "qs": [
+   [
+    "무엇을 위해 예산을 요청하나요?",
+    "새 디자인 툴",
+    [
+     "새 디자인 툴",
+     "외주 디자이너 채용",
+     "사무실 장비"
+    ]
+   ],
+   [
+    "금요일까지 보내야 하는 것은?",
+    "간단한 견적",
+    [
+     "간단한 견적",
+     "최종 계약서",
+     "디자인 시안"
+    ]
+   ]
+  ],
+  "dict": "Can you justify the cost?"
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Budget Request: Q1 Social Media Campaign",
+  "text": "Hi Daniel,\n\nI'd like to request an additional budget of $8,000 for our Q1 social media campaign. Our current budget covers only two influencer partnerships, but we need at least five to reach our target audience in the U.S.\n\nBased on last year's results, each partnership brought in around $3,000 in sales, so the extra cost should pay for itself within two months. I've also compared three agencies and chose the most cost-effective option.\n\nPlease find attached a detailed estimate and a breakdown of the expected return. If approved by December 5, we can sign contracts before the holiday season.\n\nPlease let me know if you need any further information.\n\nBest regards,\nMinsu",
+  "gloss": {
+   "partnerships": "협업, 제휴",
+   "pay for itself": "들인 비용을 스스로 회수하다",
+   "breakdown": "세부 내역",
+   "expected return": "예상 수익",
+   "holiday season": "연말 시즌"
+  },
+  "qs": [
+   [
+    "추가로 요청한 예산은 얼마인가요?",
+    "8,000달러",
+    [
+     "8,000달러",
+     "3,000달러",
+     "5,000달러"
+    ]
+   ],
+   [
+    "12월 5일까지 승인되면 무엇을 할 수 있나요?",
+    "연말 시즌 전에 계약하기",
+    [
+     "연말 시즌 전에 계약하기",
+     "캠페인을 끝내기",
+     "대행사를 바꾸기"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "팀원 5명이 들을 온라인 엑셀 교육 예산을 팀장님께 요청하는 짧은 이메일을 써 보세요. 금액과 필요한 이유를 넣어요.",
+  "en": "Write a short email to your manager requesting a budget for an online Excel course for your team, with the amount and the reason.",
+  "hints": [
+   "I'd like to request",
+   "in the long run",
+   "Please let me know if you need any further information."
+  ],
+  "model": "Hi Ms. Park,\n\nI'd like to request a budget of $1,500 for an online Excel course for our team of five. Many of us spend hours on monthly reports, and this training will help us work much faster. I believe it will save us time and money in the long run. Please let me know if you need any further information.\n\nBest regards,\nMinsu"
+ }
+}
