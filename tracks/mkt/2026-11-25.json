@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-25",
+ "track": "mkt",
+ "theme": "인플루언서 계약 조건 협의",
+ "en": "Influencer Contracts",
+ "words": [
+  [
+   "rate card",
+   "n",
+   "단가표",
+   "Could you share your rate card for TikTok videos?",
+   "틱톡 영상 단가표를 공유해 주시겠어요?"
+  ],
+  [
+   "exclusivity",
+   "n",
+   "독점(경쟁사 협업 제한)",
+   "The contract includes 30 days of exclusivity.",
+   "계약에는 30일 독점 조건이 들어 있어요."
+  ],
+  [
+   "usage period",
+   "n",
+   "(콘텐츠) 사용 기간",
+   "The usage period for paid ads is three months.",
+   "유료 광고 사용 기간은 3개월이에요."
+  ]
+ ],
+ "exprs": [
+  [
+   "협상",
+   "Would you be flexible on ...?",
+   "…를 조정해 주실 수 있을까요?",
+   "Would you be flexible on the fee if we extend the deadline?",
+   [
+    "Would you be ___ on the fee?",
+    "flexible",
+    [
+     "flexible",
+     "flexibly",
+     "flexibility"
+    ]
+   ]
+  ],
+  [
+   "이메일",
+   "Our budget for this campaign is ...",
+   "이번 캠페인 예산은 …예요",
+   "Our budget for this campaign is $1,500 per creator.",
+   [
+    "Our ___ for this campaign is $1,500.",
+    "budget",
+    [
+     "budget",
+     "budgeting",
+     "budgeted"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Re: Collaboration Terms",
+  "text": "Hi Chloe,\n\nThank you for sharing your rate card. We'd love to work with you on our winter moisturizer campaign.\n\nOur budget for this campaign is $2,000 for one TikTok video and two Instagram Stories. Your listed rate is $2,600, so would you be flexible on the fee if we extend the posting window to three weeks?\n\nWe would also like a usage period of 60 days so that we can run your video as a paid ad. During the campaign, we ask for 14 days of exclusivity, which means no posts for other moisturizer brands.\n\nPlease let me know your thoughts.\n\nBest,\nMinsu",
+  "gloss": {
+   "moisturizer": "보습 크림",
+   "posting window": "게시 기간",
+   "paid ad": "유료 광고",
+   "thoughts": "생각, 의견"
+  },
+  "qs": [
+   [
+    "인플루언서가 원래 제시한 금액은?",
+    "2,600달러",
+    [
+     "2,600달러",
+     "2,000달러",
+     "1,400달러"
+    ]
+   ],
+   [
+    "14일 독점 기간에 하지 말아야 할 것은?",
+    "다른 보습 크림 브랜드 게시물",
+    [
+     "다른 보습 크림 브랜드 게시물",
+     "틱톡 라이브 방송",
+     "개인 일상 게시물"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "인플루언서의 단가가 예산보다 높아요. 예산을 알리고 금액 조정이 가능한지 정중하게 물어보는 이메일을 써 보세요.",
+  "en": "Write a polite email telling an influencer your budget and asking if they can adjust their fee.",
+  "hints": [
+   "Our budget for this campaign is",
+   "Would you be flexible on",
+   "usage period"
+  ],
+  "model": "Hi Mia,\n\nThank you for sending your rate card. Our budget for this campaign is $1,500 for one Reel and three Stories. Would you be flexible on the fee if we give you more time to post? We would also need a usage period of 30 days for paid ads.\n\nBest,\nMinsu"
+ }
+}

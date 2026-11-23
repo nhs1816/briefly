@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-24",
+ "track": "mkt",
+ "theme": "해시태그 챌린지 기획",
+ "en": "Hashtag Challenges",
+ "words": [
+  [
+   "hashtag",
+   "n",
+   "해시태그",
+   "Please include our campaign hashtag in every post.",
+   "모든 게시물에 캠페인 해시태그를 넣어 주세요."
+  ],
+  [
+   "participant",
+   "n",
+   "참여자",
+   "Each participant will get a mini serum.",
+   "참여자 모두 미니 세럼을 받아요."
+  ],
+  [
+   "momentum",
+   "n",
+   "기세, 탄력",
+   "We need a second wave of posts to keep the momentum going.",
+   "기세를 이어 가려면 두 번째 게시물 물결이 필요해요."
+  ]
+ ],
+ "exprs": [
+  [
+   "SNS",
+   "Join us in ...ing!",
+   "함께 …해요!",
+   "Join us in sharing your morning skincare routine!",
+   [
+    "Join us ___ sharing your skincare routine!",
+    "in",
+    [
+     "in",
+     "on",
+     "at"
+    ]
+   ]
+  ],
+  [
+   "기획",
+   "We're hoping to ...",
+   "…하기를 기대하고 있어요",
+   "We're hoping to reach 5,000 entries in two weeks.",
+   [
+    "We're ___ to reach 5,000 entries.",
+    "hoping",
+    [
+     "hoping",
+     "thinking",
+     "hearing"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Brief: #GlowUpRoutine Challenge",
+  "text": "Hi Daniel,\n\nWe're planning a two-week hashtag challenge on TikTok and Instagram to support our new vitamin serum. Participants will post a short video of their morning skincare routine with the hashtag #GlowUpRoutine.\n\nWe're hoping to reach 3,000 entries. To build momentum, we'd like five micro-influencers to post on day one, followed by a reminder post from our brand account in week two. Every participant will receive a 10% discount code, and ten winners will get a full-size serum.\n\nCould you send us a draft timeline and a budget estimate by Friday?\n\nBest,\nMinsu",
+  "gloss": {
+   "micro-influencers": "소규모 인플루언서",
+   "entries": "응모(작)",
+   "reminder": "다시 알림, 리마인더",
+   "estimate": "견적, 추정치"
+  },
+  "qs": [
+   [
+    "챌린지 첫날 게시물을 올릴 사람은?",
+    "마이크로 인플루언서 5명",
+    [
+     "마이크로 인플루언서 5명",
+     "브랜드 공식 계정",
+     "당첨자 10명"
+    ]
+   ],
+   [
+    "모든 참여자가 받는 것은?",
+    "10% 할인 코드",
+    [
+     "10% 할인 코드",
+     "정품 세럼",
+     "무료 배송 쿠폰"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "새 선크림 홍보를 위해 해시태그 챌린지를 열어요. 팔로워에게 참여 방법과 혜택을 알리는 짧은 게시글을 써 보세요.",
+  "en": "Write a short social media post inviting followers to join a hashtag challenge for a new sunscreen.",
+  "hints": [
+   "Join us in",
+   "hashtag",
+   "participant"
+  ],
+  "model": "Join us in our #SunSafeSelfie challenge! Post a selfie with your favorite outdoor look, tag us, and add the hashtag #SunSafeSelfie. Every participant gets a 15% discount code, and five lucky winners will receive our new daily sunscreen. The challenge runs until December 10. We can't wait to see your posts!"
+ }
+}

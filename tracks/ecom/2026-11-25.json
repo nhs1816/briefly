@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-25",
+ "track": "ecom",
+ "theme": "블랙프라이데이 막판 점검",
+ "en": "Black Friday Prep",
+ "words": [
+  [
+   "markdown",
+   "n",
+   "가격 인하",
+   "The 30% markdown starts at midnight.",
+   "30% 가격 인하는 자정에 시작해요."
+  ],
+  [
+   "surge",
+   "n",
+   "급증",
+   "We expect a surge in traffic on Black Friday.",
+   "블랙프라이데이에 유입이 급증할 것 같아요."
+  ],
+  [
+   "out of stock",
+   "phr",
+   "품절된",
+   "If we go out of stock, our ranking will drop.",
+   "품절되면 순위가 떨어질 거예요."
+  ]
+ ],
+ "exprs": [
+  [
+   "회의",
+   "Let's make sure ...",
+   "…를 꼭 확인해요",
+   "Let's make sure the coupon is live before midnight.",
+   [
+    "Let's make ___ the coupon is live.",
+    "sure",
+    [
+     "sure",
+     "true",
+     "real"
+    ]
+   ]
+  ],
+  [
+   "보고",
+   "ahead of ...",
+   "…에 앞서",
+   "We raised our ad budgets ahead of Black Friday.",
+   [
+    "We raised our budgets ___ of Black Friday.",
+    "ahead",
+    [
+     "ahead",
+     "before",
+     "prior"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "Black Friday Checklist",
+  "text": "Hi team,\n\nBlack Friday is only two days away, so here is our final checklist.\n\nFirst, our 30% markdown on the Snail Repair Cream starts at midnight Pacific time. Let's make sure the deal badge shows correctly on the product page.\n\nSecond, we expect a surge in traffic, so we raised our daily ad budgets ahead of the event. Please check the campaigns every few hours and pause any keyword with an ACoS above 40%.\n\nFinally, our toner is close to going out of stock. If inventory falls below 300 units, we will move ad spend to the cleanser instead.\n\nThanks,\nMinsu",
+  "gloss": {
+   "Pacific time": "미국 태평양 시간",
+   "badge": "배지(표시)",
+   "pause": "일시 중지하다",
+   "ad spend": "광고비"
+  },
+  "qs": [
+   [
+    "할인은 언제 시작하나요?",
+    "태평양 시간 자정",
+    [
+     "태평양 시간 자정",
+     "한국 시간 오전 9시",
+     "금요일 정오"
+    ]
+   ],
+   [
+    "토너 재고가 300개 아래로 떨어지면 어떻게 하나요?",
+    "광고비를 클렌저로 옮긴다",
+    [
+     "광고비를 클렌저로 옮긴다",
+     "할인율을 올린다",
+     "판매를 멈춘다"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "블랙프라이데이를 하루 앞두고 있어요. 팀에게 꼭 확인할 일 두세 가지를 짧게 알리는 메시지를 써 보세요.",
+  "en": "Write a short message to your team listing two or three things to check before Black Friday.",
+  "hints": [
+   "Let's make sure",
+   "ahead of",
+   "surge"
+  ],
+  "model": "Hi everyone,\n\nBlack Friday starts tomorrow. Let's make sure all coupons are live by 10 p.m. and that the deal prices are correct. We expect a surge in orders, so please check FBA stock levels twice a day. I raised our ad budgets ahead of the event.\n\nThanks,\nMinsu"
+ }
+}

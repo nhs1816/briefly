@@ -1,0 +1,181 @@
+{
+ "date": "2026-11-24",
+ "theme": "거래처 첫 미팅",
+ "en": "First Meetings",
+ "words": [
+  [
+   "partnership",
+   "n",
+   "협력 관계, 파트너십",
+   "We hope this meeting is the start of a long partnership.",
+   "이번 미팅이 오랜 협력 관계의 시작이 되면 좋겠어요."
+  ],
+  [
+   "background",
+   "n",
+   "배경, 이력",
+   "Could you tell us a little about your company's background?",
+   "귀사의 배경에 대해 조금 말씀해 주시겠어요?"
+  ],
+  [
+   "impression",
+   "n",
+   "인상",
+   "Our team made a good impression on the client.",
+   "우리 팀은 고객에게 좋은 인상을 남겼어요."
+  ],
+  [
+   "expertise",
+   "n",
+   "전문 지식",
+   "Their expertise in skincare is impressive.",
+   "그쪽의 스킨케어 전문 지식이 인상적이에요."
+  ],
+  [
+   "mutual",
+   "adj",
+   "서로의, 상호의",
+   "We share a mutual interest in the Asian market.",
+   "우리는 아시아 시장에 서로 관심이 있어요."
+  ]
+ ],
+ "exprs": [
+  [
+   "인사",
+   "It's a pleasure to finally meet you in person.",
+   "드디어 직접 뵙게 되어 반가워요.",
+   "Ms. Park, it's a pleasure to finally meet you in person.",
+   [
+    "It's a pleasure to finally meet you in ___.",
+    "person",
+    [
+     "person",
+     "face",
+     "body"
+    ]
+   ]
+  ],
+  [
+   "회의",
+   "Thank you for taking the time to ...",
+   "…하는 데 시간 내 주셔서 감사해요",
+   "Thank you for taking the time to meet with us today.",
+   [
+    "Thank you for ___ the time to meet with us.",
+    "taking",
+    [
+     "taking",
+     "giving",
+     "having"
+    ]
+   ]
+  ],
+  [
+   "마무리",
+   "We look forward to working with you.",
+   "함께 일하게 되기를 기대해요.",
+   "We look forward to working with you on this project.",
+   [
+    "We look forward to ___ with you.",
+    "working",
+    [
+     "working",
+     "work",
+     "worked"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "거래처와의 첫 만남",
+  "lines": [
+   [
+    "A",
+    "Good morning. You must be Mr. Grant. I'm Minsu from Sunrise Cosmetics."
+   ],
+   [
+    "B",
+    "Yes, hello. It's a pleasure to finally meet you in person."
+   ],
+   [
+    "A",
+    "Likewise. Thank you for taking the time to visit our office."
+   ],
+   [
+    "B",
+    "Of course. We've heard a lot about your new skincare line."
+   ],
+   [
+    "A",
+    "Great. Before we start, would you like some coffee or tea?"
+   ],
+   [
+    "B",
+    "Coffee would be nice, thanks. Then I'd love to hear about your company's background."
+   ]
+  ],
+  "qs": [
+   [
+    "B는 무엇에 대해 많이 들었다고 했나요?",
+    "새 스킨케어 라인",
+    [
+     "새 스킨케어 라인",
+     "새 사무실 이전",
+     "신입 채용 계획"
+    ]
+   ],
+   [
+    "미팅 시작 전에 A가 권한 것은?",
+    "커피나 차",
+    [
+     "커피나 차",
+     "점심 식사",
+     "회사 투어"
+    ]
+   ]
+  ],
+  "dict": "Thank you for taking the time to visit our office."
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Great Meeting You Today",
+  "text": "Dear Mr. Grant,\n\nThank you for taking the time to meet with our team today. It was a pleasure to finally meet you in person after so many emails.\n\nWe were impressed by your expertise in the European retail market, and we believe there is a strong mutual interest in growing our brand there together. As discussed, we will send you samples of our three best-selling serums by the end of next week, along with a detailed price list.\n\nPlease also let us know a convenient date for a follow-up call with your purchasing manager. We would like to answer any questions before you make a decision.\n\nWe look forward to working with you and building a long-term partnership.\n\nBest regards,\nMinsu",
+  "gloss": {
+   "impressed": "감명받은, 좋은 인상을 받은",
+   "retail": "소매",
+   "convenient": "편한, 형편에 맞는",
+   "purchasing manager": "구매 담당자",
+   "long-term": "장기적인"
+  },
+  "qs": [
+   [
+    "다음 주 말까지 보내기로 한 것은?",
+    "세럼 샘플과 가격표",
+    [
+     "세럼 샘플과 가격표",
+     "계약서 초안",
+     "회사 소개 영상"
+    ]
+   ],
+   [
+    "후속 통화는 누구와 하려고 하나요?",
+    "구매 담당자",
+    [
+     "구매 담당자",
+     "마케팅 팀장",
+     "물류 담당자"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "오늘 처음 만난 거래처 담당자에게 시간 내 줘서 고맙다는 인사와 다음 단계(자료 발송)를 알리는 짧은 이메일을 써 보세요.",
+  "en": "Write a short email thanking a new client for today's first meeting and explaining the next step.",
+  "hints": [
+   "Thank you for taking the time to",
+   "It was a pleasure to finally meet you in person",
+   "We look forward to working with you"
+  ],
+  "model": "Dear Ms. Clark,\n\nThank you for taking the time to meet with us today. It was a pleasure to finally meet you in person. As promised, I will send you our product catalog and a sample kit by Friday. We look forward to working with you.\n\nBest regards,\nMinsu"
+ }
+}

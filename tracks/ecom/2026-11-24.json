@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-24",
+ "track": "ecom",
+ "theme": "바이박스 지키기",
+ "en": "Buy Box",
+ "words": [
+  [
+   "Buy Box",
+   "n",
+   "바이박스(장바구니 담기 영역)",
+   "We lost the Buy Box to another seller yesterday.",
+   "어제 다른 판매자에게 바이박스를 뺏겼어요."
+  ],
+  [
+   "undercut",
+   "v",
+   "(가격을) 더 낮게 부르다",
+   "A reseller undercut our price by two dollars.",
+   "한 재판매자가 우리보다 2달러 싸게 팔았어요."
+  ],
+  [
+   "repricing",
+   "n",
+   "가격 자동 조정",
+   "We use a repricing tool to stay competitive.",
+   "경쟁력을 지키려고 가격 자동 조정 도구를 써요."
+  ]
+ ],
+ "exprs": [
+  [
+   "보고",
+   "win back ...",
+   "…를 되찾다",
+   "We need to win back the Buy Box before the weekend.",
+   [
+    "We need to ___ back the Buy Box.",
+    "win",
+    [
+     "win",
+     "lose",
+     "fall"
+    ]
+   ]
+  ],
+  [
+   "회의",
+   "stay competitive",
+   "경쟁력을 유지하다",
+   "We need to lower shipping costs to stay competitive.",
+   [
+    "We need to ___ competitive on price.",
+    "stay",
+    [
+     "stay",
+     "make",
+     "take"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "Buy Box Status: Vitamin Toner",
+  "text": "Team,\n\nOver the past three days, we lost the Buy Box for our Vitamin Toner on 40% of page views. A third-party reseller undercut our price by $1.50, and Amazon now features their offer instead of ours.\n\nTo win back the Buy Box, we will adjust our repricing rules so that our price never goes more than $0.50 above the lowest offer. We will also keep enough FBA stock, because low inventory can hurt our chances.\n\nPlease report any new sellers on the listing to me. We need to stay competitive without starting a price war.\n\nThanks,\nMinsu",
+  "gloss": {
+   "third-party": "제3자의, 외부의",
+   "features": "내세워 보여 주다",
+   "inventory": "재고",
+   "price war": "가격 전쟁"
+  },
+  "qs": [
+   [
+    "바이박스를 잃은 주된 이유는?",
+    "다른 판매자가 더 싸게 팔아서",
+    [
+     "다른 판매자가 더 싸게 팔아서",
+     "리뷰 평점이 떨어져서",
+     "리스팅이 정지돼서"
+    ]
+   ],
+   [
+    "FBA 재고를 충분히 두려는 이유는?",
+    "재고가 적으면 바이박스를 얻기 어려워서",
+    [
+     "재고가 적으면 바이박스를 얻기 어려워서",
+     "연말 할인 행사가 있어서",
+     "보관료가 내려가서"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "우리 상품의 바이박스를 다른 판매자에게 뺏겼어요. 팀장님께 상황과 대응 계획을 짧게 보고해 보세요.",
+  "en": "Write a short update to your manager about losing the Buy Box and your plan to win it back.",
+  "hints": [
+   "undercut",
+   "win back",
+   "stay competitive"
+  ],
+  "model": "Hi Jiwon,\n\nWe lost the Buy Box for our cica cream this morning. Another seller undercut our price by $2. I'd like to update our repricing rules today to win back the Buy Box while protecting our margin. We also have enough FBA stock to stay competitive.\n\nThanks,\nMinsu"
+ }
+}

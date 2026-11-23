@@ -1,0 +1,185 @@
+{
+ "date": "2026-11-25",
+ "theme": "데이터 보고",
+ "en": "Data Reports",
+ "words": [
+  [
+   "trend",
+   "n",
+   "추세, 흐름",
+   "The chart shows a clear upward trend in online sales.",
+   "차트를 보면 온라인 매출이 분명히 오르는 추세예요."
+  ],
+  [
+   "decline",
+   "n",
+   "감소, 하락",
+   "We saw a slight decline in store visits last month.",
+   "지난달 매장 방문이 조금 줄었어요."
+  ],
+  [
+   "quarterly",
+   "adj",
+   "분기별의",
+   "The quarterly report is due next Monday.",
+   "분기 보고서는 다음 주 월요일까지예요."
+  ],
+  [
+   "breakdown",
+   "n",
+   "세부 내역, 분류",
+   "Could you send me a breakdown of sales by region?",
+   "지역별 매출 세부 내역을 보내 주시겠어요?"
+  ],
+  [
+   "accurate",
+   "adj",
+   "정확한",
+   "Please make sure the numbers are accurate before you share them.",
+   "공유하기 전에 숫자가 정확한지 꼭 확인해 주세요."
+  ]
+ ],
+ "exprs": [
+  [
+   "보고",
+   "Here's a quick summary of ...",
+   "…을 간단히 정리해 드릴게요",
+   "Here's a quick summary of last month's sales.",
+   [
+    "Here's a quick ___ of last month's sales.",
+    "summary",
+    [
+     "summary",
+     "summarize",
+     "summarized"
+    ]
+   ]
+  ],
+  [
+   "보고",
+   "... went up by ... percent.",
+   "…가 …퍼센트 올랐어요.",
+   "Online sales went up by 12 percent this quarter.",
+   [
+    "Online sales went ___ by 12 percent.",
+    "up",
+    [
+     "up",
+     "in",
+     "at"
+    ]
+   ]
+  ],
+  [
+   "회의",
+   "This is largely because ...",
+   "이건 주로 … 때문이에요",
+   "This is largely because more customers are shopping on mobile.",
+   [
+    "This is ___ because more customers shop on mobile.",
+    "largely",
+    [
+     "largely",
+     "widely",
+     "highly"
+    ]
+   ]
+  ]
+ ],
+ "listen": {
+  "title": "월간 매출 보고",
+  "lines": [
+   [
+    "A",
+    "Hi Sora, do you have the monthly sales numbers ready?"
+   ],
+   [
+    "B",
+    "Yes. Here's a quick summary of last month's results."
+   ],
+   [
+    "A",
+    "Great. How did online sales do?"
+   ],
+   [
+    "B",
+    "Online sales went up by fifteen percent compared with the previous month."
+   ],
+   [
+    "A",
+    "That's good news. What about our offline stores?"
+   ],
+   [
+    "B",
+    "We saw a small decline there. This is largely because more customers are shopping on mobile."
+   ],
+   [
+    "A",
+    "I see. Could you send me a breakdown by region before the meeting?"
+   ]
+  ],
+  "qs": [
+   [
+    "온라인 매출은 지난달보다 어떻게 됐나요?",
+    "15% 올랐다",
+    [
+     "15% 올랐다",
+     "15% 줄었다",
+     "그대로였다"
+    ]
+   ],
+   [
+    "A가 회의 전에 보내 달라고 한 것은?",
+    "지역별 세부 내역",
+    [
+     "지역별 세부 내역",
+     "고객 설문 결과",
+     "새 광고 시안"
+    ]
+   ]
+  ],
+  "dict": "Here's a quick summary of last month's results."
+ },
+ "read": {
+  "kind": "Memo",
+  "title": "October Sales Data Update",
+  "text": "To: Sales Team\nFrom: Minsu\n\nHere's a quick summary of our sales data for October. Total sales reached 420 million won, which is 8 percent higher than in September. Online sales went up by 15 percent, mainly thanks to the new sunscreen launch.\n\nHowever, offline sales showed a slight decline for the second month in a row. This is largely because fewer customers are visiting department stores. We expect this trend to continue during the winter season.\n\nI have attached a breakdown of sales by channel and region. Please check that the figures for your area are accurate and let me know of any errors by Wednesday. The final numbers will be included in our quarterly report to management.\n\nThanks,\nMinsu",
+  "gloss": {
+   "mainly thanks to": "주로 … 덕분에",
+   "in a row": "연속으로",
+   "department stores": "백화점",
+   "channel": "판매 채널, 판매 경로",
+   "management": "경영진"
+  },
+  "qs": [
+   [
+    "오프라인 매출이 줄어든 주된 이유는?",
+    "백화점을 찾는 고객이 줄어서",
+    [
+     "백화점을 찾는 고객이 줄어서",
+     "신제품 출시가 늦어져서",
+     "가격을 올려서"
+    ]
+   ],
+   [
+    "팀원들이 수요일까지 해야 할 일은?",
+    "자기 지역 수치가 정확한지 확인하기",
+    [
+     "자기 지역 수치가 정확한지 확인하기",
+     "분기 보고서 쓰기",
+     "백화점 방문하기"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "팀장님이 지난달 매출 결과를 물어봤어요. 오른 부분과 줄어든 부분, 그 이유를 짧게 보고하는 메시지를 써 보세요.",
+  "en": "Write a short message to your manager summarizing last month's sales, including what went up, what went down, and why.",
+  "hints": [
+   "Here's a quick summary of",
+   "went up by",
+   "This is largely because"
+  ],
+  "model": "Hi Ms. Han,\n\nHere's a quick summary of last month's sales. Online sales went up by 10 percent, while store sales showed a small decline. This is largely because our new app promotion brought in more mobile shoppers. I'll send you a full breakdown by region tomorrow.\n\nBest,\nMinsu"
+ }
+}

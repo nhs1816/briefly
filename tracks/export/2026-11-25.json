@@ -1,0 +1,102 @@
+{
+ "date": "2026-11-25",
+ "track": "export",
+ "theme": "바이어 공장 방문 준비",
+ "en": "Factory Visits",
+ "words": [
+  [
+   "facility",
+   "n",
+   "시설, 공장",
+   "Our production facility is located near Incheon.",
+   "저희 생산 시설은 인천 근처에 있어요."
+  ],
+  [
+   "production line",
+   "n",
+   "생산 라인",
+   "You will see our new production line for sheet masks.",
+   "시트 마스크 새 생산 라인을 보시게 될 거예요."
+  ],
+  [
+   "hygiene",
+   "n",
+   "위생",
+   "Visitors must follow our hygiene rules in the clean room.",
+   "방문객은 클린룸에서 위생 규칙을 지켜야 해요."
+  ]
+ ],
+ "exprs": [
+  [
+   "이메일",
+   "We look forward to welcoming you to ...",
+   "…에서 뵙기를 기대해요",
+   "We look forward to welcoming you to our factory next week.",
+   [
+    "We look forward to ___ you to our facility.",
+    "welcoming",
+    [
+     "welcoming",
+     "welcome",
+     "welcomed"
+    ]
+   ]
+  ],
+  [
+   "안내",
+   "Please let us know your preferred ...",
+   "원하시는 …를 알려 주세요",
+   "Please let us know your preferred date for the visit.",
+   [
+    "Please let us know your ___ date for the visit.",
+    "preferred",
+    [
+     "preferred",
+     "preferring",
+     "prefer"
+    ]
+   ]
+  ]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Your Visit to Our Factory",
+  "text": "Dear Mr. Rossi,\n\nWe look forward to welcoming you to our facility in Hwaseong next week. Below is the plan for your visit on Thursday, December 3.\n\n10:00 Meeting with our R&D team\n11:00 Tour of the sheet mask production line\n12:30 Lunch\n14:00 Quality control lab and Q&A\n\nFor hygiene reasons, all visitors will be asked to wear a gown, cap, and shoe covers in the production area. Photos are not allowed inside the clean room.\n\nOur driver can pick you up at your hotel at 9:15. Please let us know your preferred pickup location by Monday.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "quality control": "품질 관리",
+   "gown": "가운",
+   "clean room": "클린룸(무균 작업실)",
+   "pick you up": "데리러 가다"
+  },
+  "qs": [
+   [
+    "생산 구역에서 할 수 없는 것은?",
+    "클린룸 안에서 사진 찍기",
+    [
+     "클린룸 안에서 사진 찍기",
+     "질문하기",
+     "품질 관리 연구실 둘러보기"
+    ]
+   ],
+   [
+    "월요일까지 알려 달라고 한 것은?",
+    "원하는 픽업 장소",
+    [
+     "원하는 픽업 장소",
+     "점심 메뉴",
+     "방문 인원"
+    ]
+   ]
+  ]
+ },
+ "write": {
+  "task": "해외 바이어가 다음 주에 공장을 방문해요. 방문 일정과 주의 사항을 간단히 알리고 도착 시간을 물어보는 이메일을 써 보세요.",
+  "en": "Write an email to a buyer visiting your factory next week, sharing the plan and rules and asking for their arrival time.",
+  "hints": [
+   "We look forward to welcoming you to",
+   "facility",
+   "Please let us know your preferred"
+  ],
+  "model": "Dear Ms. Weber,\n\nWe look forward to welcoming you to our facility next Wednesday. The visit will include a meeting with our R&D team and a tour of our cream production line. For hygiene reasons, please wear the gown we provide. Please let us know your preferred arrival time.\n\nBest regards,\nMinsu Lee"
+ }
+}
