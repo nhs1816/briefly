@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-26",
+ "track": "export",
+ "theme": "가격 인상 통보",
+ "en": "Price Increases",
+ "words": [
+  ["price increase", "n", "가격 인상", "We have to announce a 5% price increase next quarter.", "다음 분기에 5% 가격 인상을 알려야 해요."],
+  ["effective", "adj", "(날짜부터) 시행되는, 적용되는", "The new prices will be effective from January 1.", "새 가격은 1월 1일부터 적용돼요."],
+  ["absorb", "v", "(비용을) 떠안다, 흡수하다", "We absorbed the higher packaging costs for six months.", "포장비 인상분을 6개월 동안 저희가 떠안았어요."]
+ ],
+ "exprs": [
+  ["이메일", "Due to rising costs, ...", "비용 상승으로 인해 …", "Due to rising costs, we need to adjust our prices.", ["___ to rising costs, we need to adjust our prices.", "Due", ["Due", "Because", "Since"]]],
+  ["협상", "We value our partnership.", "저희는 귀사와의 협력 관계를 소중히 생각합니다", "We value our partnership and want to keep the change as small as possible.", ["We ___ our partnership with your company.", "value", ["value", "worth", "price"]]]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Notice of Price Adjustment",
+  "text": "Dear Mr. Silva,\n\nWe value our partnership and want to inform you of an upcoming change. Due to rising costs of raw materials and packaging, we will apply a 4% price increase to our skincare line.\n\nThe new prices will be effective from February 1. Over the past year, we absorbed most of these costs, but we can no longer do so without lowering quality.\n\nAll orders confirmed before January 31 will keep the current prices. Please find attached the updated price list.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "upcoming": "다가오는, 곧 있을",
+   "raw materials": "원자재",
+   "apply": "적용하다",
+   "confirmed": "확정된"
+  },
+  "qs": [
+   ["새 가격은 언제부터 적용되나요?", "2월 1일", ["2월 1일", "1월 31일", "바로 다음 주문부터"]],
+   ["기존 가격을 유지하려면?", "1월 31일 전에 주문을 확정한다", ["1월 31일 전에 주문을 확정한다", "주문량을 늘린다", "새 가격표에 서명한다"]]
+  ]
+ },
+ "write": {
+  "task": "원가 상승으로 3월부터 단가를 3% 올려야 해요. 오래 거래한 바이어에게 인상 이유와 적용 날짜를 알리고, 그 전 주문은 기존 가격을 유지한다고 써 보세요.",
+  "en": "Tell a long-time buyer about a 3% price increase from March, explain why, and say earlier orders keep the current price.",
+  "hints": ["Due to rising costs", "effective", "We value our partnership"],
+  "model": "Dear Ms. Chen,\n\nWe value our partnership and want to let you know early. Due to rising costs of ingredients and shipping, our unit prices will increase by 3%, effective from March 1. Any orders placed before that date will keep the current prices. Please find attached the new price list.\n\nBest regards,\nMinsu Lee"
+ }
+}

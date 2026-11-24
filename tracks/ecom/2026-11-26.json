@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-26",
+ "track": "ecom",
+ "theme": "정기 구매 할인 설정",
+ "en": "Subscribe & Save",
+ "words": [
+  ["subscription", "n", "정기 구매, 구독", "Many customers buy our toner through a subscription.", "많은 고객이 정기 구매로 저희 토너를 사요."],
+  ["recurring", "adj", "반복되는, 정기적인", "Recurring orders give us more stable sales.", "정기 주문 덕분에 매출이 더 안정적이에요."],
+  ["retention", "n", "고객 유지(율)", "Our retention improved after we added a 10% discount.", "10% 할인을 넣은 뒤 고객 유지율이 좋아졌어요."]
+ ],
+ "exprs": [
+  ["보고", "We're seeing a steady increase in ...", "…가 꾸준히 늘고 있어요", "We're seeing a steady increase in repeat orders.", ["We're seeing a ___ increase in repeat orders.", "steady", ["steady", "stay", "still"]]],
+  ["제안", "It might be worth ...", "…해 볼 만할 것 같아요", "It might be worth adding our cleanser to Subscribe & Save.", ["It might be ___ adding the cleanser.", "worth", ["worth", "value", "useful"]]]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "Subscribe & Save Results – October",
+  "text": "Team,\n\nHere is a quick update on our Subscribe & Save program. In October, recurring orders made up 18% of total units, up from 12% in July. We're seeing a steady increase in subscriptions for the daily moisturizer.\n\nRetention is also strong. About 70% of customers who started a subscription in August are still active.\n\nIt might be worth adding the sunscreen and cleanser next. Before that, we should check stock levels, because subscription orders must ship on time every month.\n\nThanks,\nMinsu",
+  "gloss": {
+   "made up": "(비율을) 차지했다",
+   "total units": "전체 판매 수량",
+   "active": "유지 중인, 활성 상태인",
+   "stock levels": "재고 수준"
+  },
+  "qs": [
+   ["10월 전체 판매 수량 중 정기 주문 비율은?", "18%", ["18%", "12%", "70%"]],
+   ["선크림과 클렌저를 추가하기 전에 확인할 것은?", "재고 수준", ["재고 수준", "광고 예산", "리뷰 평점"]]
+  ]
+ },
+ "write": {
+  "task": "정기 구매 고객이 늘고 있어요. 팀장님께 성과를 짧게 알리고, 다른 제품 하나를 정기 구매 할인에 추가하자고 제안해 보세요.",
+  "en": "Briefly report growing Subscribe & Save results to your manager and suggest adding one more product.",
+  "hints": ["We're seeing a steady increase in", "It might be worth", "retention"],
+  "model": "Hi Jenny,\n\nWe're seeing a steady increase in Subscribe & Save orders. Recurring orders reached 15% of units last month, and retention stays above 65%. It might be worth adding our toner pads to the program next month. I'll check the stock plan first and share it by Friday.\n\nThanks,\nMinsu"
+ }
+}

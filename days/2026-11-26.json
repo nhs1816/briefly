@@ -1,0 +1,57 @@
+{
+ "date": "2026-11-26",
+ "theme": "감사 인사 전하기",
+ "en": "Thank-You Notes",
+ "words": [
+  ["grateful", "adj", "감사하는, 고마워하는", "I'm grateful for your quick response.", "빠르게 답해 주셔서 감사해요."],
+  ["support", "n", "지원, 도움", "Thank you for your support during the launch.", "출시 기간 동안 도와주셔서 감사해요."],
+  ["effort", "n", "노력, 수고", "The project succeeded thanks to everyone's effort.", "모두의 노력 덕분에 프로젝트가 성공했어요."],
+  ["recognize", "v", "인정하다, (공로를) 알아주다", "I want to recognize Jisoo for her hard work this quarter.", "이번 분기에 애써 준 지수 씨의 공로를 알리고 싶어요."],
+  ["contribution", "n", "기여, 공헌", "Your contribution made a real difference to the team.", "당신의 기여가 팀에 큰 변화를 만들었어요."]
+ ],
+ "exprs": [
+  ["이메일", "I really appreciate your help with ...", "…를 도와주셔서 정말 감사해요", "I really appreciate your help with the sales report.", ["I really ___ your help with the report.", "appreciate", ["appreciate", "thank", "grateful"]]],
+  ["회의", "I couldn't have done it without you.", "당신이 없었다면 해내지 못했을 거예요", "Thanks for staying late last week. I couldn't have done it without you.", ["I couldn't have done it ___ you.", "without", ["without", "except", "unless"]]],
+  ["인사", "It was my pleasure.", "별말씀을요, 제가 좋아서 한 일이에요", "Thanks for the tour. – It was my pleasure.", ["Thanks for your help! – It was my ___.", "pleasure", ["pleasure", "please", "pleased"]]]
+ ],
+ "listen": {
+  "title": "프로젝트를 도와준 동료에게 감사하기",
+  "lines": [
+   ["A", "Hi Daniel, do you have a second? I just wanted to say thank you."],
+   ["B", "Oh, for what?"],
+   ["A", "For helping me with the client presentation yesterday. They loved the charts you made."],
+   ["B", "It was my pleasure. I'm glad it went well."],
+   ["A", "Honestly, I couldn't have done it without you."],
+   ["B", "That's kind of you. Let me know if you need help next time, too."],
+   ["A", "I will. Can I buy you a coffee this afternoon?"],
+   ["B", "Sure, that sounds great."]
+  ],
+  "qs": [
+   ["A가 Daniel에게 고마워하는 이유는?", "고객 발표 준비를 도와줘서", ["고객 발표 준비를 도와줘서", "회의 일정을 바꿔 줘서", "보고서를 대신 써 줘서"]],
+   ["A가 감사의 뜻으로 제안한 것은?", "오후에 커피 사기", ["오후에 커피 사기", "저녁 식사 대접하기", "선물 보내기"]]
+  ],
+  "dict": "I'm glad it went well."
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Thank You for a Great Year",
+  "text": "Hi everyone,\n\nAs the year comes to an end, I want to take a moment to thank all of you. This year was not easy. We moved to a new office, welcomed six new members, and launched two product lines in overseas markets.\n\nThrough it all, you stayed positive and supported one another. I'm especially grateful to the logistics team, who worked extra hours to keep our shipments on schedule during the busy season. Your effort did not go unnoticed.\n\nTo celebrate, we will hold a team dinner on Friday, December 12, at 6:30 p.m. Please let Hana know by next Wednesday if you can join.\n\nThank you again for your hard work and contribution. I'm proud to work with such a great team.\n\nBest regards,\nSarah",
+  "gloss": {
+   "take a moment": "잠시 시간을 내다",
+   "overseas": "해외의",
+   "logistics": "물류",
+   "on schedule": "예정대로",
+   "go unnoticed": "알아주지 않고 지나가다"
+  },
+  "qs": [
+   ["Sarah가 특히 고마워한 팀은?", "물류팀", ["물류팀", "영업팀", "신입 사원들"]],
+   ["팀 저녁 식사 참석 여부는 언제까지 알려야 하나요?", "다음 주 수요일", ["다음 주 수요일", "12월 12일", "이번 주 금요일"]]
+  ]
+ },
+ "write": {
+  "task": "다른 부서 동료가 급한 자료 정리를 도와줘서 마감을 지킬 수 있었어요. 고마운 마음을 전하는 짧은 이메일을 써 보세요.",
+  "en": "Write a short email to thank a colleague from another team who helped you organize urgent data so you could meet a deadline.",
+  "hints": ["I really appreciate your help with", "I couldn't have done it without you", "grateful"],
+  "model": "Hi Yuna,\n\nI really appreciate your help with the sales data yesterday. Thanks to you, we sent the report to the client on time. I know you were busy with your own work, so I'm even more grateful. Honestly, I couldn't have done it without you. Please let me know if I can help you with anything.\n\nBest regards,\nMinsu"
+ }
+}

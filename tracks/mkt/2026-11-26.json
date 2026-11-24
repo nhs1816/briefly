@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-26",
+ "track": "mkt",
+ "theme": "세일 공지 게시물 작성",
+ "en": "Sale Announcements",
+ "words": [
+  ["countdown", "n", "카운트다운", "Let's post a countdown story three days before the sale.", "세일 3일 전에 카운트다운 스토리를 올려요."],
+  ["limited-time", "adj", "기간 한정의", "This is a limited-time offer, so don't miss it.", "기간 한정 혜택이니 놓치지 마세요."],
+  ["caption", "n", "(게시물) 캡션, 설명 문구", "Keep the caption short and put the discount first.", "캡션은 짧게, 할인 내용을 맨 앞에 두세요."]
+ ],
+ "exprs": [
+  ["공지", "Don't miss out on ...", "…를 놓치지 마세요", "Don't miss out on 30% off our best-sellers this weekend.", ["Don't miss ___ on 30% off this weekend.", "out", ["out", "off", "up"]]],
+  ["회의", "Let's lead with ...", "…를 앞세우죠, …로 시작하죠", "Let's lead with the bundle deal in the first slide.", ["Let's ___ with the bundle deal.", "lead", ["lead", "head", "front"]]]
+ ],
+ "read": {
+  "kind": "Guide",
+  "title": "Posting Plan for the Weekend Sale",
+  "text": "Our weekend sale starts on Friday at 9 a.m. Please follow this plan for Instagram and TikTok.\n\nWednesday: Post a teaser with a countdown sticker in Stories.\nThursday: Share a reel showing the three bundle sets.\nFriday: Publish the main post. Let's lead with the discount in the first line of the caption.\n\nUse the phrase \"limited-time\" only once, and always show the end date. Every post should include the sale hashtag and a link in bio.",
+  "gloss": {
+   "teaser": "티저(맛보기 콘텐츠)",
+   "sticker": "스티커(스토리 기능)",
+   "bundle sets": "묶음 세트",
+   "link in bio": "프로필 링크"
+  },
+  "qs": [
+   ["카운트다운 스티커는 언제 올리나요?", "수요일", ["수요일", "목요일", "금요일"]],
+   ["모든 게시물에 꼭 넣어야 하는 것은?", "세일 해시태그와 프로필 링크", ["세일 해시태그와 프로필 링크", "할인 코드와 가격표", "인플루언서 태그"]]
+  ]
+ },
+ "write": {
+  "task": "이번 주말 스킨케어 세일을 알리는 인스타그램 캡션을 영어로 써 보세요. 할인 내용, 기간, 프로필 링크 안내를 넣어요.",
+  "en": "Write an Instagram caption announcing this weekend's skincare sale with the discount, the dates, and a link-in-bio note.",
+  "hints": ["Don't miss out on", "limited-time", "countdown"],
+  "model": "Weekend glow sale is here! Get 25% off all serums and sheet masks, this Friday to Sunday only. Don't miss out on this limited-time offer. Tap the link in bio to shop now and build your winter routine. #GlowWeekend"
+ }
+}
