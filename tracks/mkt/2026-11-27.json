@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-27",
+ "track": "mkt",
+ "theme": "인플루언서 초안 검수",
+ "en": "Content Approval",
+ "words": [
+  ["draft", "n", "초안", "Please send us your video draft by Thursday.", "목요일까지 영상 초안을 보내 주세요."],
+  ["approve", "v", "승인하다", "Our team approved the script with one small change.", "저희 팀이 작은 수정 하나만 넣고 대본을 승인했어요."],
+  ["disclosure", "n", "(광고임을) 밝힘, 고지", "Please add an ad disclosure such as #ad at the start of the caption.", "캡션 앞부분에 #ad 같은 광고 고지를 넣어 주세요."]
+ ],
+ "exprs": [
+  ["피드백", "Overall, ... looks great.", "전체적으로 …는 아주 좋아요", "Overall, the video looks great. We just have two small notes.", ["___, the video looks great.", "Overall", ["Overall", "Totally", "Generally speaking of"]]],
+  ["요청", "Before you post, could you ...?", "올리시기 전에 …해 주시겠어요?", "Before you post, could you mention the product name once more?", ["Before you ___, could you add the hashtag?", "post", ["post", "posted", "posting"]]]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Feedback on Your Draft",
+  "text": "Hi Chloe,\n\nThank you for sending the draft so quickly. Overall, the video looks great, and we love the morning routine idea.\n\nBefore you post, could you make two small changes? First, please say that the serum is for dry skin, not all skin types. Second, please add an ad disclosure at the beginning of the caption.\n\nOnce these are done, we will approve the video right away. The planned posting date is still December 3.\n\nBest,\nMinsu",
+  "gloss": {
+   "routine": "(매일 하는) 루틴",
+   "dry skin": "건성 피부",
+   "caption": "캡션, 게시물 설명 글",
+   "right away": "바로"
+  },
+  "qs": [
+   ["영상에서 고쳐야 할 피부 타입 설명은?", "건성 피부용이라고 말하기", ["건성 피부용이라고 말하기", "모든 피부용이라고 말하기", "지성 피부용이라고 말하기"]],
+   ["예정된 게시 날짜는?", "12월 3일", ["12월 3일", "12월 1일", "바로 오늘"]]
+  ]
+ },
+ "write": {
+  "task": "인플루언서가 보낸 영상 초안이 좋지만, 할인 코드가 빠져 있어요. 칭찬과 함께 올리기 전에 할인 코드를 넣어 달라는 짧은 메시지를 써 보세요.",
+  "en": "Praise an influencer's draft and ask them to add the discount code before posting.",
+  "hints": ["Overall, ... looks great", "Before you post, could you ...?", "approve"],
+  "model": "Hi Dana,\n\nThanks for the draft! Overall, it looks great, and the lighting is perfect. Before you post, could you add the discount code GLOW15 to the caption? Once that's in, we'll approve it right away.\n\nBest,\nMinsu"
+ }
+}

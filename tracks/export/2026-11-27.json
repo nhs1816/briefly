@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-27",
+ "track": "export",
+ "theme": "발주서 확인",
+ "en": "Purchase Orders",
+ "words": [
+  ["purchase order", "n", "발주서(PO)", "We received your purchase order for 3,000 units this morning.", "오늘 아침 3,000개 발주서를 받았어요."],
+  ["discrepancy", "n", "(수치 등의) 불일치, 차이", "There is a discrepancy between the PO and our quotation.", "발주서와 저희 견적서 사이에 차이가 있어요."],
+  ["acknowledge", "v", "(받았음을) 확인하다", "Please acknowledge receipt of this order by Friday.", "금요일까지 이 주문의 수령을 확인해 주세요."]
+ ],
+ "exprs": [
+  ["이메일", "We are pleased to confirm ...", "…를 확인해 드리게 되어 기쁩니다", "We are pleased to confirm your order of 2,000 sheet masks.", ["We are ___ to confirm your order of 2,000 units.", "pleased", ["pleased", "pleasing", "pleasure"]]],
+  ["확인", "Could you double-check ...?", "…를 다시 한번 확인해 주시겠어요?", "Could you double-check the delivery address on the PO?", ["Could you ___ the quantity on the PO?", "double-check", ["double-check", "double-checking", "double-checked"]]]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Re: PO #2417",
+  "text": "Dear Ms. Tanaka,\n\nThank you for your purchase order. We are pleased to confirm 4,000 units of our hydrating cream and 1,500 units of the cleansing foam.\n\nHowever, we found one discrepancy. The PO lists the unit price of the cream as $3.20, but our latest quotation was $3.40. Could you double-check this and send us a revised PO?\n\nOnce we receive it, we will acknowledge the order and start production. The expected ship date is January 15.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "hydrating": "보습의",
+   "lists": "(목록에) 적다",
+   "revised": "수정된",
+   "ship date": "출고일"
+  },
+  "qs": [
+   ["발주서에서 발견된 문제는?", "크림 단가가 견적과 달라요", ["크림 단가가 견적과 달라요", "수량이 빠졌어요", "배송지가 틀렸어요"]],
+   ["Minsu가 바이어에게 요청한 것은?", "수정된 발주서 보내기", ["수정된 발주서 보내기", "선금 보내기", "샘플 다시 받기"]]
+  ]
+ },
+ "write": {
+  "task": "바이어가 보낸 발주서의 수량(5,000개)이 상담 때 이야기한 수량(6,000개)과 달라요. 주문에 감사하고, 수량을 다시 확인해 달라는 짧은 이메일을 써 보세요.",
+  "en": "Thank a buyer for their PO and ask them to check the quantity, which differs from what you discussed.",
+  "hints": ["We are pleased to confirm", "discrepancy", "Could you double-check ...?"],
+  "model": "Dear Mr. Lopez,\n\nThank you for your purchase order. Before we confirm it, we noticed a discrepancy. The PO shows 5,000 units, but we discussed 6,000 units during our call. Could you double-check the quantity and let us know? We will acknowledge the order as soon as we hear from you.\n\nBest regards,\nMinsu Lee"
+ }
+}

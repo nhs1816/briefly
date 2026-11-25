@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-27",
+ "track": "ecom",
+ "theme": "묶음 상품 기획",
+ "en": "Product Bundles",
+ "words": [
+  ["bundle", "n", "묶음 상품, 세트", "The cleanser and toner bundle sold out in two days.", "클렌저와 토너 묶음 상품이 이틀 만에 다 팔렸어요."],
+  ["cross-sell", "v", "(관련 상품을) 함께 팔다", "We can cross-sell the eye cream to serum buyers.", "세럼 구매 고객에게 아이크림을 함께 팔 수 있어요."],
+  ["average order value", "n", "평균 주문 금액(AOV)", "Bundles helped raise our average order value by 12%.", "묶음 상품 덕분에 평균 주문 금액이 12% 올랐어요."]
+ ],
+ "exprs": [
+  ["제안", "pair ... with ...", "…를 …와 짝지어 묶다", "Let's pair the sunscreen with a travel-size cleanser.", ["Let's ___ the sunscreen with a mini cleanser.", "pair", ["pair", "pairing", "paired"]]],
+  ["보고", "... is a natural fit for ...", "…는 …에 딱 어울려요", "The lip balm is a natural fit for our winter bundle.", ["The lip balm is a natural ___ for our winter bundle.", "fit", ["fit", "suit", "fitting"]]]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "Proposal: Winter Care Bundle",
+  "text": "Team,\n\nOur data shows that 35% of customers who buy the moisturizing cream also buy the lip balm within a month. I suggest we pair these two items as a winter care bundle on Amazon.\n\nThe bundle would sell for $29, which is 10% less than buying both items separately. This should help us cross-sell the lip balm and increase our average order value.\n\nThe hand cream is also a natural fit, but adding it would raise the price too much. Please share your thoughts by Monday.\n\nJimin",
+  "gloss": {
+   "moisturizing": "보습의",
+   "within": "…이내에",
+   "separately": "따로따로",
+   "share your thoughts": "의견을 주다"
+  },
+  "qs": [
+   ["묶음에 넣자고 제안한 두 상품은?", "보습 크림과 립밤", ["보습 크림과 립밤", "보습 크림과 핸드크림", "립밤과 핸드크림"]],
+   ["핸드크림을 넣지 않는 이유는?", "가격이 너무 올라가서", ["가격이 너무 올라가서", "재고가 없어서", "판매가 저조해서"]]
+  ]
+ },
+ "write": {
+  "task": "토너를 산 고객이 패드도 많이 산다는 걸 알았어요. 두 상품을 묶어 팔자고 팀에 제안하는 짧은 메시지를 써 보세요.",
+  "en": "Suggest to your team that you sell the toner and toner pads as a bundle.",
+  "hints": ["pair ... with ...", "cross-sell", "average order value"],
+  "model": "Hi team,\n\nMany customers who buy our toner also buy the toner pads. I suggest we pair the toner with the pads as a bundle at a small discount. This would help us cross-sell the pads and raise our average order value. Let me know what you think.\n\nThanks,\nMinsu"
+ }
+}
