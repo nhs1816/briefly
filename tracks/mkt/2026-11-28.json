@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-28",
+ "track": "mkt",
+ "theme": "연말 선물 가이드 콘텐츠",
+ "en": "Gift Guides",
+ "words": [
+  ["gift guide", "n", "선물 추천 가이드", "Our lip set was included in a holiday gift guide.", "저희 립 세트가 연말 선물 가이드에 실렸어요."],
+  ["stocking stuffer", "n", "(크리스마스) 작은 선물", "The mini hand cream is a perfect stocking stuffer.", "미니 핸드크림은 작은 선물로 딱이에요."],
+  ["feature", "v", "(콘텐츠에) 소개하다, 싣다", "Would you feature our gift set in your next post?", "다음 게시물에 저희 선물 세트를 소개해 주시겠어요?"]
+ ],
+ "exprs": [
+  ["콘텐츠", "perfect for ...", "…에 딱 좋은", "This travel kit is perfect for anyone who loves skincare.", ["This kit is ___ for anyone who loves skincare.", "perfect", ["perfect", "perfectly", "perfection"]]],
+  ["제안", "We'd be thrilled if ...", "…해 주시면 정말 기쁠 거예요", "We'd be thrilled if you could include our set in your gift guide.", ["We'd be ___ if you could include our set.", "thrilled", ["thrilled", "thrilling", "thrill"]]]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Holiday Gift Guide Opportunity",
+  "text": "Hi Mia,\n\nWe loved your holiday gift guide last year, especially the self-care section. This year, we'd be thrilled if you could feature our new Glow Gift Set.\n\nIt comes with a serum, a cream, and a mini mask, and it's priced at $35. We think it's perfect for friends who are new to K-beauty. Our mini lip balm could also work as a stocking stuffer.\n\nWe can send both items to you this week. Please let us know if you're interested.\n\nBest,\nMinsu",
+  "gloss": {
+   "self-care": "자기 관리",
+   "comes with": "…가 들어 있다",
+   "priced at": "가격이 …인",
+   "new to": "…를 처음 접하는"
+  },
+  "qs": [
+   ["Glow Gift Set의 가격은?", "35달러", ["35달러", "25달러", "45달러"]],
+   ["작은 선물(stocking stuffer)로 제안한 상품은?", "미니 립밤", ["미니 립밤", "미니 마스크", "세럼"]]
+  ]
+ },
+ "write": {
+  "task": "뷰티 블로거에게 연말 선물 가이드에 저희 핸드크림 세트를 소개해 달라고 부탁하는 짧은 메시지를 써 보세요.",
+  "en": "Ask a beauty blogger to feature your hand cream set in their holiday gift guide.",
+  "hints": ["We'd be thrilled if ...", "perfect for ...", "gift guide"],
+  "model": "Hi Leo,\n\nWe always enjoy your holiday gift guide. We'd be thrilled if you could feature our new hand cream set this year. It has three scents and is perfect for coworkers and friends. We'd be happy to send you a set this week.\n\nBest,\nMinsu"
+ }
+}

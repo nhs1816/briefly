@@ -17,5 +17,6 @@
  {"date": "2026-11-24", "theme": "거래처 첫 미팅", "en": "First Meetings", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
  {"date": "2026-11-25", "theme": "데이터 보고", "en": "Data Reports", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
  {"date": "2026-11-26", "theme": "감사 인사 전하기", "en": "Thank-You Notes", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
- {"date": "2026-11-27", "theme": "브레인스토밍", "en": "Brainstorming", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]}
+ {"date": "2026-11-27", "theme": "브레인스토밍", "en": "Brainstorming", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]},
+ {"date": "2026-11-28", "theme": "계약서 검토", "en": "Contract Review", "audio": true, "tracks": ["export", "ecom", "mkt"], "taudio": ["export", "ecom", "mkt"]}
 ]

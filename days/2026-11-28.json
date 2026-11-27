@@ -1,0 +1,56 @@
+{
+ "date": "2026-11-28",
+ "theme": "계약서 검토",
+ "en": "Contract Review",
+ "words": [
+  ["clause", "n", "(계약서의) 조항", "Please check the payment clause before we sign.", "서명하기 전에 결제 조항을 확인해 주세요."],
+  ["terms", "n", "(계약) 조건", "We agreed on the main terms last week.", "지난주에 주요 조건에 합의했어요."],
+  ["renewal", "n", "(계약) 갱신", "The contract allows for automatic renewal every year.", "이 계약은 매년 자동 갱신이 돼요."],
+  ["sign off on", "phr", "…를 최종 승인하다", "Our director needs to sign off on the contract first.", "먼저 저희 이사님이 계약서를 최종 승인해야 해요."],
+  ["mutually", "adv", "서로, 상호 간에", "We need a date that is mutually convenient.", "서로 편한 날짜가 필요해요."]
+ ],
+ "exprs": [
+  ["계약", "I'd like to clarify ...", "…를 분명히 하고 싶어요", "I'd like to clarify the delivery terms in Section 3.", ["I'd like to ___ one point in Section 4.", "clarify", ["clarify", "clearly", "clarity"]]],
+  ["협상", "Could we revisit ...?", "…를 다시 검토할 수 있을까요?", "Could we revisit the cancellation clause before we sign?", ["Could we ___ the payment terms?", "revisit", ["revisit", "revisiting", "revisited"]]],
+  ["회의", "Let me run it by our legal team.", "법무팀에 한번 확인해 볼게요", "The changes look fine, but let me run it by our legal team.", ["Let me ___ it by our legal team.", "run", ["run", "make", "take"]]]
+ ],
+ "listen": {
+  "title": "공급 계약서 초안 검토하기",
+  "lines": [
+   ["A", "Thanks for sending the draft contract. I have a few questions."],
+   ["B", "Sure, go ahead."],
+   ["A", "First, I'd like to clarify the renewal clause. Is it automatic?"],
+   ["B", "Yes, it renews every year unless one side cancels in writing."],
+   ["A", "I see. Could we revisit the payment terms, too? Sixty days would work better for us."],
+   ["B", "That might be possible. Let me run it by our legal team."],
+   ["A", "Great. Once we agree, our director can sign off on it."]
+  ],
+  "qs": [
+   ["A가 먼저 확인한 조항은?", "갱신 조항", ["갱신 조항", "가격 조항", "배송 조항"]],
+   ["B는 결제 조건 변경을 어떻게 하겠다고 했나요?", "법무팀에 확인해 보겠다", ["법무팀에 확인해 보겠다", "바로 받아들이겠다", "거절하겠다"]]
+  ],
+  "dict": "Thanks for sending the draft contract."
+ },
+ "read": {
+  "kind": "Email",
+  "title": "Comments on the Supply Agreement",
+  "text": "Dear Mr. Harris,\n\nThank you for sending the draft supply agreement. Our team has reviewed it, and overall the terms look fair. However, there are two points I'd like to clarify.\n\nFirst, Clause 5 says that prices may change with 30 days' notice. Could we revisit this and extend the notice period to 90 days? This would give us time to plan our budget.\n\nSecond, the contract does not mention what happens if a shipment is late. We suggest adding a clause that is mutually agreeable to both sides.\n\nOnce these points are settled, our CEO will sign off on the final version.\n\nBest regards,\nMinsu Kim",
+  "gloss": {
+   "supply agreement": "공급 계약",
+   "notice": "통지, 예고",
+   "extend": "연장하다",
+   "agreeable": "받아들일 수 있는",
+   "settled": "합의된, 해결된"
+  },
+  "qs": [
+   ["Minsu가 가격 변경 통지 기간을 얼마로 늘리자고 했나요?", "90일", ["90일", "30일", "60일"]],
+   ["계약서에 빠져 있다고 지적한 내용은?", "배송 지연 시 처리 방법", ["배송 지연 시 처리 방법", "계약 갱신 방법", "결제 통화"]]
+  ]
+ },
+ "write": {
+  "task": "거래처에서 받은 계약서 초안에서 계약 기간(1년)을 2년으로 바꾸고 싶어요. 초안에 감사하고, 기간을 다시 논의하자는 짧은 이메일을 써 보세요.",
+  "en": "Write a short email thanking a partner for the draft contract and asking to discuss changing the term from one year to two.",
+  "hints": ["I'd like to clarify", "Could we revisit ...?", "terms", "sign off on"],
+  "model": "Dear Ms. Lee,\n\nThank you for the draft contract. Overall, the terms look good to us. However, could we revisit the contract period? We would prefer two years instead of one, as it would help us plan long-term orders. If you agree, our director can sign off on it this week.\n\nBest regards,\nMinsu"
+ }
+}

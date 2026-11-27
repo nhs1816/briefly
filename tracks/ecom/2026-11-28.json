@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-28",
+ "track": "ecom",
+ "theme": "옵션(용량) 리스팅 합치기",
+ "en": "Listing Variations",
+ "words": [
+  ["variation", "n", "(용량·색상 등) 옵션 상품", "The 50ml and 100ml sizes are variations of the same toner.", "50ml와 100ml는 같은 토너의 옵션 상품이에요."],
+  ["parent listing", "n", "상위 리스팅(옵션을 묶는 대표 리스팅)", "We created a parent listing for all three sizes.", "세 가지 용량을 묶는 상위 리스팅을 만들었어요."],
+  ["consolidate", "v", "하나로 합치다, 통합하다", "Let's consolidate the reviews into one page.", "리뷰를 한 페이지로 합쳐요."]
+ ],
+ "exprs": [
+  ["제안", "merge ... into ...", "…를 …로 합치다", "We should merge the two serum listings into one.", ["We should ___ the two listings into one.", "merge", ["merge", "merging", "merged"]]],
+  ["보고", "As a result, ...", "그 결과, …", "We combined the listings. As a result, the review count went up to 1,200.", ["As a ___, our conversion rate improved.", "result", ["result", "reason", "cause"]]]
+ ],
+ "read": {
+  "kind": "Memo",
+  "title": "Plan to Combine Cleanser Listings",
+  "text": "Team,\n\nRight now, our gel cleanser is sold on three separate listings: 120ml, 200ml, and a two-pack. Each listing has its own reviews, so customers see only a few on each page.\n\nI propose we merge the three listings into one parent listing with size variations. As a result, all reviews would appear together, which usually helps conversion.\n\nBefore we consolidate, I'll check that the product names and ingredients match exactly. I'll open a case with Seller Support if we need help.\n\nYuri",
+  "gloss": {
+   "separate": "따로 떨어진",
+   "propose": "제안하다",
+   "appear": "나타나다, 보이다",
+   "ingredients": "성분"
+  },
+  "qs": [
+   ["지금 젤 클렌저는 리스팅이 몇 개로 나뉘어 있나요?", "3개", ["3개", "2개", "1개"]],
+   ["리스팅을 합치면 좋은 점은?", "리뷰가 한곳에 모여요", ["리뷰가 한곳에 모여요", "광고비가 줄어요", "배송이 빨라져요"]]
+  ]
+ },
+ "write": {
+  "task": "같은 크림의 50ml와 100ml가 따로 팔리고 있어요. 두 리스팅을 옵션으로 합치자고 팀에 제안하는 짧은 메시지를 써 보세요.",
+  "en": "Suggest to your team that you combine the 50ml and 100ml cream listings into one listing with variations.",
+  "hints": ["merge ... into ...", "variation", "As a result, ..."],
+  "model": "Hi team,\n\nOur cream is sold on two listings, 50ml and 100ml. I suggest we merge them into one parent listing with size variations. As a result, customers will see all the reviews in one place, which should help our conversion rate. What do you think?\n\nThanks,\nMinsu"
+ }
+}

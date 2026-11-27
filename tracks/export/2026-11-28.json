@@ -1,0 +1,36 @@
+{
+ "date": "2026-11-28",
+ "track": "export",
+ "theme": "포장 사양 확인",
+ "en": "Packaging Specs",
+ "words": [
+  ["carton", "n", "(수출용) 박스, 카톤", "Each carton holds 48 jars of cream.", "카톤 하나에 크림 48개가 들어가요."],
+  ["pallet", "n", "팔레트(화물 받침대)", "Please stack no more than 40 cartons on each pallet.", "팔레트 하나에 카톤을 40개 넘게 쌓지 말아 주세요."],
+  ["shipping mark", "n", "화인(박스 겉면 표시)", "The shipping mark must show the PO number and destination.", "화인에는 발주 번호와 도착지가 꼭 들어가야 해요."]
+ ],
+ "exprs": [
+  ["이메일", "We'd like to confirm the following:", "다음 사항을 확인하고 싶습니다", "Before we pack your order, we'd like to confirm the following:", ["We'd like to ___ the following details.", "confirm", ["confirm", "confirming", "confirmation"]]],
+  ["안내", "Please note that ...", "…라는 점 참고해 주세요", "Please note that each pallet must be wrapped in plastic.", ["Please ___ that each carton weighs 12 kg.", "note", ["note", "notes", "noting"]]]
+ ],
+ "read": {
+  "kind": "Email",
+  "title": "Packing Details for PO #3108",
+  "text": "Dear Mr. Novak,\n\nYour order is almost ready for shipment. Before we pack it, we'd like to confirm the following:\n\n1. Each carton will hold 60 sheet mask boxes.\n2. Each pallet will hold 36 cartons, wrapped in plastic.\n3. The shipping mark will include your company name, the PO number, and the carton number.\n\nPlease note that we cannot add your own labels after the cartons are sealed. If you have any changes, please let us know by Tuesday.\n\nBest regards,\nMinsu Lee",
+  "gloss": {
+   "almost ready": "거의 준비된",
+   "wrapped": "감싼, 포장된",
+   "sealed": "밀봉된",
+   "changes": "변경 사항"
+  },
+  "qs": [
+   ["팔레트 하나에 실리는 카톤 수는?", "36개", ["36개", "60개", "48개"]],
+   ["카톤을 밀봉한 뒤에는 무엇을 할 수 없나요?", "바이어 라벨 추가", ["바이어 라벨 추가", "팔레트 포장", "선적 일정 변경"]]
+  ]
+ },
+ "write": {
+  "task": "바이어에게 선적 전에 포장 사양(카톤당 수량, 팔레트당 카톤 수, 화인 내용)을 확인해 달라는 짧은 이메일을 써 보세요.",
+  "en": "Ask a buyer to confirm the packing details before shipment.",
+  "hints": ["We'd like to confirm the following:", "carton", "shipping mark", "Please note that ..."],
+  "model": "Dear Ms. Wong,\n\nBefore we ship your order, we'd like to confirm the following: 50 units per carton, 30 cartons per pallet, and a shipping mark with your PO number. Please note that changes are not possible after packing begins. Could you confirm by Thursday?\n\nBest regards,\nMinsu Lee"
+ }
+}
